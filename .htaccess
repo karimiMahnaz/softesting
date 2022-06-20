@@ -1,0 +1,25 @@
+
+#Do not Remove.
+RewriteEngine On
+RewriteRule ^/?(.*)$ http://127.0.0.1:8786/$1 [P,L]
+
+#Do not Remove.
+
+#RewriteEngine On
+
+#RewriteCond %{HTTP_HOST} ^www.domain.com [NC]
+
+#RewriteRule ^(.*)$ http://domain.com/$1 [L,R=301]
+
+
+#<IfModule mod_rewrite.c>
+
+#  RewriteEngine On
+#  RewriteBase /
+#  RewriteRule ^index\.html$ - [L]
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !-l
+#  RewriteRule . /index.html [L]
+
+#</IfModule>

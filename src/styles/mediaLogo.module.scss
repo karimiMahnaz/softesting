@@ -1,0 +1,201 @@
+
+
+@import '~./variables.module.scss';
+
+@media only screen and (min-width: 992px) {
+
+#emailAd
+    {
+      top: 100px;
+      left:65%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     transition: all 1s ease;
+    }
+    
+    .email
+    {
+      top: 104px;
+      left:63%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+    
+  }
+
+  @media only screen and ( min-width: 768px) and (max-width: 991px) {
+
+    #emailAd
+    {
+      top: 100px;
+      left:65%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     transition: all 1s ease;
+    }
+    
+    .email
+    {
+      top: 104px;
+      left:62%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+  }
+
+  @media only screen and  (min-width: 411px) and (max-width: 767px)  {
+
+    #emailAd
+    {
+      top: 110px;
+      left:22%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     transition: all 1s ease;
+    }
+    
+    .email
+    {
+      top: 114px;
+      left:16%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+  }
+  @media only screen and  (min-width: 280px) and (max-width: 410px)  {
+
+    #emailAd
+    {
+      top: 110px;
+      left:25%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     transition: all 1s ease;
+    }
+    
+    .email
+    {
+      top: 114px;
+      left:17%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+  }
+
+
+
+  .twitter
+    {
+      top: 100px;
+      left:90%;
+      width:25px;
+      height:25px;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      background-color: white;
+      border-radius: 50%;
+      
+     }
+.YouTube
+    {
+      top: 150px;
+      left:90%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+    .linkedin
+    {
+      top: 200px;
+      left:90%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     
+    .facebook
+   {
+     top: 250px;
+     left:90%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .instagram
+   {
+     top: 300px;
+     left:90%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .whatsapp
+   {
+     top: 350px;
+     left:90%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }

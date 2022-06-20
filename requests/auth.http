@@ -1,0 +1,4 @@
+###register
+get http://localhost:8000/user/getProfile
+Authorization: Bearer {{$dotenv token}}
+Content-Type: application/json

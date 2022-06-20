@@ -1,0 +1,411 @@
+
+@import '~./variables.module.scss';
+
+.inactive{display:none;}
+
+
+
+@media only screen and (min-width: 992px) {
+  
+  
+  ///1560px;
+  .footer{
+    margin:0;
+    top: 6400px; 
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    width: 100vw;
+    height: 600px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+
+   
+  }
+
+  .policyFooter{
+    top: 3730px;
+    background-color: $gradiant;
+    left:0 ;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 500px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+  }
+   .aboutUsFooter{
+    top: 6150px;
+    margin-top:0px;
+    background-color: $gradiant;
+    left:0 ;
+    background-size: 100%;
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+  }
+  .articleFooter{
+   
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+    float: center;
+    z-index: 8;
+  }
+  
+.footer_testServices{
+   margin-top:140px;
+   margin-left:50px;
+   color:$backColor;
+   display: flex;
+   position:absolute;
+   flex-direction: column;
+   li{ list-style-type: none;}
+  
+   
+}
+
+.footer_developServices{
+  margin-top:140px;
+  margin-left:300px;
+  color:$backColor;
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  li{ list-style-type: none;}
+}
+
+
+.footer_Services{
+  margin-top:140px;
+  margin-left:700px;
+  
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  Link{color:$backColor; cursor: pointer;}
+  #who{color:$backColor;&:hover{color: red;}}
+  #what{color:$backColor;&:hover{color: red;}}
+  #how{color:$backColor;&:hover{color: red;}}
+  #joinUs{color:$backColor;&:hover{color: red;}}
+  #proposal{color:$backColor;&:hover{color: red;}}
+  #blog{color:$backColor;&:hover{color: red;}}
+}
+
+.copyright{
+  margin-top:400px;
+   margin-left:50px;
+   color:$backColor;
+ //  bottom: 100px;
+   position:absolute;
+   a{cursor: pointer;}
+   #policy{color:$backColor;&:hover{color: red;}}
+   #sitmap{color:$backColor;&:hover{color: red;}}
+}
+}
+
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+
+  .footer{
+    top: 6300px;
+    background-color: $gradiant;
+   // left:11px ;
+    //padding:10px;
+    background-size: 100%;
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+   // border-radius: 5px;
+   
+  }
+
+  .policyFooter{
+    top: 3730px;
+    background-color: $gradiant;
+    left:11px ;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 500px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+  }
+   .aboutUsFooter{
+    top: 6150px;
+    margin-top:0px;
+    background-color: $gradiant;
+    left:11px ;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 500px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+   
+  }
+
+.footer_testServices{
+   margin-top:140px;
+   margin-left:50px;
+   color:$backColor;
+   display: flex;
+   position:absolute;
+   flex-direction: column;
+   li{ list-style-type: none;}
+  
+   
+}
+
+.footer_developServices{
+  margin-top:140px;
+  margin-left:280px;
+  color:$backColor;
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  li{ list-style-type: none;}
+}
+
+
+.footer_Services{
+  margin-top:140px;
+  margin-left:550px; 
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  Link{color:$backColor; cursor: pointer;}
+  #who{color:$backColor;&:hover{color: red;}}
+  #what{color:$backColor;&:hover{color: red;}}
+  #how{color:$backColor;&:hover{color: red;}}
+  #joinUs{color:$backColor;&:hover{color: red;}}
+  #proposal{color:$backColor;&:hover{color: red;}}
+  #blog{color:$backColor;&:hover{color: red;}}
+}
+.copyright{
+   margin-left:50px;
+   color:$backColor;
+   bottom: 100px;
+   position:absolute;
+   a{cursor: pointer;}
+   #policy{color:$backColor;&:hover{color: red;}}
+   #sitmap{color:$backColor;&:hover{color: red;}}
+}
+}
+
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+  .footer{
+    top: 6300px;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    width: 100vw;
+    height: 800px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+   
+  }
+
+  .policyFooter{
+    top: 3730px;
+    background-color: $gradiant;
+    left:11px ;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 800px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+  }
+   .aboutUsFooter{
+    top: 6150px;
+    margin-top:0px;
+    background-color: $gradiant;
+    left:11px ;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 800px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+   
+  }
+
+.footer_testServices{
+   margin-top:140px;
+   margin-left:50px;
+   color:$backColor;
+   display: flex;
+   position:absolute;
+   flex-direction: column;
+   li{ list-style-type: none;}
+  
+   
+}
+
+.footer_developServices{
+  margin-top:340px;
+  margin-left:50px;
+  color:$backColor;
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  li{ list-style-type: none;}
+}
+
+
+.footer_Services{
+  margin-top:540px;
+  margin-left:90px;
+  
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  Link{color:$backColor; cursor: pointer;}
+  #who{color:$backColor;&:hover{color: red;}}
+  #what{color:$backColor;&:hover{color: red;}}
+  #how{color:$backColor;&:hover{color: red;}}
+  #joinUs{color:$backColor;&:hover{color: red;}}
+  #proposal{color:$backColor;&:hover{color: red;}}
+  #blog{color:$backColor;&:hover{color: red;}}
+}
+.copyright{
+   margin-left:50px;
+   color:$backColor;
+   bottom: 50px;
+   position:absolute;
+   a{cursor: pointer;}
+   #policy{color:$backColor;&:hover{color: red;}}
+   #sitmap{color:$backColor;&:hover{color: red;}}
+}
+}
+
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+
+  .footer{
+    top: 6300px;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    width: 100vw;
+    height: 800px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+  
+  }
+
+  .policyFooter{
+    top: 3730px;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 800px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+  }
+   .aboutUsFooter{
+    top: 6150px;
+    margin-top:0px;
+    background-color: $gradiant;
+    background-size: 100%;
+    background-position: center;
+    width: 99%;
+    height: 800px;
+    float: center;
+    position:absolute;
+    scrollbar-width: none;
+    display:block;
+   
+  }
+
+.footer_testServices{
+   margin-top:140px;
+   margin-left:20px;
+   color:$backColor;
+   display: flex;
+   position:absolute;
+   flex-direction: column;
+   li{ list-style-type: none;}
+  
+   
+}
+
+.footer_developServices{
+  margin-top:340px;
+  margin-left:20px;
+  color:$backColor;
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  li{ list-style-type: none;}
+}
+
+
+.footer_Services{
+  margin-top:540px;
+  margin-left:60px;
+  display: flex;
+  position:absolute;
+  flex-direction: column;
+  text-decoration: none;
+  Link{color:$backColor; cursor: pointer;}
+  #who{color:$backColor;&:hover{color: red;}}
+  #what{color:$backColor;&:hover{color: red;}}
+  #how{color:$backColor;&:hover{color: red;}}
+  #joinUs{color:$backColor;&:hover{color: red;}}
+  #proposal{color:$backColor;&:hover{color: red;}}
+  #blog{color:$backColor;&:hover{color: red;}}
+}
+.copyright{
+   margin-left:30px;
+   color:$backColor;
+   bottom: 50px;
+   position:absolute;
+   a{cursor: pointer;}
+   #policy{color:$backColor;&:hover{color: red;}}
+   #sitmap{color:$backColor;&:hover{color: red;}}
+}
+      }
+
+     
+
+    
+ 
+
+
