@@ -163,7 +163,7 @@ const NavBar = () => {
               <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
             </ul>
 
-            <ul id={styles.link2} disabled={loginFrmShow} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+            <ul id={styles.link2} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow || loginFrmShow}>
               <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
               <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
@@ -277,7 +277,7 @@ const NavBar = () => {
               <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
             </ul>
 
-            <ul id={styles.link2} disabled={loginFrmShow} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+            <ul id={styles.link2}  className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow || loginFrmShow}>
               <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
               <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
@@ -383,7 +383,7 @@ const NavBar = () => {
                 <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
               </ul>
 
-              <ul id={styles.link2} disabled={loginFrmShow} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+              <ul id={styles.link2}  className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow || loginFrmShow}>
                 <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
                 <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
@@ -489,7 +489,7 @@ const NavBar = () => {
                 <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
               </ul>
 
-              <ul id={styles.link2} disabled={loginFrmShow} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+              <ul id={styles.link2} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow }>
                 <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
                 <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>

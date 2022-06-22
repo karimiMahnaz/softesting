@@ -131,6 +131,7 @@ const Header = () => {
                         console.log('installation was cancelled');
                     } else {
                         console.log('User Added To Home Screen');
+                        
                     }
                 });
                 window.deferredPrompt = null;
@@ -222,7 +223,7 @@ const Header = () => {
                     <img border="0" alt="instagram" src={instagram} className={styles.instagram}></img>
                 </a>
               
-                 <img border="0" alt="whatsapp" src={whatsapp} onClick = {handleWhatsApp}className={styles.whatsapp}></img>   
+                 <img border="0" alt="whatsapp" src={whatsapp} onClick = {handleWhatsApp} className={styles.whatsapp}></img>   
                 {whatsAppFrmShow? <WhatsApp/>:null}
                 
                 <a href="/" onClick={setBodyFrmShow}  >
@@ -267,7 +268,7 @@ const Header = () => {
                     <img border="0" alt="instagram" src={instagram} className={styles.instagram}></img>
                 </a>
                
-                <img border="0" alt="whatsapp" src={whatsapp} onClick = {handleWhatsApp}className={styles.whatsapp}></img>   
+                <img border="0" alt="whatsapp" src={whatsapp} onClick = {handleWhatsApp} className={styles.whatsapp}></img>   
                 {whatsAppFrmShow? <WhatsApp/>:null}
                 
 

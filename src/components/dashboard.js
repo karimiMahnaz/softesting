@@ -1,10 +1,13 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 import { Route, BrowserRouter, useHistory, Switch, Link, withRouter, useRouteMatch } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useMediaQuery } from 'react-responsive';
 
 import { VisibilityContext } from '../contexts/visibilityContext';
 import { AuthContext } from '../contexts/authContext';
 import styles from '../styles/dashboard.module.scss';
-import Profile from '../pages/profile';
+//import Profile from '../pages/profile';
 
 import exitIcon from '../assets/dashboard/exit_icon.png';
 import logoutIcon from '../assets/dashboard/logout_icon.png';
@@ -103,7 +106,8 @@ if (appElement1.current){
       history.push("/Tasks");
       setTasks(true);
    }
-
+   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+   console.log('isMobile',isMobile );
    const handleApp = (e) => {
       
       var userAnswer = window.confirm("Do you want to install SofTesting App?");
@@ -113,6 +117,9 @@ if (appElement1.current){
           console.log(choice);
           if (choice.outcome === 'dismissed') {
             console.log('installation was cancelled');
+
+            if (isMobile) { toast.info("please click 'add to home screen button'.") }
+
           } else {
             console.log('User Added To Home Screen');
           }

@@ -30,7 +30,7 @@
   {
     position: absolute;
     left: 0px;
-    top: 0px;
+    top:0px;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -68,6 +68,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     left: 0;
+    top:0;
     margin-top: 0;
     padding:0 2px;
     background-color:$black;
@@ -83,6 +84,7 @@
     grid-template-rows: auto;
     position:fixed;
     left: 0;
+    top:0;
     margin-top: 0;
     padding:0 2px;
     background-color:$black;
@@ -260,6 +262,7 @@
         grid-template-rows: auto;
         position:fixed;
         left: 0;
+        top:0;
         margin-top: 0;
         padding:0 2px;
         background-color:$black;
@@ -275,6 +278,7 @@
         grid-template-rows: auto;
         position:fixed;
         left: 0;
+        top:0;
         margin-top: 0;
         padding:0 2px;
         background-color:$black;
@@ -452,6 +456,7 @@
         grid-template-rows: auto;
         position:fixed;
         left: 0;
+        top:0;
         margin-top: 0;
         padding:0 2px;
         background-color:$black;
@@ -467,6 +472,7 @@
         grid-template-rows: auto;
         position:fixed;
         left: 0;
+        top:0;
         margin-top: 0;
         padding:0 2px;
         background-color:$black;
@@ -503,15 +509,15 @@
         color:$white;
         border: none;
         margin-top:10px;
-        font-size: .9rem;
+        font-size: .7rem;
         &:hover{
             color:$buttonColor;
         }
     }
 
         .profileIcon{
-            width: 20px;
-            height:20px;
+            width: 17px;
+            height:17px;
             margin:auto;
             margin-top:15px;
             background-color: $white;
@@ -528,15 +534,15 @@
         color:$white;
         border: none;
         margin-top:10px;
-        font-size: .9rem;
+        font-size: .7rem;
      
         &:hover{
             color:$buttonColor;
         }
     }
         .tasksIcon{
-            width: 20px;
-            height:20px;
+            width: 17px;
+            height:17px;
             margin:auto;
             margin-top:15px;
          //   background-color: $white;
@@ -555,7 +561,7 @@
         color:$white;
         border: none;
         margin-top:10px;
-        font-size: .8rem;
+        font-size: .7rem;
      
         &:hover{
             color:$buttonColor;
@@ -563,8 +569,8 @@
     }
 
         .AppIcon{
-            width: 20px;
-            height:20px;
+            width: 17px;
+            height:17px;
             margin:auto;
             margin-top:15px;
             background-color: $white;
@@ -581,15 +587,15 @@
         color:$white;
         border: none;
         margin-top:10px;
-        font-size: .9rem;
+        font-size: .7rem;
         
         &:hover{
             color:$buttonColor;
         }
     }
         .logoutIcon{
-            width: 20px;
-            height:20px;
+            width: 17px;
+            height:17px;
             margin:auto;
             margin-top:15px;
             background-color: $white;
@@ -606,7 +612,7 @@
         color:$white;
         border: none;
         margin-top:10px;
-        font-size: .9rem;
+        font-size: .7rem;
      
         &:hover{
             color:$buttonColor;
@@ -614,8 +620,8 @@
     }
 
         .exitIcon{
-            width: 20px;
-            height:20px;
+            width: 17px;
+            height:17px;
             margin:auto;
             margin-top:15px;
             background-color: $white;
@@ -638,6 +644,7 @@
         grid-template-rows: auto;
         position:fixed;
         left: 0;
+        top:0;
         margin-top: 0;
         padding:0 2px;
         background-color:$black;
@@ -653,6 +660,7 @@
         grid-template-rows: auto;
         position:fixed;
         left: 0;
+        top:0;
         margin-top: 0;
         padding:0 2px;
         background-color:$black;
