@@ -23,7 +23,34 @@ module.exports = (app) => {
 //     res.render("404", { pageTitle: "صفحه پیدا نشد | 404", path: "/404" });
 // });
 
+
+/**
+ * @swagger
+ * tags:
+ *  name: RootApi
+ *  description: Root Get Api
+ */
+
+ /**
+ *  @swagger
+ * /:
+ *  get: 
+ *    summary: Base of routes
+ *    tags: [RootApi]
+ *    description: Get Root 
+ *    parameters:
+ *        -   out: header
+ *            name: access-session
+ *            example: Bearer Your Session...
+ *    responses :
+ *      200:
+ *        description: success
+ *      500:
+ *        description: failed
+ *      
+ */
   app.get("/", (req, res) => {
+    try{
     console.log('SESSION', req.session);
     console.log('SessionId', req.sessionID);
     console.log('USER', req.user);
@@ -37,7 +64,11 @@ module.exports = (app) => {
          req.session.page_views=1;
          res.send('Welcome to this page!');
        }
-        
+       return 200;
+      }
+      catch(error){
+        return error;
+      } 
     });
 
 

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba394b1f.css",
-    "main.js": "/static/js/main.f4fd23de.js",
+    "main.css": "/static/css/main.175292cd.css",
+    "main.js": "/static/js/main.b46b2863.js",
     "static/js/787.e3172429.chunk.js": "/static/js/787.e3172429.chunk.js",
     "static/media/web_testing.jpg": "/static/media/web_testing.102256f1add3acec2831.jpg",
     "static/media/pwa.jpg": "/static/media/pwa.e809c01c0a691cd94d06.jpg",
@@ -49,6 +49,7 @@
     "index.html": "/index.html",
     "static/media/svg": "/static/media/19299514501540882611.4bd07d25531bc1a47bc09c84ceab2a35.svg",
     "static/media/twitter5.svg": "/static/media/twitter5.2f0f94c9309516638502496d83da9020.svg",
+    "static/media/whatsapp-48.svg": "/static/media/whatsapp-48.52da092f093c1d11c1089bdf7738e093.svg",
     "static/media/LinkedIn-Icon-White-Logo.wine.svg": "/static/media/LinkedIn-Icon-White-Logo.wine.4e8e25c6c6648550b92578d9582a0dda.svg",
     "static/media/whatsapp-logo.svg": "/static/media/whatsapp-logo.f9401e98af2844b1941530c3efa8d693.svg",
     "static/media/pwa.svg": "/static/media/pwa.da3d2b75ea4646ab71a6f2069aeb7a6b.svg",
@@ -56,12 +57,12 @@
     "static/media/instagram-logo.svg": "/static/media/instagram-logo.8d3e976199cf38a6e3aeea4b14a162e3.svg",
     "static/media/facebook-logo.svg": "/static/media/facebook-logo.1b45893c5e1a799e9946d1d1d8bb4513.svg",
     "static/media/purplemail.svg": "/static/media/purplemail.c3d23a95aa15af287bfa9d924881fa6f.svg",
-    "main.ba394b1f.css.map": "/static/css/main.ba394b1f.css.map",
-    "main.f4fd23de.js.map": "/static/js/main.f4fd23de.js.map",
+    "main.175292cd.css.map": "/static/css/main.175292cd.css.map",
+    "main.b46b2863.js.map": "/static/js/main.b46b2863.js.map",
     "787.e3172429.chunk.js.map": "/static/js/787.e3172429.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba394b1f.css",
-    "static/js/main.f4fd23de.js"
+    "static/css/main.175292cd.css",
+    "static/js/main.b46b2863.js"
   ]
 }
