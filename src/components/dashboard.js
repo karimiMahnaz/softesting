@@ -110,6 +110,8 @@ if (appElement1.current){
    console.log('isMobile',isMobile );
    const handleApp = (e) => {
       
+      if (isMobile) { toast.info("please click 'add to home screen button'.") }
+      else {
       var userAnswer = window.confirm("Do you want to install SofTesting App?");
       if (window.deferredPrompt) {
         window.deferredPrompt.prompt();
@@ -118,15 +120,13 @@ if (appElement1.current){
           if (choice.outcome === 'dismissed') {
             console.log('installation was cancelled');
 
-            if (isMobile) { toast.info("please click 'add to home screen button'.") }
-
           } else {
             console.log('User Added To Home Screen');
           }
         });
         window.deferredPrompt = null;
       }
- 
+   }
    }
 
    const handleMinimize = () => {

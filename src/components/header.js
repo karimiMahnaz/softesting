@@ -1,5 +1,8 @@
 import React, { useContext, useRef, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useMediaQuery } from 'react-responsive';
 
 import styles from '../styles/header.module.scss';
 import { Desktop, Tablet, Mobile, MobileX } from '../contexts/breakPoints';
@@ -117,8 +120,11 @@ const Header = () => {
     // console.log('auth', auth);
     // console.log('emailW', JSON.stringify(localStorage.getItem('userEmail')));
     // console.log('emailw',emailW);
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
     const handleApp = (e) => {
         e.preventDefault();
+        if (isMobile) { toast.info("please click 'add to home screen button'.") }
+        else {
         var userAnswer = window.confirm("Do you want to install SofTesting App?");
         console.log(userAnswer)
         if (userAnswer) {
@@ -131,7 +137,7 @@ const Header = () => {
                         console.log('installation was cancelled');
                     } else {
                         console.log('User Added To Home Screen');
-                        
+
                     }
                 });
                 window.deferredPrompt = null;
@@ -139,7 +145,7 @@ const Header = () => {
         }
         setDownLoadHover(false);
     }
-
+    }
 
     return (
         <div className={styles.header} >
