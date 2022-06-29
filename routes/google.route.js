@@ -6,7 +6,8 @@ const { ensureAuth, ensureGuest } = require("../middlewares/auth");
 const router = express.Router();
 
 
-router.post("/", [ensureGuest], Usercontroller.googleSignIn, Usercontroller.rememberMe);
+////router.post("/", [ensureGuest], Usercontroller.googleSignIn, Usercontroller.rememberMe);
+router.post("/", Usercontroller.googleSignIn);
 router.get("/callback", Usercontroller.googleCallback );
 router.get("/success", Usercontroller.googleSuccess );
 router.get("/failed", (req, res )=> {

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.71d2c6da.css",
-    "main.js": "/static/js/main.532c4364.js",
-    "static/js/787.e3172429.chunk.js": "/static/js/787.e3172429.chunk.js",
+    "main.css": "/static/css/main.509b1f65.css",
+    "main.js": "/static/js/main.17db78dc.js",
+    "static/js/787.e1d22c24.chunk.js": "/static/js/787.e1d22c24.chunk.js",
     "static/media/web_testing.jpg": "/static/media/web_testing.102256f1add3acec2831.jpg",
     "static/media/pwa.jpg": "/static/media/pwa.e809c01c0a691cd94d06.jpg",
     "static/media/test3.png": "/static/media/test3.80153384b3eb565f0b90.png",
@@ -57,12 +57,12 @@
     "static/media/instagram-logo.svg": "/static/media/instagram-logo.8d3e976199cf38a6e3aeea4b14a162e3.svg",
     "static/media/facebook-logo.svg": "/static/media/facebook-logo.1b45893c5e1a799e9946d1d1d8bb4513.svg",
     "static/media/purplemail.svg": "/static/media/purplemail.c3d23a95aa15af287bfa9d924881fa6f.svg",
-    "main.71d2c6da.css.map": "/static/css/main.71d2c6da.css.map",
-    "main.532c4364.js.map": "/static/js/main.532c4364.js.map",
-    "787.e3172429.chunk.js.map": "/static/js/787.e3172429.chunk.js.map"
+    "main.509b1f65.css.map": "/static/css/main.509b1f65.css.map",
+    "main.17db78dc.js.map": "/static/js/main.17db78dc.js.map",
+    "787.e1d22c24.chunk.js.map": "/static/js/787.e1d22c24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71d2c6da.css",
-    "static/js/main.532c4364.js"
+    "static/css/main.509b1f65.css",
+    "static/js/main.17db78dc.js"
   ]
 }

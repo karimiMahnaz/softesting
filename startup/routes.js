@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require('path');
 
 const fileManager = require("../routes/file-manager.route");
 const sendEmail = require("../routes/send-email.route");
@@ -19,9 +20,10 @@ module.exports = (app) => {
   app.use("/auth/google",  google);
   app.use("/auth/linkedin",  linkedin);
   app.use("/api/task", sofTask);
-//   app.use((req, res) => {
-//     res.render("404", { pageTitle: "صفحه پیدا نشد | 404", path: "/404" });
-// });
+
+  //  app.get('*', (req, res) => {
+  //   res.sendFile(path.join(__dirname,'/build/index.html'))
+  // });
 
 
 /**

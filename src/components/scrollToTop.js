@@ -59,14 +59,11 @@ const ScrollToTop = () => {
   const toggleVisibility = () => {
     if (window && window.pageYOffset > 300 && (window.pageYOffset < 5200 || window.pageYOffset > 5900)) {
       setIsVisible(true);
+      setOffWhatsAppFrmShow();
     } else {
       setIsVisible(false);
     }
 
-    if (window && window.pageYOffset > 300 && window.pageYOffset < 5900)
-    {
-      setOffWhatsAppFrmShow();
-    } 
   };
 
   // Set the top cordinate to 0

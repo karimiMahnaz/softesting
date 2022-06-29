@@ -21,7 +21,8 @@ class VisibilityContextProvider extends Component {
     dashboardFrmShow:false,
     profileFrmShow:false,
     blogShow:true,
-    whatsAppFrmShow:false
+    whatsAppFrmShow:false,
+    linkedinKey:false,
   }
 
 
@@ -215,6 +216,8 @@ class VisibilityContextProvider extends Component {
     setOffWhatsAppFrmShow=()=> {
       this.setState({ whatsAppFrmShow: false}) ;
     }
+    setOnLinkedin=()=>{this.setState({ linkedinKey: true}); }
+    setOffLinkedin=()=>{this.setState({ linkedinKey: false}) ; }
 
     render() {
       return (
@@ -226,7 +229,8 @@ class VisibilityContextProvider extends Component {
           setOnLineChatFrmShow:this.setOnLineChatFrmShow, setOffOnLineChatFrmShow:this.setOffOnLineChatFrmShow,
           setOnLineChatLoginFrmShow:this.setOnLineChatLoginFrmShow, setChangePassFrmShow:this.setChangePassFrmShow,
           setDashboardFrmShow:this.setDashboardFrmShow, setBlogShow:this.setBlogShow, setProfileFrmShow:this.setProfileFrmShow, 
-          setWhatsAppFrmShow:this.setWhatsAppFrmShow, setOffWhatsAppFrmShow:this.setOffWhatsAppFrmShow
+          setWhatsAppFrmShow:this.setWhatsAppFrmShow, setOffWhatsAppFrmShow:this.setOffWhatsAppFrmShow,
+          setOffLinkedin:this.setOfflinkedin, setOnLinkedin:this.setOnLinkedin,
         }}>
 
           {this.props.children}

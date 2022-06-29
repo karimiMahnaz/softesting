@@ -74,7 +74,7 @@ const Body = () => {
   const { setOffMenu } = useContext(NavContext);
  // const arrow = ' -->';
   ///const { forms , dispatch   } = useContext(VisibilityContext );
-  const { loginFrmShow, registerFrmShow, resetPassFrmShow, setBlogShow,  bodyFrmShow,  setFormsHide } = useContext(VisibilityContext);
+  const { loginFrmShow, registerFrmShow, resetPassFrmShow, contactFrmShow, setBlogShow,  bodyFrmShow,  setFormsHide } = useContext(VisibilityContext);
  // const [StateVariable, setStateVariable] = useState(false)
   
  // const contactRef = useRef(null);
@@ -82,6 +82,8 @@ const Body = () => {
   document.title= 'SofTesting | Software Testing & Development';
 
   const location = window.location.hostname;
+
+ 
 
   let urlTestArticle1, urlTestArticle2, urlTestArticle3 ;
   let urlTestArticle4, urlTestArticle5, urlTestArticle6 ;
@@ -122,6 +124,7 @@ const Body = () => {
     urlDevelopArticle5 = "/src/blog/developArticle5";
     urlDevelopArticle6 = "/src/blog/developArticle6";
 }
+
 
   //  useEffect(() => {
   //  //// window.history.pushState(null, null, window.location.pathname);//or//

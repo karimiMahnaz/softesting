@@ -26,18 +26,27 @@ const ContactUs = (props = "") => {
     const [selectedFiles, setSelectedFiles] = useState([]);
     const [captchaSuccess, setCaptchaSuccess] = useState(false);
 
-    let history = useHistory();
 
     toast.configure()
 
     const { contactFrmShow, setContactFrmShow, setAboutUsFrmShow, setFormsHide } = useContext(VisibilityContext);
-    const { register, handleSubmit, setError, reset, formState: { errors, isDirty, isValid }, isSubmitSuccessful } = useForm({
+    const { register, handleSubmit, setValue, reset, formState: { errors, isDirty, isValid }, isSubmitSuccessful } = useForm({
         mode: "onTouch",
         reValidateMode: "onChange"
     });
 
    // document.title= 'SofTesting | ContactUs ';
 
+
+   let emailW='';
+ 
+  useEffect(()=>{
+    //console.log(JSON.parse(localStorage.getItem('userEmail')));
+  if (JSON.parse(localStorage.getItem('userEmail'))){ emailW= JSON.parse(localStorage.getItem('userEmail')); }
+     setValue('customerMail', emailW);
+  },[] )
+
+    let history = useHistory();
     const handleFrmClose = () => { 
         history.push("/");
         setFormsHide();
@@ -242,7 +251,7 @@ const ContactUs = (props = "") => {
 
                     <input placeholder="Enter E-mail Address" id={styles.customerMail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
-                        defaultValue="" type="email" placeholder="Enter Email Address"
+                        defaultValue="" type="email" 
                         name="customerMail" onChange={onChangeEmail}
                         {...register('customerMail', {
                             required: "*",
@@ -313,7 +322,7 @@ const ContactUs = (props = "") => {
 
                     {/*     /^[a-zA-Z]*$/  */}
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail}
+                    <input  id={styles.customerMail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address"
                         name="customerMail" onChange={onChangeEmail}
@@ -340,7 +349,7 @@ const ContactUs = (props = "") => {
                         defaultValue="" type="text" name="customerMessage" onChange={onChangeMessage}
                         {...register('customerMessage')} />
 
-                    <label id={styles.rf} >You Can Upload your Documents</label>
+                    <label id={styles.rf} >you can upload your documents</label>
                     <input type="file" placeholder="Your File" id={styles.rfp} multiple
                         name="fileInput" {...register("fileInput")} accept=" .pdf, .jpeg, .jpg, .png, .zip "
                         onChange={onChange} onClick={onClick} />
@@ -349,7 +358,7 @@ const ContactUs = (props = "") => {
                     <input type="checkbox" id={styles.policy} name="policy" onClick={e => handleChangeB(e)}
                         {...register("policy", { required: "*" })} />
 
-                    <label id={styles.confirm} >  I agree of the Terms of use and Privacy policy </label>
+                    <label id={styles.confirm} >  I agree of the terms of use and privacy policy </label>
 
                     {errors.customerName && <p id={styles.nError} role="alert" >{errors.customerName.message}</p>}
                     {errors.customerMail && <p id={styles.mError} role="alert"  > {errors.customerMail.message}</p>}
@@ -385,7 +394,7 @@ const ContactUs = (props = "") => {
 
                     {/*     /^[a-zA-Z]*$/  */}
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail}
+                    <input  id={styles.customerMail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address"
                         name="customerMail" onChange={onChangeEmail}
@@ -421,7 +430,7 @@ const ContactUs = (props = "") => {
                     <input type="checkbox" id={styles.policy} name="policy" onClick={e => handleChangeB(e)}
                         {...register("policy", { required: "*" })} />
 
-                    <label id={styles.confirm} >  I agree Privacy policy </label>
+                    <label id={styles.confirm} >  I agree privacy policy </label>
 
                     {errors.customerName && <p id={styles.nError} role="alert" >{errors.customerName.message}</p>}
                     {errors.customerMail && <p id={styles.mError} role="alert"  > {errors.customerMail.message}</p>}
@@ -457,7 +466,7 @@ const ContactUs = (props = "") => {
 
                     {/*     /^[a-zA-Z]*$/  */}
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail}
+                    <input  id={styles.customerMail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address"
                         name="customerMail" onChange={onChangeEmail}
@@ -513,7 +522,7 @@ const ContactUs = (props = "") => {
         :
         <>
         <Desktop>
-            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={styles.animate, contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
+            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={ contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
                 <div className={styles.container}>
                     <span id={styles.closeBtn} onClick={handleFrmClose} className={styles.closeBtn}  >
                         <svg id={styles.svg}>
@@ -538,7 +547,7 @@ const ContactUs = (props = "") => {
                         })} />
 
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail} onChange={onChangeEmail}
+                    <input  id={styles.customerMail} onChange={onChangeEmail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address" name="customerMail"
                         {...register('customerMail', {
@@ -572,7 +581,7 @@ const ContactUs = (props = "") => {
 
                     <input type="checkbox" id={styles.policy} name="policy" defaultValue={false} onClick={e => handleChange(e)}
                         {...register("policy", { required: "*" })} />
-                    <label id={styles.confirm}>I agree of the Terms of use and Privacy policy </label>
+                    <label id={styles.confirm}>I agree of the Terms of use and privacy policy </label>
 
                     {errors.customerName && <p id={styles.nError} role="alert" >{errors.customerName.message}</p>}
                     {errors.customerMail && <p id={styles.mError} role="alert"  > {errors.customerMail.message}</p>}
@@ -591,7 +600,7 @@ const ContactUs = (props = "") => {
             </form>
             </Desktop>
             <Tablet>
-            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={styles.animate, contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
+            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
                 <div className={styles.container}>
                     <span id={styles.closeBtn} onClick={handleFrmClose} className={styles.closeBtn}  >
                         <svg id={styles.svg}>
@@ -616,7 +625,7 @@ const ContactUs = (props = "") => {
                         })} />
 
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail} onChange={onChangeEmail}
+                    <input  id={styles.customerMail} onChange={onChangeEmail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address" name="customerMail"
                         {...register('customerMail', {
@@ -650,7 +659,7 @@ const ContactUs = (props = "") => {
 
                     <input type="checkbox" id={styles.policy} name="policy" defaultValue={false} onClick={e => handleChange(e)}
                         {...register("policy", { required: "*" })} />
-                    <label id={styles.confirm} > I agree of the Terms of use and Privacy policy </label>
+                    <label id={styles.confirm} > I agree of the terms of use and privacy policy </label>
 
                     {errors.customerName && <p id={styles.nError} role="alert" >{errors.customerName.message}</p>}
                     {errors.customerMail && <p id={styles.mError} role="alert"  > {errors.customerMail.message}</p>}
@@ -669,7 +678,7 @@ const ContactUs = (props = "") => {
             </form>
             </Tablet>
             <Mobile>
-            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={styles.animate, contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
+            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
                 <div className={styles.container}>
                     <span id={styles.closeBtn} onClick={handleFrmClose} className={styles.closeBtn}  >
                         <svg id={styles.svg}>
@@ -694,7 +703,7 @@ const ContactUs = (props = "") => {
                         })} />
 
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail} onChange={onChangeEmail}
+                    <input id={styles.customerMail} onChange={onChangeEmail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address" name="customerMail"
                         {...register('customerMail', {
@@ -728,7 +737,7 @@ const ContactUs = (props = "") => {
 
                     <input type="checkbox" id={styles.policy} name="policy" defaultValue={false} onClick={e => handleChange(e)}
                         {...register("policy", { required: "*" })} />
-                    <label id={styles.confirm}> I agree Privacy policy </label>
+                    <label id={styles.confirm}> I agree privacy policy </label>
 
                     {errors.customerName && <p id={styles.nError} role="alert" >{errors.customerName.message}</p>}
                     {errors.customerMail && <p id={styles.mError} role="alert"  > {errors.customerMail.message}</p>}
@@ -747,7 +756,7 @@ const ContactUs = (props = "") => {
             </form>
             </Mobile>
             <MobileX>
-            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={styles.animate, contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
+            <form id={styles.modalContactUs} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }} className={ contactFrmShow ? (props.src == 'REQUEST A PROPOSAL' ? styles.fp : (props.src == 'JOIN US' ? styles.fj : styles.modalContactUs)) : styles.inactive} >
                 <div className={styles.container}>
                     <span id={styles.closeBtn} onClick={handleFrmClose} className={styles.closeBtn}  >
                         <svg id={styles.svg}>
@@ -772,7 +781,7 @@ const ContactUs = (props = "") => {
                         })} />
 
 
-                    <input placeholder="Enter E-mail Address" id={styles.customerMail} onChange={onChangeEmail}
+                    <input id={styles.customerMail} onChange={onChangeEmail}
                         className={`${errors.customerMail ? styles.errorBorder : styles.Border}`}
                         defaultValue="" type="email" placeholder="Enter Email Address" name="customerMail"
                         {...register('customerMail', {
@@ -806,7 +815,7 @@ const ContactUs = (props = "") => {
 
                     <input type="checkbox" id={styles.policy} name="policy" defaultValue={false} onClick={e => handleChange(e)}
                         {...register("policy", { required: "*" })} />
-                    <label id={styles.confirm} > I agree Privacy policy </label>
+                    <label id={styles.confirm} > I agree privacy policy </label>
 
                     {errors.customerName && <p id={styles.nError} role="alert" >{errors.customerName.message}</p>}
                     {errors.customerMail && <p id={styles.mError} role="alert"  > {errors.customerMail.message}</p>}

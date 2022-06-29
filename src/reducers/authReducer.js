@@ -35,7 +35,7 @@ export const authReducer=(state, action)=>{
                  }] ;
 
         case 'SignOut':
-
+            localStorage.removeItem('googleData');
             localStorage.clear();
             return[...state,{
                 authorized:false,

@@ -7,9 +7,9 @@ const smtpTransport = require("nodemailer-smtp-transport");
  // service: 'gmail',
 //  host: 'smtp.gmail.com',
 var transporterDetails = smtpTransport({
-  host:'mail.softestingca.com',
-  port: 465,
-  secure: true, // use SSL
+  host: '5.9.116.157',   ////'mail.softestingca.com',
+  port: 587,  /////465,
+  ////secure: true, // use SSL
   auth: {
     user: 'hello@softestingca.com',
     pass: 'Mah13861392'

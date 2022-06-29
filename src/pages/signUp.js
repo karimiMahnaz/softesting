@@ -28,7 +28,7 @@ const SignUp = () => {
 
   const { loginFrmShow, setLoginFrmShow, registerFrmShow, setFormsHide, policyFrmShow, setPolicyFrmShow } = useContext(VisibilityContext);
   const { states, dispatch } = useContext(AuthContext);
-  const { register, handleSubmit, setFocus, unregister, reset, formState, formState: { errors }, isSubmiting } = useForm({
+  const { register, handleSubmit, setFocus, unregister, reset, setValue, formState: { errors }, isSubmiting } = useForm({
     mode: "onTouched",
     reValidateMode: "onChange"
   });
@@ -44,7 +44,10 @@ const SignUp = () => {
 
   let {path, url} = useRouteMatch();
 
-  document.title = "SofTesting| Sign Up";
+  document.title = "SofTesting | Sign Up";
+
+
+  
 
   const handleSignIn = () => {
     setLoginFrmShow();

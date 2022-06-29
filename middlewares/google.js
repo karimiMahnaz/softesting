@@ -1,18 +1,24 @@
 
+
+
+
+
+
+/* 
 const passport =require("passport");
 var GoogleStrategy = require('passport-google-oauth20').Strategy;
 const Usermodel = require("../models/user.model") ;
 //const mongoose = require("mongoose");
-//console.log(process.env.GOOGLE_CLIENT_SECRET);
-//console.log(process.env.GOOGLE_CLIENT_ID);
+///console.log(process.env.GOOGLE_CLIENT_SECRET);
+///console.log(process.env.GOOGLE_CLIENT_ID);
 ///module.exports = function (passport) {
-  
+
     passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: "https://softestingca.com/signin",
-      //  callbackURL: "http://localhost:3000/signin",
-     //   callbackURL: "http://localhost:8000/auth/google/callback",
+      ///  callbackURL: "https://softestingca.com/signin",
+       /// callbackURL: "http://localhost:3000/signin",
+       callbackURL: "http://localhost:8000/auth/google/callback",
          passReqToCallback: true,
     },
     async (request, accessToken, refreshToken, profile, done) => {
@@ -21,7 +27,7 @@ const Usermodel = require("../models/user.model") ;
         const googleUser = await Usermodel.findOne({ googleId : profile.googleId });
         console.log('googleUser',googleUser)
         if (!googleUser) {
-          
+    
                 //  return done(null, false, {
                 //      message:"TokenId is not registered",
                 //  });
@@ -103,3 +109,4 @@ const Usermodel = require("../models/user.model") ;
 // //   });
 
 
+ */

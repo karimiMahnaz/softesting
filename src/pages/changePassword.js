@@ -16,7 +16,7 @@ import img from '../assets/abstract-blue.jpg'
 
 import SignIn from '../pages/signIn';
 
-<title>SofTesting| ChangePassword</title>
+<title>SofTesting | ChangePassword</title>
 
 ///import http from '../services/httpService';
 
@@ -120,7 +120,7 @@ const ChangePassword = () => {
   return (
     <>
       <Desktop>
-        <form className={styles.animate, (changePassFrmShow) ? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
+        <form className={changePassFrmShow? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
 
           <div className={styles.container}>
             <span id={styles.closeBtn} onClick={handleFrmRClose} className={styles.closeBtn}  >
@@ -187,7 +187,7 @@ const ChangePassword = () => {
         </form>
       </Desktop>
       <Tablet>
-        <form className={styles.animate, (changePassFrmShow) ? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
+        <form className={changePassFrmShow ? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
 
           <div className={styles.container}>
             <span id={styles.closeBtn} onClick={handleFrmRClose} className={styles.closeBtn}  >
@@ -254,7 +254,7 @@ const ChangePassword = () => {
         </form>
       </Tablet>
       <Mobile>
-        <form className={styles.animate, (changePassFrmShow) ? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
+        <form className={changePassFrmShow ? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
 
           <div className={styles.container}>
             <span id={styles.closeBtn} onClick={handleFrmRClose} className={styles.closeBtn}  >
@@ -321,7 +321,7 @@ const ChangePassword = () => {
         </form>
       </Mobile>
       <MobileX>
-        <form className={styles.animate, (changePassFrmShow) ? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
+        <form className={changePassFrmShow? styles.modal : styles.inActive} onSubmit={handleSubmit(onSubmit)} style={{ backgroundImage: `url(${img})` }}>
 
           <div className={styles.container}>
             <span id={styles.closeBtn} onClick={handleFrmRClose} className={styles.closeBtn}  >

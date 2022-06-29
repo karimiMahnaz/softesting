@@ -1,10 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Route, BrowserRouter, Switch, Link, withRouter, useRouteMatch } from 'react-router-dom';
-import { LinkedInCallback } from 'react-linkedin-login-oauth2';
+import { Route, BrowserRouter, Switch, Link, useHistory, withRouter, useRouteMatch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import { ThemeContext } from '../contexts/themeContext';
-import { AuthContext } from '../contexts/authContext';
+//import { AuthContext } from '../contexts/authContext';
 import { NavContext } from '../contexts/navContext';
 import { VisibilityContext } from '../contexts/visibilityContext';
 import styles from '../styles/navBar.module.scss';
@@ -38,7 +37,7 @@ const NavBar = () => {
   const { showMenu, activeMenu1, activeMenu2, setShowMenu, setActiveMenu1, setActiveMenu2, setOffMenu } = useContext(NavContext);
   const { loginFrmShow, setLoginFrmShow, policyFrmShow, setPolicyFrmShow, registerFrmShow, resetPassFrmShow,
     notFoundFrmShow, contactFrmShow, setContactFrmShow, aboutUsFrmShow, setAboutUsFrmShow,
-    setFormsHide, setAllFormsHide, setBodyFrmShow, setChangePassFrmShow, changePassFrmShow } = useContext(VisibilityContext);
+    setFormsHide, setAllFormsHide, setBodyFrmShow, setChangePassFrmShow, changePassFrmShow, linkedinKey } = useContext(VisibilityContext);
 
 
 
@@ -47,6 +46,15 @@ const NavBar = () => {
   useEffect(() => {
     if (isTabletMid) { setShowMenu() }
   }, [])
+
+
+  let history0 = useHistory();
+
+useEffect(() => {
+  if (!resetPassFrmShow && !loginFrmShow && !registerFrmShow  && !contactFrmShow && !linkedinKey)  {  history0.push("/");}
+
+}, []);
+
 
   const menuActive1 = activeMenu1 ? true : '';
   const menuActive2 = activeMenu2 ? true : '';
@@ -193,17 +201,18 @@ const NavBar = () => {
               </Route>
 
               <Route path="/contactD" exact >
-                `${contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}`
+                 {contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}
               </Route>
 
               <Route path="/contactJ" exact>
-                `${contactFrmShow ? <ContactUs src="Join our team" /> : null}`
+                  {contactFrmShow ? <ContactUs src="Join our team" /> : null}
               </Route>
 
               <Route path="/signin" exact>
                 {loginFrmShow ? <SignIn /> : null}
               </Route>
-              
+                
+            
                {/* <Route path='/src/pages/policy'  exact>
                      <Policy />
                   </Route> */}
@@ -225,7 +234,7 @@ const NavBar = () => {
                 <Profile />
               </Route>  */}
 
-              <Route exact path="/signUp" component={LinkedInCallback} />
+           
 
               <Route path="/" exact >
                 {/* <Body/>  */}
@@ -308,11 +317,11 @@ const NavBar = () => {
               </Route>
 
               <Route path="/contactD" exact >
-                `${contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}`
+                 {contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}
               </Route>
 
               <Route path="/contactJ" exact>
-                `${contactFrmShow ? <ContactUs src="Join our team" /> : null}`
+                 {contactFrmShow ? <ContactUs src="Join our team" /> : null}
               </Route>
 
               <Route path="/signin" exact>
@@ -324,7 +333,7 @@ const NavBar = () => {
                 <Policy src="signUp" />
               </Route>  */}
               
-              <Route exact path="/signUp" component={LinkedInCallback} />
+       
 
               <Route path="/" exact >
                 {/* <Body/>  */}
@@ -415,11 +424,11 @@ const NavBar = () => {
               </Route>
 
               <Route path="/contactD" exact >
-                `${contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}`
+                 {contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}
               </Route>
 
               <Route path="/contactJ" exact>
-                `${contactFrmShow ? <ContactUs src="Join our team" /> : null}`
+                  {contactFrmShow ? <ContactUs src="Join our team" /> : null}
               </Route>
 
               <Route path="/signin" exact>
@@ -431,7 +440,7 @@ const NavBar = () => {
                 <Policy src="signUp" />
               </Route> 
  */}
-              <Route exact path="/signUp" component={LinkedInCallback} />
+          
 
               <Route path="/" exact >
                 {/* <Body/>  */}
@@ -521,11 +530,11 @@ const NavBar = () => {
               </Route>
 
               <Route path="/contactD" exact >
-                `${contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}`
+                {contactFrmShow ? <ContactUs src="Let's discuss your project" /> : null}
               </Route>
 
               <Route path="/contactJ" exact>
-                `${contactFrmShow ? <ContactUs src="Join our team" /> : null}`
+                {contactFrmShow ? <ContactUs src="Join our team" /> : null}
               </Route>
 
               <Route path="/signin" exact>
@@ -537,7 +546,7 @@ const NavBar = () => {
                 <Policy src="signUp" />
               </Route>  */}
 
-              <Route exact path="/signUp" component={LinkedInCallback} />
+          
 
               <Route path="/" exact >
                 {/* <Body/>  */}

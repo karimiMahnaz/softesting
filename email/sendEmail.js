@@ -4,13 +4,19 @@ const fs = require("fs");
 var handlebars = require('handlebars');
 const path = require("path");
 
-const transporterDetails = smtpTransport({
-  host: process.env.EMAIL_HOST,
-  port: 465,
-  secure:true,
-  auth: {
-    user: process.env.EMAIL_USERNAME,
-    pass: process.env.EMAIL_PASSWORD, // naturally, replace both with your real credentials or an application-specific password
+ const transporterDetails = smtpTransport({
+     host: '5.9.116.157' ,   ///process.env.EMAIL_HOST,
+     port: '587', ////465,
+  ///secure:true,
+  // const transporterDetails = nodeMailer.createTransport({
+  //   service:'gmail',
+    auth: {
+     type:"OAuth2",
+     user: process.env.EMAIL_USER,
+     pass: process.env.EMAIL_PASS, // naturally, replace both with your real credentials or an application-specific password
+     clientId: process.env.GOOGLE_CLIENT_ID,
+     clientSecret:process.env.GOOGLE_CLIENT_SECRET,
+     refreshToken:process.env.REFRESH_TOKEN
   },
   tls:{
     rejectUnauthorized:false,

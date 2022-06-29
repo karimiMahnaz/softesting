@@ -3,8 +3,7 @@ const { Strategy } = require("passport-local");
 const bcrypt = require("bcrypt");
 
 const Usermodel = require("../models/user.model") ;
-const google = require("../middlewares/google");
-const linkedin = require("../middlewares/linkedin");
+
 
 passport.use(
     new Strategy({ usernameField: "email" }, async (email, password, done) => {
@@ -30,8 +29,6 @@ passport.use(
     })
 );
 
-google;
-linkedin;
 
 passport.serializeUser((user, done) => {
     done(null, user);

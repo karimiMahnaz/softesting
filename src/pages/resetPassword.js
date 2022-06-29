@@ -25,7 +25,7 @@ const ResetPassword = () => {
 
   const { loginFrmShow, setLoginFrmShow, resetPassFrmShow, setFormsHide } = useContext(VisibilityContext);
   const { states, dispatch } = useContext(AuthContext);
-  const { register, handleSubmit, reset, formState: { errors }, isSubmiting } = useForm({
+  const { register, handleSubmit, setValue, reset, formState: { errors }, isSubmiting } = useForm({
     mode: "onTouched",
     reValidateMode: "onChange"
   });
@@ -35,7 +35,15 @@ const ResetPassword = () => {
 
   const history = useHistory();
 
-  document.title = "SofTesting| Reset Password";
+  document.title = "SofTesting | Reset Password";
+
+  let emailW='';
+  useEffect(()=>{
+   // console.log(JSON.parse(localStorage.getItem('userEmail')));
+  if (JSON.parse(localStorage.getItem('userEmail'))){ emailW= JSON.parse(localStorage.getItem('userEmail')); } 
+     setValue('email', emailW);
+  },[] )
+
 
   const handleSignIn = () => {
     setLoginFrmShow();
@@ -126,7 +134,7 @@ const ResetPassword = () => {
             <FocusLock>
               <input id={styles.email} placeholder="Enter Email Address" autoFocus
                 className={`${errors.email ? styles.errorBorder : styles.Border}`}
-                defaultValue="" type="email" name="email"
+                defaultValue="" type="email" name="email" disabled={true}
                 {...register('email', {
                   required: "*",
                   pattern: {
@@ -169,7 +177,7 @@ const ResetPassword = () => {
             <FocusLock>
               <input id={styles.email} placeholder="Enter Email Address" autoFocus
                 className={`${errors.email ? styles.errorBorder : styles.Border}`}
-                defaultValue="" type="email" name="email"
+                defaultValue="" type="email" name="email" disabled={true}
                 {...register('email', {
                   required: "*",
                   pattern: {
@@ -212,7 +220,7 @@ const ResetPassword = () => {
             <FocusLock>
               <input id={styles.email} placeholder="Enter Email Address" autoFocus
                 className={`${errors.email ? styles.errorBorder : styles.Border}`}
-                defaultValue="" type="email" name="email"
+                defaultValue="" type="email" name="email"  disabled={true}
                 {...register('email', {
                   required: "*",
                   pattern: {
@@ -255,7 +263,7 @@ const ResetPassword = () => {
             <FocusLock>
               <input id={styles.email} placeholder="Enter Email Address" autoFocus
                 className={`${errors.email ? styles.errorBorder : styles.Border}`}
-                defaultValue="" type="email" name="email"
+                defaultValue="" type="email" name="email" disabled={true}
                 {...register('email', {
                   required: "*",
                   pattern: {

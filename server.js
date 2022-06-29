@@ -33,8 +33,10 @@ app.use(morgan("combined", { stream: winston.stream }));
 
 
 require("./startup/secure")(app);
-
 require("./middlewares/passport");
+//require("./middlewares/google");
+require("./middlewares/linkedin");
+
 
 app.use(session({
   secret: process.env.SESSION_SECRET,
@@ -61,9 +63,11 @@ logger.info('step=2');
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/public/blog", express.static(path.join(__dirname, "blog")));
 app.use("/uploaded-files", express.static(path.join(__dirname, "uploaded-files")));
-console.log(path.join(__dirname, "uploaded-files"));
+app.use(express.static(path.join(__dirname, '/build')));
 
+//console.log(path.join(__dirname, "uploaded-files"));
 
+///swagger
 app.use(
   "/SoftestingApi-documents",
   swaggerUI.serve,
