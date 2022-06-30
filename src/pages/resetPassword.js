@@ -91,7 +91,7 @@ const ResetPassword = () => {
         })
           console.log('responsetoken', response.data.token);
           toast.success("Message Sent.", { theme: "colored" });
-          reset();
+         // reset();
         } else {
           toast.error("Message failed to send.", { theme: "dark" })
         }

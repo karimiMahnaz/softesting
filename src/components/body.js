@@ -74,7 +74,7 @@ const Body = () => {
   const { setOffMenu } = useContext(NavContext);
  // const arrow = ' -->';
   ///const { forms , dispatch   } = useContext(VisibilityContext );
-  const { loginFrmShow, registerFrmShow, resetPassFrmShow, contactFrmShow, setBlogShow,  bodyFrmShow,  setFormsHide } = useContext(VisibilityContext);
+  const { loginFrmShow, registerFrmShow, resetPassFrmShow, contactFrmShow, setBlogShow,  bodyFrmShow, linkedinKey,  setFormsHide } = useContext(VisibilityContext);
  // const [StateVariable, setStateVariable] = useState(false)
   
  // const contactRef = useRef(null);
@@ -83,7 +83,14 @@ const Body = () => {
 
   const location = window.location.hostname;
 
- 
+  let history0 = useHistory();
+
+useEffect(() => {
+  if (!resetPassFrmShow && !loginFrmShow && !registerFrmShow  && !contactFrmShow && !linkedinKey)  {  history0.push("/");}
+
+}, []);
+
+
 
   let urlTestArticle1, urlTestArticle2, urlTestArticle3 ;
   let urlTestArticle4, urlTestArticle5, urlTestArticle6 ;

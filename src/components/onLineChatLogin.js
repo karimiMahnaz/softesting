@@ -3,8 +3,6 @@ import {useHistory} from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { withCookies, useCookies } from 'react-cookie';
 
-import {ToastContainer, toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 import { Desktop, Tablet, Mobile, MobileX } from '../contexts/breakPoints';
 import styles from '../styles/onLineChatLogin.module.scss';
@@ -15,8 +13,8 @@ import title from '../assets/Icon/4910150761581665181.svg'
 
 
 const OnLineChatLogin= (props) => {
-    const { onLineChatFrmShow, setOnLineChatFrmShow, setOffOnLineChatFrmShow, onLineChatLoginFrmShow, setOnLineChatLoginFrmShow } = useContext(VisibilityContext);
-    const { register, handleSubmit, setFocus, unregister, reset, formState, formState: { errors }, isSubmiting } = useForm({
+    const {  setOnLineChatFrmShow, setOffOnLineChatFrmShow, onLineChatLoginFrmShow, setOnLineChatLoginFrmShow } = useContext(VisibilityContext);
+    const { register, handleSubmit, formState: { errors }, isSubmiting } = useForm({
         mode: "onTouched",
         reValidateMode: "onChange"
       });
@@ -61,7 +59,7 @@ const OnLineChatLogin= (props) => {
       })
 
       const handleClose =()=>{
-        history.push("/");
+      ///  history.push("/");
         setOffOnLineChatFrmShow();
       }
 
@@ -72,7 +70,7 @@ const OnLineChatLogin= (props) => {
         setNameCookie('name', data.userName, { path: '/' });
 
         history.push({
-          pathname: "/onLineChat",
+        ///  pathname: "/onLineChat",
           state: {
             name:dataForm.userName,
             email:dataForm.email
@@ -99,7 +97,7 @@ const OnLineChatLogin= (props) => {
        
         <h1  id={styles.h3}>Request OnLine Support Chat </h1>
 
-        <input type={styles.text} id={styles.userName} placeholder="Full Name" 
+        <input  id={styles.userName} placeholder="Full Name" 
             className={`${errors.userName ? styles.errorBorder : styles.Border}`}
             defaultValue="" type="text" name="userName" autoFocus tabIndex="0" ref={userNameRef}
             {...register('userName', {
@@ -111,9 +109,9 @@ const OnLineChatLogin= (props) => {
                 message: "*"
               }
             })} />
-          <input id={styles.email} placeholder="Email Address" tabIndex="0" ref={emailRef}
+          <input id={styles.email}  tabIndex="0" ref={emailRef}
             className={`${errors.email ? styles.errorBorder : styles.Border}`} 
-            defaultValue="" type="email" placeholder="Enter Email Address" name="email"
+            defaultValue="" type="email" placeholder="Email Address" name="email"
             {...register('email', {
               required: "*",
               pattern: {
@@ -143,7 +141,7 @@ const OnLineChatLogin= (props) => {
        
         <h3  id={styles.h3}>Request OnLine Support Chat </h3>
 
-        <input type={styles.text} id={styles.userName} placeholder="Full Name" 
+        <input  id={styles.userName} placeholder="Full Name" 
             className={`${errors.userName ? styles.errorBorder : styles.Border}`}
             defaultValue="" type="text" name="userName" autoFocus tabIndex="0" ref={userNameRef}
             {...register('userName', {
@@ -157,7 +155,7 @@ const OnLineChatLogin= (props) => {
             })} />
           <input id={styles.email} placeholder="Email Address" tabIndex="0" ref={emailRef}
             className={`${errors.email ? styles.errorBorder : styles.Border}`} 
-            defaultValue="" type="email" placeholder="Enter Email Address" name="email"
+            defaultValue="" type="email" name="email"
             {...register('email', {
               required: "*",
               pattern: {
@@ -186,7 +184,7 @@ const OnLineChatLogin= (props) => {
        
         <h3  id={styles.h3}>Request OnLine Support Chat </h3>
 
-        <input type={styles.text} id={styles.userName} placeholder="Full Name" 
+        <input  id={styles.userName} placeholder="Full Name" 
             className={`${errors.userName ? styles.errorBorder : styles.Border}`}
             defaultValue="" type="text" name="userName" autoFocus tabIndex="0" ref={userNameRef}
             {...register('userName', {
@@ -198,9 +196,9 @@ const OnLineChatLogin= (props) => {
                 message: "*"
               }
             })} />
-          <input id={styles.email} placeholder="Email Address" tabIndex="0" ref={emailRef}
+          <input id={styles.email}  tabIndex="0" ref={emailRef}
             className={`${errors.email ? styles.errorBorder : styles.Border}`} 
-            defaultValue="" type="email" placeholder="Enter Email Address" name="email"
+            defaultValue="" type="email" placeholder="Email Address" name="email"
             {...register('email', {
               required: "*",
               pattern: {
@@ -229,7 +227,7 @@ const OnLineChatLogin= (props) => {
        
         <h3  id={styles.h3}>Request OnLine Support Chat </h3>
 
-        <input type={styles.text} id={styles.userName} placeholder="Full Name" 
+        <input  id={styles.userName} placeholder="Full Name" 
             className={`${errors.userName ? styles.errorBorder : styles.Border}`}
             defaultValue="" type="text" name="userName" autoFocus tabIndex="0" ref={userNameRef}
             {...register('userName', {
@@ -241,9 +239,9 @@ const OnLineChatLogin= (props) => {
                 message: "*"
               }
             })} />
-          <input id={styles.email} placeholder="Email Address" tabIndex="0" ref={emailRef}
+          <input id={styles.email}  tabIndex="0" ref={emailRef}
             className={`${errors.email ? styles.errorBorder : styles.Border}`} 
-            defaultValue="" type="email" placeholder="Enter Email Address" name="email"
+            defaultValue="" type="email" placeholder="Email Address" name="email"
             {...register('email', {
               required: "*",
               pattern: {

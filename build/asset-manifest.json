@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.509b1f65.css",
-    "main.js": "/static/js/main.17db78dc.js",
+    "main.css": "/static/css/main.399c8654.css",
+    "main.js": "/static/js/main.3c0df7ec.js",
     "static/js/787.e1d22c24.chunk.js": "/static/js/787.e1d22c24.chunk.js",
     "static/media/web_testing.jpg": "/static/media/web_testing.102256f1add3acec2831.jpg",
     "static/media/pwa.jpg": "/static/media/pwa.e809c01c0a691cd94d06.jpg",
@@ -45,8 +45,8 @@
     "static/media/visualization.png": "/static/media/visualization.f3b6ae2726ecb6d9f564.png",
     "static/media/abstract-blue.jpg": "/static/media/abstract-blue.419a85318b07e818b50e.jpg",
     "static/media/software-testing.png": "/static/media/software-testing.261c97cb2261f2638c7f.png",
-    "static/media/chat2.svg": "/static/media/chat2.bfce934d4f3ea74bbb6ff93ba7b05ea9.svg",
     "index.html": "/index.html",
+    "static/media/chat2.svg": "/static/media/chat2.bfce934d4f3ea74bbb6ff93ba7b05ea9.svg",
     "static/media/svg": "/static/media/19299514501540882611.4bd07d25531bc1a47bc09c84ceab2a35.svg",
     "static/media/twitter5.svg": "/static/media/twitter5.2f0f94c9309516638502496d83da9020.svg",
     "static/media/whatsapp-48.svg": "/static/media/whatsapp-48.52da092f093c1d11c1089bdf7738e093.svg",
@@ -57,12 +57,12 @@
     "static/media/instagram-logo.svg": "/static/media/instagram-logo.8d3e976199cf38a6e3aeea4b14a162e3.svg",
     "static/media/facebook-logo.svg": "/static/media/facebook-logo.1b45893c5e1a799e9946d1d1d8bb4513.svg",
     "static/media/purplemail.svg": "/static/media/purplemail.c3d23a95aa15af287bfa9d924881fa6f.svg",
-    "main.509b1f65.css.map": "/static/css/main.509b1f65.css.map",
-    "main.17db78dc.js.map": "/static/js/main.17db78dc.js.map",
+    "main.399c8654.css.map": "/static/css/main.399c8654.css.map",
+    "main.3c0df7ec.js.map": "/static/js/main.3c0df7ec.js.map",
     "787.e1d22c24.chunk.js.map": "/static/js/787.e1d22c24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.509b1f65.css",
-    "static/js/main.17db78dc.js"
+    "static/css/main.399c8654.css",
+    "static/js/main.3c0df7ec.js"
   ]
 }

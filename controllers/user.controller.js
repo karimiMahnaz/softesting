@@ -6,7 +6,7 @@ const axios = require("axios");
 const bcrypt1 = require("bcrypt");
 const fs = require("fs");
 
-const { OAuth2Client } = require('google-auth-library');
+const { OAuth2Client } = require("google-auth-library");
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 const Usermodel = require("../models/user.model");
@@ -329,41 +329,35 @@ exports.googleSignIn = async (req, res, next) => {
   try {
     const users = [];
 
-      const { token } = req.body;
-  
-      const ticket = await client.verifyIdToken({
-        idToken: token,
-        audience: process.env.GOOGLE_CLIENT_ID,
+    const { token } = req.body;
+
+    const ticket = await client.verifyIdToken({
+      idToken: token,
+      audience: process.env.GOOGLE_CLIENT_ID,
+    });
+    ///console.log(ticket.getPayload());
+    const { name, email, sub } = ticket.getPayload();
+    upsert(users, { userName: name, email, googleId: sub });
+    res.status(201);
+    res.json({ name, email });
+
+    const googleUser = await Usermodel.findOne({ email });
+    console.log("googleUser", googleUser);
+    if (!googleUser) {
+      await Usermodel.create({
+        userName: name, //profile.name.givenName //profile.name.familyName
+        password: "123456789", // profile.photos[0].value
+        linkdinId: "",
+        googleId: sub,
+        githubId: "",
+        facebookId: "",
+        email: email,
+        phone: "123456789",
       });
-     ///console.log(ticket.getPayload());
-      const { name, email, sub } = ticket.getPayload();
-      upsert(users, { userName:name, email, googleId:sub });
-      res.status(201);
-      res.json({ name, email });
- 
-
-      const googleUser = await Usermodel.findOne({ email });
-      console.log('googleUser',googleUser)
-      if (!googleUser) {
-
-
-              await Usermodel.create({
-                              
-                                       userName : name,  //profile.name.givenName //profile.name.familyName
-                                       password : '123456789',   // profile.photos[0].value
-                                       linkdinId : '',
-                                       googleId : sub,
-                                       githubId :'',
-                                       facebookId: '',
-                                       email : email,
-                                       phone: '123456789'
-                                     })
-
-          } 
+    }
     // passport.authenticate('google', { scope: ['profile', 'email'] })(req, res, next);
-   
   } catch (error) {
-    console.log("error",error)
+    console.log("error", error);
     next(error);
   }
 };
@@ -535,13 +529,32 @@ exports.signUp_post = async (req, res, next) => {
     if (!user) {
       await Usermodel.create(req.body);
     } else {
-      errors.push({ message: "You are already registered!" });
-      ///  return res.errors;
-      const error = new Error("You are already registered!");
-      error.statusCode = 400;
-      error.message = "You are already registered!";
-      error.data = errors;
-      throw error;
+      if (
+        (user.googleId !== "" ||
+          user.linkdinId !== "" ||
+          user.githubId !== "" ||
+          user.facebookId !== "") &&
+        user.phone === "123456789"
+      ) {
+            await Usermodel.updateOne({email} , {phone});
+    
+            const bcryptSalt1 = process.env.BCRYPT_SALT;
+
+            const hash = await bcrypt1.hash(password, Number(bcryptSalt1));
+            const q = await Usermodel.findOneAndUpdate(
+              { email },
+              { password: hash }
+            );
+
+      } else {
+        errors.push({ message: "You are already registered!" });
+        ///  return res.errors;
+        const error = new Error("You are already registered!");
+        error.statusCode = 400;
+        error.message = "You are already registered!";
+        error.data = errors;
+        throw error;
+      }
     }
     const appLink = "softestingca.com/appDownLoad";
 

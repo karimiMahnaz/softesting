@@ -4,6 +4,11 @@
 
 #emailAd:hover{color:$buttonColor;}
 
+.fontLink {
+  font-family: 'Roboto', sans-serif;
+}
+
+
 @media only screen and (min-width: 992px) {
  
   .widget{
@@ -26,7 +31,7 @@
    // border-top-left-radius: 6px;
    // border-top-right-radius: 6px;
     display:block;
-   
+    font-family: 'Roboto', sans-serif;
   }
   
   .welcome{
@@ -42,6 +47,7 @@
     color:$backColor;
     text-decoration-line: none;
     &:hover{ color:$buttonColor}
+    font-family: 'Roboto', sans-serif;
   }
 
  .signIn 
@@ -57,6 +63,7 @@
      border-radius: 5px;
      font-size: 14px;
      padding: 4px 5px;
+     font-family: 'Roboto', sans-serif;
     }
 
     .App{
@@ -77,7 +84,7 @@
       .AppIcon{
           width: 22px;
           height:22px;
-          margin:10px;
+          margin:7px;
           align-items: left;
           margin-left:0;
           background-color: $white;
@@ -104,9 +111,36 @@
       border-radius: 3px;
       z-index: 1;
 }
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:9px;
+  font-size: .7rem;
+  left:33%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+
+
     #emailAd
     {
-      top: 9px;
+      top: 10px;
       left:55%;
       position:absolute;
       cursor: pointer;
@@ -249,7 +283,7 @@
   //  border-top-left-radius: 6px;
   //  border-top-right-radius: 6px;
     display:block;
-   
+    font-family: 'Roboto', sans-serif;
   }
   
   .welcome{
@@ -265,6 +299,7 @@
     color:$backColor;
     text-decoration-line: none;
     &:hover{ color:$buttonColor}
+    font-family: 'Roboto', sans-serif;
   }
  .signIn 
    {
@@ -278,7 +313,7 @@
      border:none;
      border-radius: 5px;
      padding:5px;
-     
+     font-family: 'Roboto', sans-serif;
     }
 
     .App{
@@ -327,9 +362,35 @@
     z-index: 1;
 }
 
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:9px;
+  font-size: .7rem;
+  left:34%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+
     #emailAd
     {
-      top: 9px;
+      top: 10px;
       left:45%;
       position:absolute;
       cursor: pointer;
@@ -472,7 +533,7 @@
   //  border-top-left-radius: 6px;
   //  border-top-right-radius: 6px;
     display:block;
-   
+    font-family: 'Roboto', sans-serif;
   }
   
  
@@ -488,7 +549,7 @@
      border:none;
      border-radius: 5px;
      padding:5px;
-     
+     font-family: 'Roboto', sans-serif;
     }
 
     .App{
@@ -536,9 +597,34 @@
     border-radius: 3px;
     z-index: 1;
 }
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:9px;
+  font-size: .7rem;
+  left:33%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
     #emailAd
     {
-      top: 9px;
+      top: 10px;
       left:55%;
       position:absolute;
       cursor: pointer;
@@ -660,7 +746,7 @@
      float:right;
      display: block;
      border:none;
-     
+     font-family: 'Roboto', sans-serif;
     }
     .home
    {
@@ -698,7 +784,7 @@
   //  border-top-left-radius: 6px;
   //  border-top-right-radius: 6px;
     display:block;
-   
+    font-family: 'Roboto', sans-serif;
   }
   
  
@@ -714,7 +800,7 @@
      border:none;
      border-radius: 5px;
      padding:5px;
-     
+     font-family: 'Roboto', sans-serif;
     }
 
     .App{
@@ -725,9 +811,9 @@
       float:right;
       display: block;
       border: none;
-      top:2px;
+      top:1.5px;
       font-size: .7rem;
-      left:25%;
+      left:20%;
       cursor: pointer;
       &:hover{
           color:$buttonColor;
@@ -735,7 +821,7 @@
       .AppIcon{
           width: 22px;
           height:22px;
-          margin:10px;
+          margin:8px;
           align-items: left;
           margin-left:0;
           background-color: $white;
@@ -763,9 +849,36 @@
     z-index: 1;
 }
 
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:8px;
+  font-size: .7rem;
+  left:29%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+
+
     #emailAd
     {
-      top: 9px;
+      top: 10px;
       left:46%;
       position:absolute;
       cursor: pointer;

@@ -41,18 +41,22 @@ const userSchema = new Schema(
         },
         googleId: {
             type: String,
+            trim: true,
             default: '',
         },
         linkdinId: {
             type: String,
+          //  trim: true,
             default: '',
         },
         githubId: {
             type: String,
+          //  trim: true,
             default: '',
         },
         facebookId: {
             type: String,
+        //    trim: true,
             default: '',
         },
         createDate: {

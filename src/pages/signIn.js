@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef, useEffect} from "react";
 import { useForm } from "react-hook-form";
 import {
   Route,
@@ -92,6 +92,14 @@ const SignIn = (props) => {
 
   document.title = "SofTesting | SignIn";
 
+
+   let emailW = '';
+  useEffect(()=>{
+    //console.log(JSON.parse(localStorage.getItem('userEmail')));
+  if (JSON.parse(localStorage.getItem('userEmail'))){ emailW= JSON.parse(localStorage.getItem('userEmail')); }
+     setValue('email', emailW);
+  },[localStorage.getItem('userEmail')] )
+  
   const location = window.location.hostname;
   const googleClientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
   const linkedinClientId = process.env.REACT_APP_LINKEDIN_CLIENT_ID;
@@ -188,7 +196,7 @@ const SignIn = (props) => {
       localStorage.setItem("googleData", JSON.stringify(data));
 
       setCookie("email", data.email, { path: "/" });
-      setCookie("Password", data.password, { path: "/" });
+      //setCookie("Password", data.password, { path: "/" });
       setCookie("name", data.name, { path: "/" });
 
       dispatch({
@@ -199,7 +207,7 @@ const SignIn = (props) => {
       });
 
       toast.success("google login is done.", { theme: "colored" });
-      history.push("/");
+  //    history.push("/");
       setFormsHide();
     } catch (error) {
       toast.info("google login failed");

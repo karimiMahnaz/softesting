@@ -48,14 +48,7 @@ const NavBar = () => {
   }, [])
 
 
-  let history0 = useHistory();
-
-useEffect(() => {
-  if (!resetPassFrmShow && !loginFrmShow && !registerFrmShow  && !contactFrmShow && !linkedinKey)  {  history0.push("/");}
-
-}, []);
-
-
+ 
   const menuActive1 = activeMenu1 ? true : '';
   const menuActive2 = activeMenu2 ? true : '';
   let burgerActive = showMenu ? true : '';
@@ -150,7 +143,8 @@ useEffect(() => {
               </Link>
             </div>
 
-            <div id={styles.menu} className={styles.hamburger_menu} onClick={setShowMenu}>
+            <div id={styles.menu} className={styles.hamburger_menu} onClick={setShowMenu}>  
+                 
               <span id={styles.span1} className={`${burgerActive ? styles.rotate1 : ''}`}></span>
               <span id={styles.span2} className={`${burgerActive ? styles.hide : ''}`}></span>
               <span id={styles.span3} className={`${burgerActive ? styles.rotate3 : ''}`}></span>

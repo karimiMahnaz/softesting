@@ -141,8 +141,8 @@ const OnLineChat = (props) => {
 
   let history = useHistory();
   const handleClose = () => {
-    if (bodyFrmShow) history.push("/");
-    if (aboutUsFrmShow) history.push("/aboutUs");
+  //  if (bodyFrmShow) history.push("/");
+  //  if (aboutUsFrmShow) history.push("/aboutUs");
     setOffOnLineChatFrmShow();
   }
 
