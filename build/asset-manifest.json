@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.399c8654.css",
-    "main.js": "/static/js/main.3c0df7ec.js",
+    "main.css": "/static/css/main.b3aa3fa4.css",
+    "main.js": "/static/js/main.2398c64d.js",
     "static/js/787.e1d22c24.chunk.js": "/static/js/787.e1d22c24.chunk.js",
     "static/media/web_testing.jpg": "/static/media/web_testing.102256f1add3acec2831.jpg",
     "static/media/pwa.jpg": "/static/media/pwa.e809c01c0a691cd94d06.jpg",
@@ -10,6 +10,7 @@
     "static/media/3879969.jpg": "/static/media/3879969.19a140231a0657504005.jpg",
     "static/media/owasp.png": "/static/media/owasp.be0bfde23a7a23da658d.png",
     "static/media/abstract-data.jpg": "/static/media/abstract-data.f8e475694914a0974160.jpg",
+    "static/media/bg.jpg": "/static/media/bg.6baeb121205cb10a4eb5.jpg",
     "static/media/mobile_app_test.png": "/static/media/mobile_app_test.f50ea68123e98f761d17.png",
     "static/media/4-768x553.png": "/static/media/4-768x553.9ee3ec9ca8b571e8a874.png",
     "static/media/document1.svg": "/static/media/document1.789bef9b296b02b793c81956b9de360a.svg",
@@ -57,12 +58,12 @@
     "static/media/instagram-logo.svg": "/static/media/instagram-logo.8d3e976199cf38a6e3aeea4b14a162e3.svg",
     "static/media/facebook-logo.svg": "/static/media/facebook-logo.1b45893c5e1a799e9946d1d1d8bb4513.svg",
     "static/media/purplemail.svg": "/static/media/purplemail.c3d23a95aa15af287bfa9d924881fa6f.svg",
-    "main.399c8654.css.map": "/static/css/main.399c8654.css.map",
-    "main.3c0df7ec.js.map": "/static/js/main.3c0df7ec.js.map",
+    "main.b3aa3fa4.css.map": "/static/css/main.b3aa3fa4.css.map",
+    "main.2398c64d.js.map": "/static/js/main.2398c64d.js.map",
     "787.e1d22c24.chunk.js.map": "/static/js/787.e1d22c24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.399c8654.css",
-    "static/js/main.3c0df7ec.js"
+    "static/css/main.b3aa3fa4.css",
+    "static/js/main.2398c64d.js"
   ]
 }

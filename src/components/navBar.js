@@ -128,7 +128,7 @@ const NavBar = () => {
           <ul id={styles.container} >
 
             <div id={styles.shape} onMouseEnter={setOffMenu} >
-              <Link id={styles.link0} to="/" disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+              <Link id={styles.link0} to="/" >
 
                 <div className={styles.shape1} />
                 <div className={styles.shape2} />
@@ -152,35 +152,33 @@ const NavBar = () => {
 
 
 
-            <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+            <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`} >
+              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide}   >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-
-              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
-
-              <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Manual Testing</li>
-              <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Automated Testing</li>
-              <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Applications Testing</li>
-              <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Security Testing</li>
-              <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Mobile Applications Testing</li>
-              <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
+              <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Manual Testing</li>
+              <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Automated Testing</li>
+              <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Web Applications Testing</li>
+              <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Web Security Testing</li>
+              <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Mobile Applications Testing</li>
+              <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`}  onClick = {setOffMenu}>Integaration Testing</li>
             </ul>
 
-            <ul id={styles.link2} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow || loginFrmShow}>
-              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+            <ul id={styles.link2} className={`${burgerActive ? styles.active : styles.inactive}`} >
+              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide}  > Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-              <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
-              <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Software Development</li>
-              <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>PWA Development</li>
-              <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Mobile App Development</li>
-              <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>UI/UX Design</li>
-              <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Technical SEO Services</li>
+              <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Web Development</li>
+              <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Software Development</li>
+              <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>PWA Development</li>
+              <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Mobile App Development</li>
+              <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>UI/UX Design</li>
+              <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Technical SEO Services</li>
             </ul>
 
-            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Let's discuss your project</Link>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow}   >Let's discuss your project</Link>
             </ul>
-            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Join our team</Link>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
             </ul>
             {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
             {/* <Link onClick={setChangePassFrmShow} to="/changePassword" >changePassword</Link> */}
@@ -246,7 +244,7 @@ const NavBar = () => {
           <ul id={styles.container} >
 
             <div id={styles.shape} onMouseEnter={setOffMenu} >
-              <Link id={styles.link0} to="/" disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+              <Link id={styles.link0} to="/"  >
 
                 <div className={styles.shape1} />
                 <div className={styles.shape2} />
@@ -269,33 +267,33 @@ const NavBar = () => {
 
 
 
-            <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+            <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`} >
+              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide}   >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-              <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Manual Testing</li>
-              <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Automated Testing</li>
-              <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Applications Testing</li>
-              <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Security Testing</li>
-              <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Mobile Applications Testing</li>
-              <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
+              <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Manual Testing</li>
+              <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Automated Testing</li>
+              <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Web Applications Testing</li>
+              <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Web Security Testing</li>
+              <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Mobile Applications Testing</li>
+              <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Integaration Testing</li>
             </ul>
 
-            <ul id={styles.link2}  className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow || loginFrmShow}>
-              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+            <ul id={styles.link2}  className={`${burgerActive ? styles.active : styles.inactive}`} >
+              <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide}  > Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-              <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
-              <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Software Development</li>
-              <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>PWA Development</li>
-              <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Mobile App Development</li>
-              <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>UI/UX Design</li>
-              <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Technical SEO Services</li>
+              <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Web Development</li>
+              <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Software Development</li>
+              <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>PWA Development</li>
+              <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Mobile App Development</li>
+              <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>UI/UX Design</li>
+              <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Technical SEO Services</li>
             </ul>
 
-            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Let's discuss your project</Link>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow}   >Let's discuss your project</Link>
             </ul>
-            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Join our team</Link>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
             </ul>
             {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
             {/* <Link onClick={setChangePassFrmShow} to="/users/changePassword" >changePassword</Link> */}
@@ -344,7 +342,7 @@ const NavBar = () => {
           <ul id={styles.container} >
 
             <div id={styles.shape} onMouseEnter={setOffMenu} >
-              <Link id={styles.link0} to="/" disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+              <Link id={styles.link0} to="/"  >
 
                 <div className={styles.shape1} />
                 <div className={styles.shape2} />
@@ -375,33 +373,33 @@ const NavBar = () => {
                 </svg>
               </span>
 
-              <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+              <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`}  >
+                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide}   >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-                <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Manual Testing</li>
-                <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Automated Testing</li>
-                <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Applications Testing</li>
-                <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Security Testing</li>
-                <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Mobile Applications Testing</li>
-                <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
+                <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Manual Testing</li>
+                <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Automated Testing</li>
+                <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Web Applications Testing</li>
+                <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Web Security Testing</li>
+                <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Mobile Applications Testing</li>
+                <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Integaration Testing</li>
               </ul>
 
-              <ul id={styles.link2}  className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow || loginFrmShow}>
-                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+              <ul id={styles.link2}  className={`${burgerActive ? styles.active : styles.inactive}`} >
+                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide}  > Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-                <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
-                <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Software Development</li>
-                <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>PWA Development</li>
-                <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Mobile App Development</li>
-                <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>UI/UX Design</li>
-                <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Technical SEO Services</li>
+                <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Web Development</li>
+                <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Software Development</li>
+                <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>PWA Development</li>
+                <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Mobile App Development</li>
+                <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>UI/UX Design</li>
+                <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Technical SEO Services</li>
               </ul>
 
-              <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-                <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Let's discuss your project</Link>
+              <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+                <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow}   >Let's discuss your project</Link>
               </ul>
-              <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-                <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Join our team</Link>
+              <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+                <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
               </ul>
               {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
               {/* <Link onClick={setChangePassFrmShow} to="/users/changePassword" >changePassword</Link> */}
@@ -451,7 +449,7 @@ const NavBar = () => {
           <ul id={styles.container} >
 
             <div id={styles.shape} onMouseEnter={setOffMenu} >
-              <Link id={styles.link0} to="/" disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
+              <Link id={styles.link0} to="/"  >
 
                 <div className={styles.shape1} />
                 <div className={styles.shape2} />
@@ -481,34 +479,34 @@ const NavBar = () => {
                 </svg>
               </span>
 
-              <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+              <ul id={styles.link1} className={`${burgerActive ? styles.active : styles.inactive}`}  >
+                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink1(true)} onMouseLeave={() => setInHoverLink1(false)} onMouseDown={setFormsHide}   >Testing & QA Services <img src={menuActive1 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-                <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Manual Testing</li>
-                <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Automated Testing</li>
-                <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Applications Testing</li>
-                <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Web Security Testing</li>
-                <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Mobile Applications Testing</li>
-                <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>Integaration Testing</li>
+                <li id={styles.sublink1} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Manual Testing</li>
+                <li id={styles.sublink2} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Automated Testing</li>
+                <li id={styles.sublink3} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Web Applications Testing</li>
+                <li id={styles.sublink4} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Web Security Testing</li>
+                <li id={styles.sublink5} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Mobile Applications Testing</li>
+                <li id={styles.sublink6} className={`${burgerActive ? menuActive1 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu} >Integaration Testing</li>
               </ul>
 
               <ul id={styles.link2} className={`${burgerActive ? styles.active : styles.inactive}`} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow }>
-                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}> Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
+                <a id={styles.a} className={`${burgerActive ? styles.active : styles.inactive}`} onMouseEnter={() => setInHoverLink2(true)} onMouseLeave={() => setInHoverLink2(false)} onMouseDown={setFormsHide}  > Development Services  <img src={menuActive2 ? iconDown : iconUp} alt="iconDown" width="15" height="15" /></a>
 
-                <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Web Development</li>
-                <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Custom Software Development</li>
-                <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>PWA Development</li>
-                <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Mobile App Development</li>
-                <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>UI/UX Design</li>
-                <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`}>Technical SEO Services</li>
+                <li id={styles.sublink1} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Web Development</li>
+                <li id={styles.sublink2} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Custom Software Development</li>
+                <li id={styles.sublink3} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>PWA Development</li>
+                <li id={styles.sublink4} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Mobile App Development</li>
+                <li id={styles.sublink5} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>UI/UX Design</li>
+                <li id={styles.sublink6} disabled={loginFrmShow} className={`${burgerActive ? menuActive2 ? styles.active : styles.inactive : styles.inactive}`} onClick = {setOffMenu}>Technical SEO Services</li>
               </ul>
             </div>
 
-            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Let's discuss your project</Link>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link3} to="/contactD" onClick={setContactFrmShow}   >Let's discuss your project</Link>
             </ul>
-            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow}>
-              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow} disabled={resetPassFrmShow || loginFrmShow || registerFrmShow} >Join our team</Link>
+            <ul className={`${burgerActive ? styles.active : styles.inactive} `} onMouseEnter={setOffMenu}  >
+              <Link id={styles.link4} to="/contactJ" onClick={setContactFrmShow}   >Join our team</Link>
             </ul>
             {/* <Link  to ="/aboutUs"   onMouseDown={setFormsHide } onClick={setAboutUsFrmShow}>WHO WE ARE</Link>  */}
             {/* <Link onClick={setChangePassFrmShow} to="/users/changePassword" >changePassword</Link> */}
