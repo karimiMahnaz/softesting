@@ -131,6 +131,11 @@
     font-size: 0.9rem;
     z-index: 1;
     box-sizing: border-box;
+    outline: none;
+    padding-right:20px;
+     background-size: 15px;
+     background: no-repeat right;
+     background-color: $backColor;
   }
 
   #pError{
@@ -399,6 +404,11 @@
      font-size: 0.9rem;
      z-index: 1;
      box-sizing: border-box;
+     outline: none;
+     padding-right:20px;
+     background-size: 15px;
+     background: no-repeat right;
+     background-color: $backColor;
    }
  
    #pError{
@@ -667,6 +677,11 @@
      font-size: 0.9rem;
      z-index: 1;
      box-sizing: border-box;
+     outline: none;
+     padding-right:20px;
+     background-size: 15px;
+     background: no-repeat right;
+     background-color: $backColor;
    }
  
    #pError{
@@ -937,6 +952,11 @@
      font-size: 0.9rem;
      z-index: 1;
      box-sizing: border-box;
+     outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
    }
  
    #pError{

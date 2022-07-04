@@ -39,7 +39,6 @@ const ResetPassword = () => {
 
   let emailW='';
   useEffect(()=>{
-   // console.log(JSON.parse(localStorage.getItem('userEmail')));
   if (JSON.parse(localStorage.getItem('userEmail'))){ emailW= JSON.parse(localStorage.getItem('userEmail')); } 
      setValue('email', emailW);
   },[] )

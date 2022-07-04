@@ -41,15 +41,12 @@
 
 
 .searchResut{
-    width:70vw;
+    width:60vw;
     position: absolute;
     top:280px;
-    margin-left: 150px;
-   // display: grid;
-   // grid-template-columns: repeat(1, 1fr);
-   // grid-template-rows: auto;
-    justify-items: left;
-    align-items: left;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .article{
     list-style-type: none;

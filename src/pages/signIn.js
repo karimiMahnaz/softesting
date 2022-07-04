@@ -29,7 +29,7 @@ import { AuthContext } from "../contexts/authContext";
 import { NavContext } from "../contexts/navContext";
 
 import img from "../assets/abstract-blue.jpg";
-//import facebook from '../assets/facebook-logo.svg';
+import eye from '../assets/Icon/eye.png';
 import linkedinLogo from "../assets/LinkedIn-Icon-White-Logo.wine.svg";
 //import twitter from '../assets/twitter5.svg';
 //import google from '../assets/google.svg';
@@ -74,6 +74,7 @@ const SignIn = (props) => {
   const [success, setSuccess] = useState(true);
   const [code,setCode]  = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [passwordShown, setPasswordShown] = useState(true);
 
   const [googleData, setGoogleData] = useState(
     localStorage.getItem("googleData")
@@ -96,9 +97,15 @@ const SignIn = (props) => {
    let emailW = '';
   useEffect(()=>{
     //console.log(JSON.parse(localStorage.getItem('userEmail')));
-  if (JSON.parse(localStorage.getItem('userEmail'))){ emailW= JSON.parse(localStorage.getItem('userEmail')); }
-     setValue('email', emailW);
-  },[localStorage.getItem('userEmail')] )
+    if (localStorage.getItem("userEmail") !== 'undefined' && 
+    localStorage.getItem("userEmail")!== '' &&
+    localStorage.getItem("userEmail") !== null) {
+    if (JSON.parse(localStorage.getItem('userEmail'))){ 
+       emailW= JSON.parse(localStorage.getItem('userEmail')); 
+         setValue('email', emailW);
+    }
+  }
+  },[] )
   
   const location = window.location.hostname;
   const googleClientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
@@ -131,7 +138,9 @@ const SignIn = (props) => {
     alert(error.errorMessage)
   };
 
- 
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  }
 
   const { linkedInLogin } = useLinkedIn({
     clientId: process.env.REACT_APP_LINKEDIN_CLIENT_ID ,
@@ -175,7 +184,7 @@ const SignIn = (props) => {
 
       if (googleData) {
         setValue("email", googleData.email);
-        setValue("password", googleData.password);
+     ///   setValue("password", googleData.password);
       }
       const res2 = await axios({
         method: "post",
@@ -216,20 +225,20 @@ const SignIn = (props) => {
 
   const handleResetPassword = () => {
     setResetPassFrmShow();
-    const location = {
-      pathname: "/resetpassword",
-      state: { fromDashboard: true },
-    };
+    // const location = {
+    //   pathname: "/resetpassword",
+    //   state: { fromDashboard: true },
+    // };
 
     history.push("/resetpassword");
   };
 
   const handleSignUp = () => {
     setRegisterFrmShow();
-    const location = {
-      pathname: "/signup",
-      state: { fromDashboard: true },
-    };
+    // const location = {
+    //   pathname: "/signup",
+    // //  state: { fromDashboard: true },
+    // };
 
     history.push("/signup");
   };
@@ -326,7 +335,7 @@ const SignIn = (props) => {
             setStatus("SignIn");
 
             setCookie("email", data.email, { path: "/" });
-            setCookie("Password", data.password, { path: "/" });
+         //   setCookie("Password", data.password, { path: "/" });
 
             dispatch({
               type: "SignIn",
@@ -434,9 +443,11 @@ const SignIn = (props) => {
             }`}
             ref={passwordRef}
             defaultValue=""
-            type="password"
+            type={passwordShown ? "text" : "password"}
             placeholder="Enter Password"
             name="password"
+            style={{ backgroundImage: `url(${eye})` }}
+            onClick={togglePassword}
             onChange={(e) => setPasswordV(passwordRef.current.value)}
             {...register("password", {
               required: (true, "*"),
@@ -447,7 +458,7 @@ const SignIn = (props) => {
               },
             })}
           />
-
+           
           <div id={styles.recaptcha} tabIndex="0">
             <ReCAPTCHA
               sitekey={process.env.REACT_APP_LOCAL_SITE_KEY}
@@ -487,7 +498,7 @@ const SignIn = (props) => {
 
         <BrowserRouter>
           <span id={styles.psw}>
-            {" "}
+           
             <Link to="/resetpassword" onClick={handleResetPassword}>
               Forgot Password?
             </Link>
@@ -495,9 +506,8 @@ const SignIn = (props) => {
 
           <label id={styles.signLabel}> Create new account? </label>
 
-          <Link to="/signup" id={styles.signUp} onClick={handleSignUp}>
-            {" "}
-            SignUp!{" "}
+          <Link to="/signup" id={styles.signUp} onClick={handleSignUp}>        
+            SignUp!
           </Link>
           <Switch>
             <Route path="/signup" exact>

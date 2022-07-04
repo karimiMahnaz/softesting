@@ -105,7 +105,7 @@ const OnLineChat = (props) => {
 
   const sendMessage = () => {
 
-    if (value !== null && value !== undefined && value.trim() !== '') {
+    if (value !== null && value !== 'undefined' && value.trim() !== '') {
 
 
       let emailW = '';
@@ -114,9 +114,9 @@ const OnLineChat = (props) => {
           setEmailCookie('email', emailW);
         }
 
-      if (cookies.email === undefined || cookies.email.trim() === '' || cookies.email === null) {
+      if (cookies.email === 'undefined' || cookies.email === '' || cookies.email === null) {
         
-       if (emailW === undefined || emailW.trim() === '' || emailW === null) {
+       if (emailW === 'undefined' || emailW === '' || emailW === null) {
           setOnLineChatLoginFrmShow();
         }
 

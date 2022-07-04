@@ -42,20 +42,33 @@ const ContactUs = (props = "") => {
 
   // document.title= 'SofTesting | ContactUs ';
 
-  let emailW = "", userNameW = "";;
+  let emailW = "", userNameW = "";
 
-  useEffect(() => {
-    //console.log(JSON.parse(localStorage.getItem('userEmail')));
-    if (JSON.parse(localStorage.getItem("userEmail"))) {
-      emailW = JSON.parse(localStorage.getItem("userEmail"));
-    }
-    setValue("customerMail", emailW);
-    if (JSON.parse(localStorage.getItem("userName"))) {
-      userNameW = JSON.parse(localStorage.getItem("userName"));
-    }
-    setValue("customerName", userNameW);
-  }, [localStorage.getItem("userEmail")]);
 
+  useEffect(()=>{
+    if (JSON.parse(localStorage.getItem('userEmail'))){ emailW= JSON.parse(localStorage.getItem('userEmail')); } 
+       setValue('customerMail', emailW);
+    },[] )
+  
+    useEffect(()=>{
+      if (localStorage.getItem("userEmail") !== 'undefined' && 
+      localStorage.getItem("userEmail") !== '' &&
+      localStorage.getItem("userEmail") !== null) {
+      if (JSON.parse(localStorage.getItem('userEmail'))){
+         emailW= JSON.parse(localStorage.getItem('userEmail'));  
+         setValue('customerMail', emailW);
+        }
+      }
+        if (localStorage.getItem("userName") !== 'undefined' && 
+            localStorage.getItem("userName") !== '' &&
+            localStorage.getItem("userName") !== null) {
+         if (JSON.parse(localStorage.getItem("userName"))) {
+               userNameW = JSON.parse(localStorage.getItem("userName"));
+               setValue("customerName", userNameW); 
+             }
+            }
+      },[] )
+      
   let history = useHistory();
   const handleFrmClose = () => {
     history.push("/");

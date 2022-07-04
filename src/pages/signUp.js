@@ -17,6 +17,7 @@ import FocusLock from "react-focus-lock";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Captcha from "react-numeric-captcha";
+import eye from '../assets/Icon/eye.png';
 
 import styles from "../styles/signUp.module.scss";
 import Policy from "../pages/policy";
@@ -62,6 +63,8 @@ const SignUp = () => {
   const [dataForm, setDataForm] = useState("");
   const [captchaSuccess, setCaptchaSuccess] = useState(false);
   const [cookies, setCookie] = useCookies(["user"]);
+  const [passwordShown, setPasswordShown] = useState(true);
+  const [coPasswordShown, setCoPasswordShown] = useState(true);
 
   toast.configure();
   const history = useHistory();
@@ -71,17 +74,28 @@ const SignUp = () => {
   document.title = "SofTesting | Sign Up";
   let emailW = "",
     userNameW = "";
-  useEffect(() => {
-    //console.log(JSON.parse(localStorage.getItem('userEmail')));
-    if (JSON.parse(localStorage.getItem("userEmail"))) {
-      emailW = JSON.parse(localStorage.getItem("userEmail"));
-    }
-    setValue("email", emailW);
-    if (JSON.parse(localStorage.getItem("userName"))) {
-      userNameW = JSON.parse(localStorage.getItem("userName"));
-    }
-    setValue("userName", userNameW);
-  }, [localStorage.getItem("userEmail")]);
+////console.log('localStorage.getItem("userName")', localStorage.getItem("userName"));
+
+    useEffect(()=>{
+      if (localStorage.getItem("userEmail") !== 'undefined' && 
+            localStorage.getItem("userEmail") !== '' &&
+            localStorage.getItem("userEmail") !== null) {
+      if (JSON.parse(localStorage.getItem('userEmail'))){
+         emailW= JSON.parse(localStorage.getItem('userEmail'));  
+         setValue('email', emailW);
+        }
+      }
+        if (localStorage.getItem("userName") !== 'undefined' && 
+            localStorage.getItem("userName") !== '' &&
+            localStorage.getItem("userName") !== null) {
+         if (JSON.parse(localStorage.getItem("userName"))) {
+               userNameW = JSON.parse(localStorage.getItem("userName"));
+               setValue("userName", userNameW); 
+             }
+            }
+      },[] )
+    
+  
 
   const handleSignIn = () => {
     setLoginFrmShow();
@@ -114,6 +128,7 @@ const SignUp = () => {
   let urlCookie = "";
   let urlPolicy = "";
 
+
   if (location === "localhost") {
     urlLinkedinSignIn = `http://${location}:8000/auth/linkedin/linkedinSignIn`;
     urlCredentials = `http://${location}:8000/auth/linkedin/getUserCredentials`;
@@ -129,6 +144,12 @@ const SignUp = () => {
     urlPolicy = "/src/pages/policy";
   }
 
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  }
+  const toggleCoPassword = () => {
+    setCoPasswordShown(!coPasswordShown);
+  }
   const linkedinSignUp = () => {
     axios
       .get(urlLinkedinSignIn)
@@ -415,9 +436,11 @@ const SignUp = () => {
                 className={`${
                   errors.password ? styles.errorBorder : styles.Border
                 }`}
+                style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={passwordShown ? "text" : "password"}
+                 onClick={togglePassword}
                 tabIndex="0"
                 ref={passwordRef}
                 {...register("password", {
@@ -439,9 +462,11 @@ const SignUp = () => {
                 className={`${
                   errors.coPassword ? styles.errorBorder : styles.Border
                 }`}
+                style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={coPasswordShown ? "text" : "password"}
+                 onClick={toggleCoPassword}
                 tabIndex="0"
                 ref={coPasswordRef}
                 {...register("coPassword", {
@@ -646,9 +671,11 @@ const SignUp = () => {
                 className={`${
                   errors.password ? styles.errorBorder : styles.Border
                 }`}
+                  style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={passwordShown ? "text" : "password"}
+                 onClick={togglePassword}
                 tabIndex="0"
                 ref={passwordRef}
                 {...register("password", {
@@ -670,9 +697,11 @@ const SignUp = () => {
                 className={`${
                   errors.coPassword ? styles.errorBorder : styles.Border
                 }`}
+                style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={coPasswordShown ? "text" : "password"}
+                 onClick={toggleCoPassword}
                 tabIndex="0"
                 ref={coPasswordRef}
                 {...register("coPassword", {
@@ -873,9 +902,11 @@ const SignUp = () => {
                 className={`${
                   errors.password ? styles.errorBorder : styles.Border
                 }`}
+                  style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={passwordShown ? "text" : "password"}
+                 onClick={togglePassword}
                 tabIndex="0"
                 ref={passwordRef}
                 {...register("password", {
@@ -897,9 +928,11 @@ const SignUp = () => {
                 className={`${
                   errors.coPassword ? styles.errorBorder : styles.Border
                 }`}
+                style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={coPasswordShown ? "text" : "password"}
+                 onClick={toggleCoPassword}
                 tabIndex="0"
                 ref={coPasswordRef}
                 {...register("coPassword", {
@@ -1100,9 +1133,11 @@ const SignUp = () => {
                 className={`${
                   errors.password ? styles.errorBorder : styles.Border
                 }`}
+                style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={passwordShown ? "text" : "password"}
+                onClick={togglePassword}
                 tabIndex="0"
                 ref={passwordRef}
                 {...register("password", {
@@ -1124,9 +1159,11 @@ const SignUp = () => {
                 className={`${
                   errors.coPassword ? styles.errorBorder : styles.Border
                 }`}
+                style={{ backgroundImage: `url(${eye})` }}
                 onMouseDown={handleKeyDown}
                 defaultValue=""
-                type="password"
+                type={coPasswordShown ? "text" : "password"}
+                 onClick={toggleCoPassword}
                 tabIndex="0"
                 ref={coPasswordRef}
                 {...register("coPassword", {
