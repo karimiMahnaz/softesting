@@ -1,0 +1,935 @@
+//@import './variables.module.scss';
+
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+
+
+
+.inactive{display:none;}
+
+.h1{
+    color:darkblue;
+    font-size: .5rem;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    float:left;
+    margin-top: 50px;
+    position:absolute;
+ 
+   /* Legacy vendor prefixes that you probably don't need... */
+ 
+   /* Safari */
+   -webkit-transform: rotate(-90deg);
+ 
+   /* Firefox */
+   -moz-transform: rotate(-90deg);
+ 
+   /* IE */
+   -ms-transform: rotate(-90deg);
+ 
+   /* Opera */
+   -o-transform: rotate(-90deg);
+  }
+
+  #tooltip
+  {
+    position: absolute;
+    left: 0px;
+    top:0px;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    display: inline-block;
+  }
+
+  #tooltip.bottom
+{
+  margin-top: 5px;
+}
+
+#tooltip .tooltip_arrow
+{
+  top: 10%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+
+@media only screen and (min-width: 992px) {
+.tabs{
+    position:fixed;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    left: 0;
+    top:0;
+    margin-top: 0;
+    padding:0 2px;
+    background-color:$black;
+    place-content: center;
+    width: 8vw;
+    z-index: 30;
+    height:100vh;
+}
+
+.minTabs{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    position:fixed;
+    left: 0;
+    top:0;
+    margin-top: 0;
+    padding:0 2px;
+    background-color:$black;
+    place-content: center;
+    width: 8vw;
+    z-index: 30;
+    height:100vh;
+}
+
+#arrow {
+    width:5px;
+    height: 5px;
+    margin-top:2px;
+    margin-left:20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+
+.profile{
+    background-color: $black;
+    color:$white;
+    border: none;
+    margin-top:1px;
+    align-items: left;
+    font-size: .9rem;
+ 
+    &:hover{
+        color:$buttonColor;
+    }
+}
+
+    .profileIcon{
+        width: 24px;
+        height:24px;
+        margin:auto;
+        margin-top:15px;
+        background-color: $white;
+        border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+    }
+
+
+.tasks{
+    background-color: $black;
+    color:$white;
+    border: none;
+    margin-top:10px;
+    align-items: left;
+    font-size: .9rem;
+  
+    &:hover{
+        color:$buttonColor;
+    }
+}
+
+    .tasksIcon{
+        width: 24px;
+        height:24px;
+        margin:auto;
+        margin-top:15px;
+     //   background-color: $white;
+    //    border-radius: 50%;
+    &:hover{
+        opacity: 50%;
+        color:$buttonColor;
+    }
+    }
+
+
+.App{
+    background-color: $black;
+    color:$white;
+    border: none;
+    margin-top:10px;
+    font-size: .8rem;
+    align-items: left;
+   
+    &:hover{
+        color:$buttonColor;
+    }
+}
+
+    .AppIcon{
+        width: 24px;
+        height:24px;
+        margin:auto;
+        margin-top:15px;
+        background-color: $white;
+        border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+    }
+
+    .Contract{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .8rem;
+        align-items: left;
+       
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+    
+        .ContractIcon{
+            width: 30px;
+            height:30px;
+            margin:auto;
+            margin-top:15px;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+.logout{
+    background-color: $black;
+    color:$white;
+    border: none;
+    margin-top:10px;
+    font-size: .9rem;
+ 
+    &:hover{
+        color:$buttonColor;
+    }
+    }
+
+    .logoutIcon{
+        width: 24px;
+        height:24px;
+        margin:auto;
+        margin-top:15px;
+        background-color: $white;
+        border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+    }
+
+
+
+.exit{
+    background-color: $black;
+    color:$white;
+    border: none;
+    margin-top:10px;
+    align-items: left;
+    font-size: .8rem;
+  
+    &:hover{
+        color:$buttonColor;
+    }
+}
+
+    .exitIcon{
+        width: 24px;
+        height:24px;
+        margin:auto;
+        margin-top:15px;
+        background-color: $white;
+        border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+    }
+
+
+
+
+}
+
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+    .tabs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        position:fixed;
+        left: 0;
+        top:0;
+        margin-top: 0;
+        padding:0 2px;
+        background-color:$black;
+        place-content: center;
+        width: 9vw;
+        z-index: 30;
+        height:100vh;
+    }
+    
+    .minTabs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        position:fixed;
+        left: 0;
+        top:0;
+        margin-top: 0;
+        padding:0 2px;
+        background-color:$black;
+        place-content: center;
+        width: 9vw;
+        z-index: 30;
+        height:100vh;
+       
+    }
+    
+    #arrow {
+        width:5px;
+      height: 5px;
+      margin-top:2px;
+      margin-left:20px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 4px;
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    
+    
+    .profile{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        border-radius: 40%;
+        align-items: center;
+        font-size: .9rem;
+      
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+
+        .profileIcon{
+            width: 23px;
+            height:23px;
+             margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+    
+    .tasks{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        border-radius: 40%;
+        align-items: center;
+        font-size: .9rem;
+      
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+
+        .tasksIcon{
+            width: 23px;
+            height:23px;
+            margin:auto;
+            margin-top:15px;
+         //   background-color: $white;
+        //    border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+        }
+    
+    
+    .App{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .8rem;
+        align-items: center;
+      
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+
+        .AppIcon{
+            width: 23px;
+            height:23px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+        .Contract{
+            background-color: $black;
+            color:$white;
+            border: none;
+            margin-top:10px;
+            font-size: .8rem;
+            align-items: left;
+           
+            &:hover{
+                color:$buttonColor;
+            }
+        }
+        
+            .ContractIcon{
+                width: 23px;
+                height:23px;
+                margin:auto;
+                margin-top:15px;
+                &:hover{
+                    opacity: 50%;
+                    color:$buttonColor;
+                }
+            }
+
+    .logout{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .9rem;
+       
+        &:hover{
+            color:$buttonColor;
+        }
+        }
+
+        .logoutIcon{
+            width: 23px;
+            height:23px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+
+    .exit{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        align-items: center;
+        font-size: .8rem;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .exitIcon{
+            width: 23px;
+            height:23px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    }
+
+
+
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+
+    .tabs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        position:fixed;
+        left: 0;
+        top:0;
+        margin-top: 0;
+        padding:0 2px;
+        background-color:$black;
+        place-content: center;
+        width: 19vw;
+        z-index: 30;
+        height:100vh;
+    }
+    
+    .minTabs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        position:fixed;
+        left: 0;
+        top:0;
+        margin-top: 0;
+        padding:0 2px;
+        background-color:$black;
+        place-content: center;
+        width: 19vw;
+        z-index: 30;
+        height:100vh;
+    }
+    
+    #arrow {
+        width:5px;
+        height: 5px;
+        margin-top:2px;
+        margin-left:20px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+         padding: 4px;
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    
+    
+    .profile{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .7rem;
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+
+        .profileIcon{
+            width: 17px;
+            height:17px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+   
+    
+    .tasks{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .7rem;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .tasksIcon{
+            width: 17px;
+            height:17px;
+            margin:auto;
+            margin-top:15px;
+         //   background-color: $white;
+        //    border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+        }
+    
+    
+    
+
+    .App{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .7rem;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+
+        .AppIcon{
+            width: 17px;
+            height:17px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+        .Contract{
+            background-color: $black;
+            color:$white;
+            border: none;
+            margin-top:10px;
+            font-size: .7rem;
+            align-items: left;
+           
+            &:hover{
+                color:$buttonColor;
+            }
+        }
+        
+            .ContractIcon{
+                width: 17px;
+                height:17px;
+                margin:auto;
+                margin-top:15px;
+                &:hover{
+                    opacity: 50%;
+                    color:$buttonColor;
+                }
+            }
+
+    .logout{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .7rem;
+        
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .logoutIcon{
+            width: 17px;
+            height:17px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+
+    .exit{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin-top:10px;
+        font-size: .7rem;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+
+        .exitIcon{
+            width: 17px;
+            height:17px;
+            margin:auto;
+            margin-top:15px;
+            background-color: $white;
+            border-radius: 50%;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    }
+
+
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+
+    
+    .tabs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        position:fixed;
+        left: 0;
+        top:0;
+        margin-top: 0;
+        padding:0 2px;
+        background-color:$black;
+        place-content: center;
+        width: 22vw;
+        z-index: 30;
+        height:100vh;
+    }
+    
+    .minTabs{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        position:fixed;
+        left: 0;
+        top:0;
+        margin-top: 0;
+        padding:0 2px;
+        background-color:$black;
+        place-content: center;
+        width: 22vw;
+        z-index: 30;
+        height:100vh;
+    }
+    
+    #arrow {
+        width:5px;
+       height: 5px;
+       margin-top:0;
+       margin-left:20px;
+       border: solid white;
+       border-width: 0 3px 3px 0;
+   //    display: block;
+       padding: 4px;
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    
+    
+    .profile{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin:auto;
+        font-size: .9rem;
+        margin-top:10px;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .profileIcon{
+            width: 20px;
+            height:20px;
+            margin:auto;
+            background-color: $white;
+            border-radius: 50%;
+            margin-top:15px;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+   
+    
+    .tasks{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin:auto;
+        font-size: .9rem;
+        margin-top: 2px;
+       
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .tasksIcon{
+            width: 20px;
+            height:20px;
+            margin:auto;
+            margin-top:15px;
+         //   background-color: $white;
+        //    border-radius: 50%;
+        &:hover{
+            opacity: 50%;
+            color:$buttonColor;
+        }
+        }
+   
+    .App{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin:auto;
+        margin-top:2px;
+        font-size: .7rem;
+      
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .AppIcon{
+            width: 20px;
+            height:20px;
+            margin:auto;
+            background-color: $white;
+            border-radius: 50%;
+            margin-top:15px;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+        .Contract{
+            background-color: $black;
+            color:$white;
+            border: none;
+            margin-top:10px;
+            font-size: .7rem;
+            align-items: left;
+           
+            &:hover{
+                color:$buttonColor;
+            }
+        }
+        
+            .ContractIcon{
+                width: 20px;
+                height:20px;
+                margin:auto;
+                margin-top:15px;
+
+                &:hover{
+                    opacity: 50%;
+                    color:$buttonColor;
+                }
+            }
+
+
+    .logout{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin:auto;
+        margin-top:2px;
+        font-size: .9rem;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .logoutIcon{
+            width: 20px;
+            height:20px;
+            margin:auto;
+            background-color: $white;
+            border-radius: 50%;
+            margin-top:15px;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    
+
+    .exit{
+        background-color: $black;
+        color:$white;
+        border: none;
+        margin:auto;
+        margin-top:2px;
+        font-size: .9rem;
+     
+        &:hover{
+            color:$buttonColor;
+        }
+    }
+        .exitIcon{
+            width: 20px;
+            height:20px;
+            margin:auto;
+            background-color: $white;
+            border-radius: 50%;
+            margin-top:15px;
+            &:hover{
+                opacity: 50%;
+                color:$buttonColor;
+            }
+        }
+    }

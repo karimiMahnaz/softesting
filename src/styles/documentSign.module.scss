@@ -1,0 +1,197 @@
+@import './variables.module.scss';
+
+.modal {
+    margin: 0 auto;
+    width:100vw;
+    position: block; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    height: 1000vh; /* Full height */
+    top:152px;
+    overflow: hidden; /* Enable scroll if needed */
+    background-size: cover;
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    align-content: center;
+    align-items: center;
+     .container {
+       width: 100%; 
+       height: 100%;
+       background: $formColor; /* Fallback color */
+       background: rgba(6, 15, 117, 0.8); 
+       position: block;
+       #svg{
+         height:25px;
+         width:25px;
+       }
+       #line1{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       #line2{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       /* The Close Button */
+       .closeBtn {
+         /* Position it in the top right corner outside of the modal */
+         position: absolute;
+         right: 40px;
+         top: 20px;
+         font-size: 30px;
+         font-weight: bold;
+       }
+     }
+    
+#prev{
+  color:$backColor;
+  background-color: $linkColor;
+   width: 60px;
+   height: 30px;
+   left:50px;
+   position:absolute;
+   top:160px;
+   border-radius: 5px;
+   border: none;
+   font-family: sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   margin-top: 10px;
+   padding-top:10px;
+   padding-bottom:30px;
+   padding-left: 10px;
+   padding-right:30px;
+   cursor: pointer;
+
+   &:hover{color:red; opacity:.8;}
+}
+
+#next{
+  color:$backColor;
+  background-color: $linkColor;
+  width: 60px;
+  height: 30px;
+  left:120px;
+  position:absolute;
+  top:160px;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-top:10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right:30px;
+  cursor: pointer;
+  &:hover{color:red; opacity:.8;}
+}
+
+#pageCounter{
+    color:$backColor;
+    background-color: $linkColor;
+    height: 30px;
+    left:215px;
+    position:absolute;
+   // top:10px;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: left;
+    padding:30px;
+    padding-top: 15px;
+    margin:10px;
+    margin-top: 20px;
+}
+
+#allPages{
+  color:$backColor;
+  background-color: $linkColor;
+  width: 130px;
+  height: 30px;
+  left:50px;
+  position:absolute;
+  top:210px;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-top:10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right:30px;
+  cursor: pointer;
+  &:hover{color:red; opacity:.8;}
+}
+#savePdf{
+  color:$backColor;
+  background-color: $linkColor;
+  width: 130px;
+  height: 60px;
+  left:50px;
+  position:absolute;
+  top:260px;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-top:10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right:30px;
+  cursor: pointer;
+  &:hover{color:red; opacity:.8;}
+
+}
+   
+    .description{
+        width: 65vw;
+        height: 80px;
+        top:250px;
+        margin-left:200px;
+        background-color: $linkColor;
+        color:$white;
+        position: absolute;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        text-justify: auto;
+        vertical-align: middle;
+        border-radius: 10px;
+        padding-top: 12px;
+
+    }
+.pdf{
+    width:80%; 
+    position:absolute;
+    align-content: center;
+    align-items: center;
+    top:320px;
+    margin:20px;
+    margin-left: 200px;
+    align-content: center;
+    align-items: center;
+}
+
+.outLine{
+  width: 910px;
+  height:120%;
+  top:100px;
+  left:100px;
+  background-color: aqua;
+  position:absolute;
+  z-index: 10;
+}
+
+   }

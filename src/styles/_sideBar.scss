@@ -1,0 +1,44 @@
+.leftSideBar{
+    top: 800px;
+    margin-top: 0px;
+    padding:0px;
+    display: block;
+    height: 500px;
+    width: 280px;
+    float: left;
+    margin-left : 10px;
+    border-radius: 5px;
+    position:absolute;
+    scrollbar-width: none;
+    overflow:none;
+}
+.rightSideBar{
+    top: 800px;
+    margin-top: 0px;
+    padding:0px;
+    display: block;
+    height: 500px;
+    width: 280px;
+    float: left;
+    margin-left : 1260px;
+    border-radius: 5px;
+    position:absolute;
+    scrollbar-width: none;
+    overflow:none;
+   
+}
+.card-slidBar{
+    
+   top:0px;
+   position:absolute;
+   border: none;
+}
+.card-Image{
+    margin-top:0px;
+    padding-top : 0px;
+    margin-left :10px;
+    margin-right :10px;
+    position:absolute;
+    border: none;
+}
+

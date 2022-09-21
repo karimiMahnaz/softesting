@@ -1,0 +1,123 @@
+//@import './variables.module.scss';
+
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+
+
+
+.inactive{display:none;}
+
+
+#notFound {
+  position:fixed;
+  top:0;
+  width:100%;
+  height: 100%;
+  
+  z-index: 20;
+//   opacity: 1;
+  overflow: hidden; /* Enable scroll if needed */
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+ .notFound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+         
+          h2 {
+            color:$backColor;
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 0;
+          }
+          
+                       
+           p {
+            
+            color:$backColor;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            margin-top: 0px;
+          }
+
+          a {       
+            font-size: 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            background:$buttonColor;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 40px;
+            color:$backColor;
+            font-weight: 700;
+            -webkit-box-shadow: 0px 4px 15px -5px $buttonColor;
+             box-shadow: 0px 4px 15px -5px $buttonColor;
+             &:hover{color:rgb(245, 138, 154);}
+           }
+ }
+
+
+ .notFound404 {
+  height: 280px;
+  position: relative;
+  z-index: -1;
+
+ 
+  h1{
+  
+   font-size: 220px;
+   margin: 0px;
+   font-weight: 900;
+   position: absolute;
+   left: 50%;
+   color:$buttonColor;
+   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+   background:  no-repeat;
+   background-clip: text;
+   opacity: .5;
+   background-size: cover;
+   background-position: center;
+     }
+
+ }
+
+ 
+
+
+@media only screen and (max-width: 767px) {
+    .notFound404 {
+      height: 142px;
+    }
+     .notFound404 {
+       h1 {
+      font-size: 112px;
+       }
+    }
+}

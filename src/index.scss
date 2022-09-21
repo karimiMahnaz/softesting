@@ -1,0 +1,57 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Work Sans', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @font-face {
+    font-family: "Nunito-Bold";
+    src: local("Nunito-Bold"),
+     url('./assets/font/Nunito-Bold.ttf') format("truetype");
+    font-weight: bold;
+    }
+
+  @font-face {
+    font-family: "Nunito-Medium";
+    src: local("Nunito-Medium"),
+     url('./assets/font/Nunito-Medium.ttf') format("truetype");
+    font-weight: bold;
+    }
+    
+    @font-face {
+      font-family: "Nunito-Regular";
+      src: local("Nunito-Regular"),
+       url('./assets/font/Nunito-Regular.ttf') format("truetype");
+      font-weight: bold;
+      }
+      
+      @font-face {
+        font-family: "Nunito-Light";
+        src: local("Nunito-Light"),
+         url('./assets/font/Nunito-Light.ttf') format("truetype");
+       
+        }
+        @font-face {
+          font-family: "Roboto-Light";
+          src: local("Roboto-Light"),
+           url('./assets/font/Roboto-Light.ttf') format("truetype");
+       
+          }
+          @font-face {
+            font-family: "Roboto-Medium";
+            src: local("Roboto-Medium"),
+             url('./assets/font/Roboto-Medium.ttf') format("truetype");
+         
+            }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+
+}

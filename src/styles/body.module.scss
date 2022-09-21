@@ -1,0 +1,2938 @@
+//@import './variables.module.scss';
+
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+
+
+
+.inactive{display:none;}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 992px) {
+.body{
+    top:10px;
+    width:100vw;
+    height:6650px;
+    position:relative;
+    display:block;
+    margin-inline : auto;
+   // background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 81, 255));
+  // background-image: radial-gradient(circle, rgba(0, 225, 255, 0.075), rgba(0, 140, 255, 0.075), rgba(0, 119, 128, 0.055));
+    padding:0px;
+    background-color:$backColor;
+    float:center;
+    align-items: center;
+    overflow:  hidden;
+    scrollbar-width: none;
+    font-family: sans-serif ;
+
+}
+
+.slider{
+  width: 100%;
+  height: 600px;
+  position:absolute;
+  display: flex;
+  overflow:  hidden;
+  align-content: center;
+   left:1%;
+  //box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  //border: 5px solid #0000ff3b;
+    box-sizing: border-box;
+  
+}
+.slider::after{
+  clear:both;
+  content: " ";
+  display: block;
+}
+
+
+
+.cardHeader{
+  height:50px;
+}
+
+.testSection2{
+  width: 100%;
+  
+  h3{
+    
+    background: -webkit-linear-gradient( $cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute; 
+    max-width: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:650px;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    font-weight: 400;
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 63%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:700px;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+  }
+}
+.testcards{
+  display:grid;
+  position: absolute;
+  margin-top:800px;
+  width: 100%;
+  height: 300px;
+  border:none;
+  grid-template-columns: repeat(3, 1fr);
+  //grid-template-rows: auto;
+  //gap: 20px;
+ 
+.card {
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left:20px;
+  margin-bottom: 0px;
+  //grid-row: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  
+  img{
+    margin-left: 3%;
+    margin-top:3%;
+    max-width: 7%;
+  //  max-height: 7%;
+    display: inline-block;
+    margin-right: 0px;
+    padding:5px;
+     }
+    h6{
+      margin-top: 0;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      
+      }
+}
+// .card:after {
+//   content: " ";
+//   display: table;
+//   clear: both;
+// }
+   .card_content
+   {
+       background: -webkit-linear-gradient($cardColor, $gradiant);
+       background-clip: text;
+      -webkit-text-fill-color: transparent;
+       margin: 3px;
+       flex-direction: column;
+       margin-left:20px;
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       
+     
+      span{
+    
+        color:$cardColor;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+        max-width:400px;
+        padding:30px;
+         }
+   
+    a{     
+       padding:10px;
+       display: inline-block;
+       font-size: .9rem;
+       font-family: sans-serif;
+       color:$cardColor;
+        cursor:pointer;
+        font-weight: 100;
+        :hover{ color:red;}
+     }
+ }
+}
+ .developmentsection2{
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  
+  h3{
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 51%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:1150px;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    font-weight: 400;
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 37%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:1200px;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+  }
+}
+.developmentcards{
+  display:grid;
+  position: absolute;
+  margin-top:1300px;
+  width: 100%;
+  height: 300px;
+  border:none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  
+  //gap: 20px;
+ 
+  .card {
+  box-shadow: 4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left:20px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+  img{
+    margin-left: 3%;
+    margin-top:3%;
+    max-width:  7%;
+  //  max-height:  7%;
+    display: inline-block;
+    padding:5px;
+    
+  }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 5px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+
+   .card_content 
+   {
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+       background-clip: text;
+       -webkit-text-fill-color: transparent; 
+       padding-top: 0;
+       margin-left: 20px;
+       padding-bottom: 50px;
+       background-color:  $backColor;
+     
+      span{
+        color:$cardColor;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+       
+       }
+   
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+ }
+}
+
+
+ .testsection3{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    h3{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;
+      max-width: 35%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top:1700px;
+      font-size: 2rem;
+    font-family: sans-serif ;
+    font-weight: 400;
+    }
+ }
+
+  .testServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:1800px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+   // gap: 20px;
+ 
+  }
+
+    .testcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+     //   max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+       
+      }
+
+        h6{
+          margin-top: 3%;
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          margin-left: 0px;
+          padding-left: 0px;
+          font-size: 1.1rem;
+          font-family: sans-serif ;
+          font-weight: 200;
+          }
+    }
+  
+  .testcard_content 
+  {
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 10px;
+  
+   
+     span{
+        
+      color:$cardColor;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-size: .9rem;
+      font-family: sans-serif;
+      font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+  }
+
+  .developsection3{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    h1{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;   
+      max-width: 55%;
+      font-weight: 400;
+      font-family: sans-serif ;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top:2540px;
+    }
+ }
+
+  .developServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:2600px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(3, 1fr);
+   // grid-template-rows: auto;
+   // gap: 20px;
+ 
+  }
+
+    .developcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      justify-content: center;
+  align-items: center;
+  display: inline-block;
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+    //    max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+       
+      }
+
+        h6{
+          margin-top: 3%;
+         background: $gradiant;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         display: inline-block;
+         margin-left: 0px;
+         padding-left: 0px;
+         font-size: 1.1rem;
+         font-family: sans-serif ;
+         font-weight: 200;
+          }
+    }
+  
+  .developcard_content 
+  {
+     background: -webkit-linear-gradient($cardColor, $gradiant);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+     display: inline-block;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     span{
+        
+      color:$cardColor;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-size: .9rem;
+      font-family: sans-serif;
+      font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+  }
+
+  .logoSlider {
+    position: absolute;
+      margin-top:2850px;
+      width: 100%;
+      height: 150px;
+      background: $backColor;
+      background-size: cover;
+    //  background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+      box-sizing: border-box;
+     // box-shadow: 0 4px 4px 0 rgba(196, 190, 190, 0.705);
+      border-radius: 5px;
+      display: flex;
+      
+  }
+
+  .one
+  {
+      position: absolute;
+      margin-top:3050px;
+      width: 100%;
+      min-height: 600px;
+  
+       // background: rgb(255, 0, 13);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+      ///border-radius: 5px;
+      .subOne{
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); 
+
+    h2{
+      margin-left: 20px;
+      margin-top: 20px;
+      background: -webkit-linear-gradient($buttonColor, $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 32px;
+      font-family: sans-serif ;
+      z-index: 2;
+    
+    }
+    .onespan{
+        
+      margin: 30px;
+      margin-top: 20px;
+      color:$inputColor;
+      font-size: 24px;
+      font-family: sans-serif;
+      z-index: 2;
+      padding:10px;
+      
+       }
+    h3{
+      margin-left: 20px;
+      margin-top: 15px;
+      background: -webkit-linear-gradient($buttonColor, $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-family: sans-serif ;
+      z-index: 2;
+     
+    }
+    }
+  }
+  
+  .two
+   {
+      position: absolute;
+      margin-top:3650px;
+      width: 100%;
+      height: 600px;    
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+    //  border-radius: 5px;
+   //   background-attachment: fixed;
+      h3{
+        margin-left: 30px;
+      margin-top: 30px;
+      background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 2.2rem;
+      font-family: sans-serif ;
+      z-index: 2;
+      background-color: $gradiant;
+      }
+      h4{
+        margin-left: 50px;
+        margin-top: 22px;
+        background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size:2rem;
+        font-family: sans-serif ;
+        z-index: 2;
+        background-color: $gradiant;
+      }
+    
+  }
+ 
+  .three {
+    position: absolute;
+      margin-top:4250px;
+      width: 100%;
+      min-height: 600px;
+      background: rgba(65, 51, 75, 0.527);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+    //  border-radius: 5px;
+      h3{
+        margin-left: 30px;
+        margin-top: 50px;
+        color: rgb(247, 243, 247);
+        font-weight: 400;
+        font-size:2.1rem;
+        font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+      span{
+        margin-left: 50px;
+        margin-right:50px;
+        margin-top: 30px;
+        color:rgb(247, 243, 247);
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        font-weight: 200;
+        z-index: 2;
+        padding:30px;
+       }
+      h4{
+        margin-left: 50px;
+        margin-top: 50px;
+        color:rgb(247, 243, 247);
+        font-weight: 400;
+        font-size:1.9rem;
+        font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+      
+  }
+  
+  .four {
+     position: absolute;
+      margin-top:4850px;
+      width: 100%;
+      height: 700px;
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+      h3{
+        margin-left: 30px;
+        margin-top: 0px;
+        color:rgb(243, 182, 243);
+        font-size: 32px;
+        font-weight: 300;
+        font-family: sans-serif;
+        z-index: 2;
+     
+      }
+      span{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 10;
+        margin-bottom: 30px;
+        color:rgb(247, 243, 247);
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        font-weight: 100;
+        z-index: 2 ;
+       }
+      h4{
+        margin-left: 50px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        color:rgb(243, 182, 243);
+        font-size: 28px;
+        font-weight: 400;
+        font-size:1.5rem;
+        font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+  }
+
+  // .four::after{
+  //   clear:both;
+  //   content: " ";
+  //   display: flex;
+  // }
+
+    .six {
+     position: absolute;
+     margin-top:5550px;
+     width: 100%;
+     height: 600px;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+  //   border-radius: 5px;
+     background-color: $gradiant;
+     //filter: blur(4px);
+     //-webkit-filter: blur(4px);
+
+ }
+ 
+ .footer{
+  margin-top:6150px;
+  height: 600px;
+  position:absolute;
+}
+
+
+  }
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+  .body{
+    top:10px;
+    width:100vw;
+    height: 6700px;
+    position:relative;
+    display:block;
+ //   margin : 10px;
+   
+   // background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 81, 255));
+  // background-image: radial-gradient(circle, rgba(0, 225, 255, 0.075), rgba(0, 140, 255, 0.075), rgba(0, 119, 128, 0.055));
+    padding:0px;
+    background-color:$backColor;
+    float:center;
+    align-items: center;
+  //  border-radius: 5px;
+    overflow:  hidden;
+    scrollbar-width: none;
+    
+    
+}
+
+.slider{
+  width: 100%;
+  height: 600px;
+  position:absolute;
+  display: flex;
+  overflow:  hidden;
+  align-content: center;
+   left:10px;
+  //box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  //border: 5px solid #0000ff3b;
+    box-sizing: border-box;
+  
+}
+.slider::after{
+  clear:both;
+  content: " ";
+  display: block;
+}
+
+.cardHeader{
+  height:50px;
+}
+
+.testSection2{
+  width: 100%;
+  
+  h3{
+    
+    background: -webkit-linear-gradient( $cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 54%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    margin-top:650px;
+
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;  
+    max-width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+    margin-top:700px;
+   
+  }
+}
+.testcards{
+  display:grid;
+  position: absolute;
+  margin-top:800px;
+  width: 100%;
+  height: 300px;
+  border:none;
+  grid-template-columns: repeat(3, 1fr);
+  //grid-template-rows: auto;
+  //gap: 20px;
+ 
+.card {
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:0px;
+  margin-left:20px;
+  margin-bottom: 0px;
+  //grid-row: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  
+  img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+   //     max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+     }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+// .card:after {
+//   content: " ";
+//   display: table;
+//   clear: both;
+// }
+   .card_content
+   {
+       background: -webkit-linear-gradient($cardColor, $gradiant);
+       background-clip: text;
+      -webkit-text-fill-color: transparent;
+       margin: 5px;
+       flex-direction: column;
+       padding: 10px;
+       margin-left:20px;
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+          overflow: hidden;
+       
+     
+      span{
+        
+        color:$cardColor;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+         }
+   
+         a{     
+          padding:10px;
+          display: inline-block;
+          font-size: .9rem;
+          font-family: sans-serif;
+          color:$cardColor;
+           cursor:pointer;
+           font-weight: 100;
+           :hover{ color:red;}
+        }
+ }
+}
+ .developmentsection2{
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  h3{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 90%;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    font-weight: 400;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:1150px;
+   
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 40%;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:1200px;
+  }
+}
+.developmentcards{
+  display:grid;
+  position: absolute;
+  margin-top:1300px;
+  width: 100%;
+  height: 300px;
+  border:none;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  //gap: 20px;
+ 
+  .card {
+  box-shadow: 4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:0px;
+  margin-left:20px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+  img{
+    margin-left: 3%;
+    margin-top:3%;
+    max-width: 7%;
+ //   max-height:  7%;
+    display: inline-block;
+    margin-right: 0px;
+    padding:5px;
+    
+  }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+
+   .card_content 
+   {
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+       padding-top: 0;
+        margin-left:20px;
+      
+       padding-bottom: 50px;
+       background-color:  $backColor;
+     
+       span{
+        
+        color:$cardColor;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+         }
+   
+         a{     
+          padding:10px;
+          display: inline-block;
+          font-size: .9rem;
+          font-family: sans-serif;
+          color:$cardColor;
+           cursor:pointer;
+           font-weight: 100;
+           :hover{ color:red;}
+        }
+ }
+}
+
+
+ .testsection3{
+    width: 100%;
+    h3{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;
+      max-width: 50%;
+      font-weight: 400;
+      font-size: 2rem;
+      font-family: sans-serif ;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top:1700px;
+      
+    }
+ }
+
+  .testServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:1800px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    //gap: 20px;
+ 
+  }
+
+    .testcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+  //      max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+      }
+
+        h6{
+          margin-top: 3%;
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          margin-left: 0px;
+          padding-left: 0px;
+          font-size: 1.1rem;
+          font-family: sans-serif ;
+          font-weight: 200;
+          }
+    }
+  
+  .testcard_content 
+  {
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+  
+   
+     span{
+        
+      font-size: .9rem;
+      font-family: sans-serif;
+      color:$cardColor;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+  a{
+    padding:10px;
+    display: inline-block;
+    font-size: .9rem;
+    font-family: sans-serif;
+    color:$cardColor;
+     cursor:pointer;
+     :hover{ color:red;}
+   }
+  }
+
+  .developsection3{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    h1{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;
+      max-width: 85%;
+      font-weight: 400;
+       font-family: sans-serif ;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top:2520px;
+    }
+ }
+
+  .developServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:2600px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    //gap: 20px;
+ 
+  }
+
+    .developcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width: 7%;
+    //    max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+      }
+
+        h6{
+          margin-top: 3%;
+         background: $gradiant;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         display: inline-block;
+         margin-left: 0px;
+         padding-left: 0px;
+         font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+          }
+    }
+  
+  .developcard_content 
+  {
+     background: -webkit-linear-gradient($cardColor, $gradiant);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+   
+   
+     span{
+        
+      font-size: .9rem;
+      font-family: sans-serif;
+      color:$cardColor;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+  a{
+    padding:10px;
+    display: inline-block;
+    font-size: .9rem;
+    font-family: sans-serif;
+    color:$cardColor;
+     cursor:pointer;
+     :hover{ color:red;}
+   }
+  }
+
+
+  .logoSlider {
+    position: absolute;
+      margin-top:2850px;
+      width: 100%;
+      height: 150px;
+      background: $backColor;
+      background-size: cover;
+    //  background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+      box-sizing: border-box;
+     // box-shadow: 0 4px 4px 0 rgba(196, 190, 190, 0.705);
+      border-radius: 5px;
+      display: flex;
+      
+  }
+
+  .one
+  {
+    position: absolute;
+      margin-top:3050px;
+      width: 100%;
+      min-height: 600px;
+       // background: rgb(255, 0, 13);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+    ///  border-radius: 5px;
+      .subOne{
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); 
+
+    h2{
+      margin-left: 20px;
+      margin-top: 20px;
+      background: -webkit-linear-gradient($buttonColor, $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 32px;
+       font-family: sans-serif ;
+      z-index: 2;
+    
+    }
+    .onespan{
+      margin: 20px;
+      margin-top: 20px;
+      color:$inputColor;
+      font-size: 24px;
+      font-family: sans-serif ;
+      z-index: 2;
+      padding:10px;
+      
+    }
+    h3{
+      margin-left: 20px;
+      margin-top: 15px;
+      background: -webkit-linear-gradient($buttonColor, $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-family: sans-serif ;
+      z-index: 2;
+     
+    }
+    }
+  }
+  
+  .two
+   {
+      position: absolute;
+      margin-top:3650px;
+      width: 100%;
+      height: 600px;   
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+   ///   border-radius: 5px;
+   //   background-attachment: fixed;
+      h3{
+        margin-left: 30px;
+      margin-top: 30px;
+      background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 2.1rem;
+      font-family: sans-serif ;
+      z-index: 2;
+      background-color: $gradiant;
+      }
+      h4{
+        margin-left: 50px;
+        margin-top: 22px;
+        background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size:2rem;
+        font-family: sans-serif ;
+        z-index: 2;
+        background-color: $gradiant;
+      }
+    
+  }
+ 
+  .three {
+    position: absolute;
+      margin-top:4250px;
+      width: 100%;
+      min-height: 600px;
+      background: rgba(65, 51, 75, 0.527);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+   ///   border-radius: 5px;
+   h3{
+    margin-left: 30px;
+    margin-top: 50px;
+    color: rgb(247, 243, 247);
+    font-weight: 400;
+    font-size:2.1rem;
+    font-family: sans-serif ;
+    z-index: 2;
+ 
+  }
+  span{
+    margin-left: 50px;
+    margin-right:5opx;
+    margin-top: 30px;
+    color:rgb(247, 243, 247);
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    z-index: 2;
+    padding:30px;
+   }
+  h4{
+    margin-left: 50px;
+    margin-top: 50px;
+    color:rgb(247, 243, 247);
+    font-weight: 400;
+    font-size:1.9rem;
+    font-family: sans-serif ;
+    z-index: 2;
+ 
+  }
+      
+  }
+  
+  .four {
+    position: absolute;
+     margin-top:4850px;
+     width: 100%;
+     height: 700px;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+     h3{
+       margin-left: 30px;
+       margin-top: 0px;
+       color:rgb(243, 182, 243);
+       font-size: 30px;
+       font-family: sans-serif ;
+       font-weight: 300;
+       z-index: 2;
+    
+     }
+     span{
+       margin-left: 50px;
+       margin-right: 50px;
+       margin-top: 10;
+       margin-bottom: 30px;
+       color:rgb(247, 243, 247);
+       font-size: 1.5rem;
+       font-family: sans-serif;
+       font-weight: 100;
+       z-index: 2 ;
+      }
+     h4{
+       margin-left: 50px;
+       margin-top: 20px;
+       margin-bottom: 15px;
+       color:rgb(243, 182, 243);
+       font-weight: 400;
+       font-size:1.5rem;
+       font-family: sans-serif ;
+       z-index: 2;
+    
+     }
+ }
+
+  // .four::after{
+  //   clear:both;
+  //   content: " ";
+  //   display: flex;
+  // }
+
+    .six {
+     position: absolute;
+     margin-top:5550px;
+     width: 100%;
+     height: 600px;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+    // border-radius: 5px;
+     background-color: $gradiant;
+     //filter: blur(4px);
+     //-webkit-filter: blur(4px);
+
+ }
+
+ .footer{
+  position:absolute;
+  margin-top:6150px;
+  width: 100%;
+  margin-left:0;
+  height: 600px;
+  background-color: $gradiant;
+  background-size: 100%;
+  background-position: center;
+}
+  
+}
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+  .body{
+    top:10px;
+    width:100vw;
+    height: 7150px;
+    position:relative;
+    display:block;
+ //   margin : 0px;
+   // background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 81, 255));
+  // background-image: radial-gradient(circle, rgba(0, 225, 255, 0.075), rgba(0, 140, 255, 0.075), rgba(0, 119, 128, 0.055));
+    padding:0px;
+    background-color:$backColor;
+    float:center;
+    align-items: center;
+  //  border-radius: 5px;
+    overflow:  hidden;
+    scrollbar-width: none;
+    
+    
+}
+
+.slider{
+  width: 100%;
+  height: 600px;
+  position:absolute;
+  display: flex;
+  overflow:  hidden;
+  align-content: center;
+   left:0px;
+  //box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+//  border-radius: 10px;
+  //border: 5px solid #0000ff3b;
+    box-sizing: border-box;
+  
+}
+.slider::after{
+  clear:both;
+  content: " ";
+  display: block;
+}
+
+.cardHeader{
+  height:100px;
+}
+
+.testSection2{
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  h3{
+    
+    background: -webkit-linear-gradient( $cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute; 
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    margin-top:650px;
+   
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+    margin-top:700px;
+  }
+}
+.testcards{
+  display:grid;
+  position: absolute;
+  margin-top:800px;
+  width: 100%;
+  //height: 300px;
+  border:none;
+  grid-template-columns: repeat(1, 1fr);
+  //grid-template-rows: auto;
+  //gap: 20px;
+ 
+.card {
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:0px;
+  margin-bottom: 0px;
+  //grid-row: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  
+  img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+  //      max-height: 7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+     }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+// .card:after {
+//   content: " ";
+//   display: table;
+//   clear: both;
+// }
+   .card_content
+   {
+       background: -webkit-linear-gradient($cardColor, $gradiant);
+       background-clip: text;
+      -webkit-text-fill-color: transparent;
+       margin: 5px;
+       flex-direction: column;
+       padding: 10px;
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+          overflow: hidden;
+       
+     
+      span{
+        
+        background: -webkit-linear-gradient($cardColor,$gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+         }
+   
+         a{     
+          padding:10px;
+          display: inline-block;
+          font-size: .9rem;
+          font-family: sans-serif;
+          color:$cardColor;
+           cursor:pointer;
+           font-weight: 100;
+           :hover{ color:red;}
+        }
+ }
+}
+ .developmentsection2{
+  width: 100%;
+  
+  h3{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute; 
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:1450px;
+   
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top:1500px;
+  }
+}
+.developmentcards{
+  display:grid;
+  position: absolute;
+  margin-top:1500px;
+  width: 100%;
+ // height: 300px;
+  border:none;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+ // gap: 20px;
+ 
+  .card {
+  box-shadow: 4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:0px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+  img{
+    margin-left: 3%;
+    margin-top:3%;
+    max-width:  7%;
+//    max-height:  7%;
+    display: inline-block;
+    margin-right: 0px;
+    padding:5px;
+    
+  }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+
+   .card_content 
+   {
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+    
+       padding-top: 0;
+       padding-left: 20px;
+       padding-bottom: 50px;
+       background-color:  $backColor;
+     
+       span{
+        
+        background: -webkit-linear-gradient($cardColor,$gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+         }
+   
+         a{     
+          padding:10px;
+          display: inline-block;
+          font-size: .9rem;
+          font-family: sans-serif;
+          color:$cardColor;
+           cursor:pointer;
+           font-weight: 100;
+           :hover{ color:red;}
+        }
+ }
+}
+
+
+ .testsection3{
+    width: 100%;
+    h3{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;  
+      max-width: 100%;
+      left: 0;
+      right: 0;
+       margin: auto;
+      font-weight: 400;
+      margin-top:2300px;
+      font-size: 2rem;
+      font-family: sans-serif ;
+    }
+ }
+
+  .testServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:2350px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    //gap: 20px;
+ 
+  }
+
+    .testcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+   //     max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+      }
+
+        h6{
+          margin-top: 3%;
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          margin-left: 0px;
+          padding-left: 0px;
+          font-size: 1.1rem;
+          font-family: sans-serif ;
+          font-weight: 200;
+          }
+    }
+  
+  .testcard_content 
+  {
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+  
+   
+     span{
+        
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-size: .9rem;
+      font-family: sans-serif;
+      font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+  }
+
+  .developsection3{
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    visibility: hidden;
+    h1{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;
+      max-width: 100%;
+      font-weight: 400;
+       font-family: sans-serif ;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top:2520px;
+    }
+ }
+
+  .developServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:2500px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    //gap: 20px;
+ 
+  }
+
+    .developcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+   //     max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+      }
+
+        h6{
+          margin-top: 3%;
+         background: $gradiant;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         display: inline-block;
+         margin-left: 0px;
+         padding-left: 0px;
+         font-size: 1.1rem;
+         font-family: sans-serif ;
+         font-weight: 200;
+          }
+    }
+  
+  .developcard_content 
+  {
+     background: -webkit-linear-gradient($cardColor, $gradiant);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+   
+   
+     span{
+        
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-size: .9rem;
+      font-family: sans-serif;
+      font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+  }
+
+
+  .logoSlider {
+    position: absolute;
+      margin-top:2850px;
+      width: 100%;
+      height: 150px;
+      background: $backColor;
+      background-size: cover;
+    //  background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+      box-sizing: border-box;
+     // box-shadow: 0 4px 4px 0 rgba(196, 190, 190, 0.705);
+      border-radius: 5px;
+      display: flex;
+      
+  }
+
+  .one
+  {
+    position: absolute;
+      margin-top:3050px;
+      width: 100%;
+      min-height: 700px;
+       // background: rgb(255, 0, 13);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+    //  border-radius: 5px;
+      .subOne{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); 
+
+        h2{   
+          margin-top: 20px;
+          background: -webkit-linear-gradient($buttonColor, $inputColor);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 28px;
+          font-family: sans-serif ;
+          z-index: 2;
+          padding:10px;
+        }
+        .onespan{
+          margin: 40px;
+          color:$inputColor;
+          font-size: 1.3rem;
+          font-family: sans-serif ;
+          z-index: 2;
+          padding:30px;
+          font-weight: 200;
+    
+        }
+    h3{
+      margin-left: 20px;
+      margin-top: 15px;
+      background: -webkit-linear-gradient($buttonColor, $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-family: sans-serif ;
+      z-index: 2;
+     
+    }
+    }
+  }
+  
+  .two
+   {
+      position: absolute;
+      margin-top:3750px;
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+   //   border-radius: 5px;
+   //   background-attachment: fixed;
+      h3{
+        margin-left: 30px;
+      margin-top: 30px;
+      background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 2rem;
+      font-family: sans-serif ;
+      z-index: 2;
+      background-color: $gradiant;
+      }
+      h4{
+        margin-left: 50px;
+        margin-top: 22px;
+        background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size:1.7rem;
+        font-family: sans-serif ;
+        z-index: 2;
+        background-color: $gradiant;
+      }
+    
+  }
+ 
+  .three {
+    position: absolute;
+      margin-top:4250px;
+      width: 100%;
+      min-height: 600px;
+      background: rgba(65, 51, 75, 0.527);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+    //  border-radius: 5px;
+      h3{
+        margin-left: 30px;
+        margin-top: 40px;
+        color: rgb(247, 243, 247);
+        font-size: 30px;
+        font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+      span{
+        margin-left: 50px;
+        margin-top: 30px;
+        color:rgb(247, 243, 247);
+        font-size: 1rem;
+        font-family: sans-serif;
+        font-weight: 100;
+        z-index: 2;
+       }
+      h4{
+        margin-left: 50px;
+        margin-top: 30px;
+        color:rgb(247, 243, 247);
+        font-weight: 400;
+        font-size:1.5rem;
+        font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+      
+  }
+  
+  .four {
+    position: absolute;
+     margin-top:4850px;
+     width: 100%;
+     height: 900px;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+     h3{
+       margin-left: 30px;
+       margin-top: 0px;
+       color:rgb(243, 182, 243);
+       font-size: 28px;
+        font-family: sans-serif ;
+       font-weight: 300;
+       z-index: 2;
+    
+     }
+     span{
+       margin-left: 50px;
+       margin-top: 0;
+       margin-bottom: 30px;
+       color:rgb(247, 243, 247);
+       font-size: 1rem;
+       font-family: sans-serif;
+       font-weight: 100;
+       z-index: 2 ;
+      }
+     h4{
+       margin-left: 50px;
+       margin-top: 20px;
+       margin-bottom: 5px;
+       color:rgb(243, 182, 243);
+       font-weight: 400;
+       font-size:1.5rem;
+       font-family: sans-serif ;
+       z-index: 2;
+    
+     }
+ }
+
+  // .four::after{
+  //   clear:both;
+  //   content: " ";
+  //   display: flex;
+  // }
+
+    .six {
+     position: absolute;
+     margin-top:5750px;
+     width: 100%;
+     height: 600px;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+  //   border-radius: 5px;
+     background-color: $gradiant;
+     //filter: blur(4px);
+     //-webkit-filter: blur(4px);
+
+ }
+
+ .footer{
+  top:6350px;
+  position:absolute;
+  height: 800px;
+  width: 100%;
+  margin-left:0;
+  background-color: $gradiant;
+  background-size: 100%;
+  background-position: center;
+}
+
+}
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+  .body{
+    top:10px;
+    width:100vw;
+    height: 7200px;
+    position:relative;
+    display:block;
+  //  margin : 10px;
+   // background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 81, 255));
+  // background-image: radial-gradient(circle, rgba(0, 225, 255, 0.075), rgba(0, 140, 255, 0.075), rgba(0, 119, 128, 0.055));
+    padding:0px;
+    background-color:$backColor;
+    float:center;
+    align-items: center;
+ //   border-radius: 5px;
+    overflow:  hidden;
+    scrollbar-width: none;
+    
+    
+}
+
+.slider{
+  width: 100%;
+  height: 600px;
+  position:absolute;
+  display: flex;
+  overflow:  hidden;
+  align-content: center;
+   left:0px;
+  //box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+ // border-radius: 10px;
+  //border: 5px solid #0000ff3b;
+    box-sizing: border-box;
+  
+}
+.slider::after{
+  clear:both;
+  content: " ";
+  display: block;
+}
+
+
+
+.cardHeader{
+  height:50px;
+}
+
+.testSection2{
+  width: 100%;
+  
+  h3{
+    
+    background: -webkit-linear-gradient( $cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    margin-top:650px;
+   
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+    margin-top:700px;
+  }
+}
+.testcards{
+  display:grid;
+  position: absolute;
+  margin-top:800px;
+  width: 100%;
+ // height: 300px;
+  border:none;
+  grid-template-columns: repeat(1, 1fr);
+  //grid-template-rows: auto;
+ // gap: 20px;
+ 
+.card {
+  box-shadow:  4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:0px;
+  margin-bottom: 0px;
+  //grid-row: inline-flexbox;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  
+  img{
+    margin-left: 3%;
+    margin-top:3%;
+    max-width:  7%;
+  //  max-height:  7%;
+    display: inline-block;
+    margin-right: 0px;
+    padding:5px;
+     }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+// .card:after {
+//   content: " ";
+//   display: table;
+//   clear: both;
+// }
+   .card_content
+   {
+       background: -webkit-linear-gradient($cardColor, $gradiant);
+       background-clip: text;
+      -webkit-text-fill-color: transparent;
+       margin: 5px;
+       flex-direction: column;
+       padding: 10px;
+       display: inline-block;
+       justify-content: center;
+       align-items: center;
+          overflow: hidden;
+       
+     
+      span{
+        
+        background: -webkit-linear-gradient($cardColor,$gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+         }
+   
+         a{     
+          padding:10px;
+          display: inline-block;
+          font-size: .9rem;
+          font-family: sans-serif;
+          color:$cardColor;
+           cursor:pointer;
+           font-weight: 100;
+           :hover{ color:red;}
+        }
+ }
+}
+ .developmentsection2{
+  width: 100%;
+  
+  h3{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;  
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif ;
+    margin-top:1700px;
+   
+  }
+  h4{
+    
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+    margin-top:1700px;
+  }
+}
+.developmentcards{
+  display:grid;
+  position: absolute;
+  margin-top:1800px;
+  width: 100%;
+ // height: 300px;
+  border:none;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+ // gap: 20px;
+ 
+  .card {
+  box-shadow: 4px 4px  rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding:0px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+
+  img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+  //      max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+    
+  }
+    h6{
+      margin-top: 3%;
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-left: 0px;
+      padding-left: 10px;
+      font-size: 1.1rem;
+      font-family: sans-serif ;
+      font-weight: 200;
+      }
+}
+
+   .card_content 
+   {
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+    
+       padding-top: 0;
+       padding-left: 20px;
+       padding-bottom: 50px;
+       background-color:  $backColor;
+     
+       span{
+        
+        background: -webkit-linear-gradient($cardColor,$gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: center;
+        display: inline-block;
+        overflow: hidden;
+        font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+       // line-height: 110px;
+        max-width:400px;
+        padding:30px;
+         }
+   
+  a{     
+       padding:10px;
+       display: inline-block;
+       font-size: .9rem;
+       font-family: sans-serif;
+       color:$cardColor;
+        cursor:pointer;
+        font-weight: 100;
+        :hover{ color:red;}
+     }
+ }
+}
+
+
+ .testsection3{
+    width: 100%;
+    h3{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;
+      max-width: 100%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-weight: 400;
+      font-size: 2rem;
+      font-family: sans-serif ;
+      margin-top:2500px;
+     
+    }
+ }
+
+  .testServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:2600px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    //gap: 20px;
+ 
+  }
+
+    .testcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+     //  max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+      }
+
+        h6{
+          margin-top: 3%;
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+         display: inline-block;
+         margin-left: 0px;
+         padding-left: 0px;
+         font-size: 1.1rem;
+         font-family: sans-serif ;
+         font-weight: 200;
+          }
+    }
+  
+  .testcard_content 
+  {
+    background: -webkit-linear-gradient($cardColor, $gradiant);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+  
+     span{
+        
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+  }
+
+  .developsection3{
+    width: 100%;
+    visibility: hidden;
+    h1{
+      background: -webkit-linear-gradient($cardColor, $gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:absolute;
+      max-width:100%;
+      font-weight: 400;
+       font-family: sans-serif ;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin-top:2520px;
+    }
+ }
+
+  .developServices
+  {
+    
+    display:grid;
+    position: absolute;
+    margin-top:2500px;
+    width: 100%;
+    border:none;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    //gap: 20px;
+ 
+  }
+
+    .developcard
+    {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding:0px;
+      margin-bottom: 0px;
+      
+      img{
+        margin-left: 3%;
+        margin-top:3%;
+        max-width:  7%;
+   //     max-height:  7%;
+        display: inline-block;
+        margin-right: 0px;
+        padding:5px;
+      }
+
+        h6{
+          margin-top: 3%;
+         background: $gradiant;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         display: inline-block;
+         margin-left: 0px;
+         padding-left: 0px;
+         font-size: 1.1rem;
+         font-family: sans-serif ;
+         font-weight: 200;
+          }
+    }
+  
+  .developcard_content 
+  {
+     background: -webkit-linear-gradient($cardColor, $gradiant);
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-top:0px;
+     padding-top: 10px;
+     padding-left: 20px;
+     padding-bottom: 50px;
+   
+   
+     span{
+        
+      background: -webkit-linear-gradient($cardColor,$gradiant);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      justify-content: center;
+      display: inline-block;
+      overflow: hidden;
+      font-size: .9rem;
+        font-family: sans-serif;
+        font-weight: 100;
+     // line-height: 110px;
+      max-width:400px;
+      padding:30px;
+       }
+ 
+       a{     
+        padding:10px;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: sans-serif;
+        color:$cardColor;
+         cursor:pointer;
+         font-weight: 100;
+         :hover{ color:red;}
+      }
+  }
+
+
+  .logoSlider {
+    position: absolute;
+      margin-top:2850px;
+      width: 100%;
+      height: 150px;
+      background: $backColor;
+      background-size: cover;
+    //  background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+      box-sizing: border-box;
+     // box-shadow: 0 4px 4px 0 rgba(196, 190, 190, 0.705);
+      border-radius: 5px;
+      display: flex;
+      
+  }
+
+  .one
+  {
+    position: absolute;
+      margin-top:3050px;
+      width: 100%;
+      min-height: 700px;
+       // background: rgb(255, 0, 13);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+   //   border-radius: 5px;
+      .subOne{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); 
+
+        h2{   
+          margin-top: 20px;
+          background: -webkit-linear-gradient($buttonColor, $inputColor);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 28px;
+          font-family: sans-serif ;
+          z-index: 2;
+          padding:10px;
+        }
+        .onespan{
+          margin: 40px;
+          color:$inputColor;
+          font-size: 1.3rem;
+          font-family: sans-serif ;
+          z-index: 2;
+          padding:30px;
+          font-weight: 200;
+    
+        }
+    h3{
+      margin-left: 20px;
+      margin-top: 15px;
+      background: -webkit-linear-gradient($buttonColor, $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 28px;
+      font-family: sans-serif ;
+      z-index: 2;
+     
+    }
+    }
+  }
+  
+  .two
+   {
+      position: absolute;
+      margin-top:3750px;
+      width: 100%;
+      height: 700px;   
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+   //   border-radius: 5px;
+   //   background-attachment: fixed;
+      h3{
+        margin-left: 30px;
+      margin-top: 30px;
+      background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 2rem;
+      font-family: sans-serif ;
+      z-index: 2;
+      background-color: $gradiant;
+    
+      }
+      h4{
+        margin-left: 40px;
+        margin-top: 22px;
+        background: -webkit-linear-gradient(rgb(243, 237, 243), $inputColor);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size:1.7rem;
+        font-family: sans-serif ;
+        z-index: 2;
+        background-color: $gradiant;
+       
+      }
+    
+  }
+ 
+  .three {
+    position: absolute;
+      margin-top:4350px;
+      width: 100%;
+      min-height: 700px;
+      background: rgba(65, 51, 75, 0.527);
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat:  no-repeat;
+      background-position: center;
+   //   border-radius: 5px;
+      h3{
+        margin-left: 30px;
+        margin-top: 40px;
+        color: rgb(247, 243, 247);
+        font-size: 28px;
+         font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+      span{
+        margin-left: 50px;
+        margin-top: 30px;
+        color:rgb(247, 243, 247);
+        font-size: 1rem;
+        font-family: sans-serif;
+        font-weight: 100;
+        z-index: 2;
+       }
+      h4{
+        margin-left: 50px;
+        margin-top: 30px;
+        color:rgb(247, 243, 247);
+        font-weight: 400;
+        font-size:1.5rem;
+        font-family: sans-serif ;
+        z-index: 2;
+     
+      }
+      
+  }
+  
+  .four {
+    position: absolute;
+     margin-top:4850px;
+     width: 100%;
+     height: 1000px;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+     h3{
+       margin-left: 30px;
+       margin-top: 0px;
+       color:rgb(243, 182, 243);
+       font-size: 28px;
+       font-weight: 300;
+       font-family: sans-serif ;
+       z-index: 2;
+    
+     }
+     span{
+       margin-left: 50px;
+       margin-top: 0;
+       margin-bottom: 30px;
+       color:rgb(247, 243, 247);
+       font-size: 1rem;
+       font-family: sans-serif;
+       font-weight: 100;
+       z-index: 2 ;
+       padding:30px;
+      }
+     h4{
+       margin-left: 50px;
+       margin-top: 20px;
+       margin-bottom: 5px;
+       color:rgb(243, 182, 243);
+       font-weight: 400;
+    font-size:1.5rem;
+    font-family: sans-serif ;
+       z-index: 2;
+    
+     }
+ }
+  // .four::after{
+  //   clear:both;
+  //   content: " ";
+  //   display: flex;
+  // }
+
+    .six {
+     position: absolute;
+     margin-top:5850px;
+     width: 100%;
+     height: 600px;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+  //   border-radius: 5px;
+     background-color: $gradiant;
+     //filter: blur(4px);
+     //-webkit-filter: blur(4px);
+
+ }
+
+ .footer{
+  top:6400px;
+  position:absolute;
+  height: 800px;
+  width: 100%;
+  margin-left:0;
+  background-color: $gradiant;
+  background-size: 100%;
+  background-position: center;
+}
+  
+}

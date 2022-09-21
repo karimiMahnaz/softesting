@@ -1,0 +1,205 @@
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+
+.inactive{display:none;}
+
+.contactus2{
+    margin: 0px;
+    background-color: $buttonColor;
+  ///  right: 90px;
+    bottom: 200px;
+    position: fixed;
+    height: 0px;
+    width: 140px;
+    -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+       transform: rotate(90deg);
+     padding: 30px 20px ;
+     border-radius: 0 0 20px 20px ;
+     z-index: 15; 
+     font-family:  sans-serif ;
+     font-size: 1.2rem;
+     
+      }
+
+      #contactus2 {
+      
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        -webkit-transition: all 0.6s;
+        -o-transition: all 0.6s;
+         transition: all 0.6s;
+         cursor:pointer;
+         z-index: 15; 
+         font-family:  sans-serif ;
+         font-size: 1.2rem;
+     
+       }
+       
+      .contactus2:hover {
+        opacity: 1;
+         box-shadow:  4px 4px rgba(122, 11, 196, 0.459);
+       
+         }
+
+     .inactive{
+        right:-200;
+      }
+  
+      // .upscroll{
+       
+       
+      //   background-color: $buttonColor;
+      //   right: 50px;
+      //   bottom: 20px;
+      //   position: fixed;
+      //   height: 80px;
+      //   width: 80px;
+      //   padding: 11px 10px ;
+      //   border-radius: 50px ;
+      //     img {
+      //         height: 60px;
+      //         width: 60px;
+      //         border-radius: 50px ;
+              
+      //        -webkit-transition: all 0.6s;
+      //        -o-transition: all 0.6s;
+      //         transition: all 0.6s;
+      //         cursor:pointer;
+      //        box-shadow: #ffc200;
+              
+      //       }
+      //       :hover {
+      //         opacity: 1;
+      //         color: #ffc200;
+              
+      //       }
+            
+      //     }
+  
+    
+  
+            .upscroll {
+                height: 60px;
+                width: 60px;
+                border-radius: 50px ;
+             //  right: 30%;
+                bottom: 35px;
+                position: fixed;
+               -webkit-transition: all 0.6s;
+               -o-transition: all 0.6s;
+                transition: all 0.6s;
+                cursor:pointer;
+                box-shadow: 1px 1px #c4c3c5;
+                z-index: 15; 
+                font-family:  sans-serif ;
+              }
+              .upscroll:hover {
+                opacity: 1;
+                 box-shadow: 1px 1px rgba(122, 11, 196, 0.459);
+                 }
+  
+
+        
+          #supportChat
+          {
+            height: 70px;
+            width: 70px;
+            left: 60px;
+            bottom: 40px;
+            border-radius: 40px ;
+            position: fixed;
+           -webkit-transition: all 0.6s;
+           -o-transition: all 0.6s;
+            transition: all 0.6s;
+            cursor:pointer;
+        //    box-shadow: 3px 3px #2776ec;
+            z-index: 15; 
+             font-family:  sans-serif ;
+         
+            &:hover {
+              opacity: 1;
+               box-shadow: 5px 5px rgba(100, 8, 143, 0.548);
+               }
+          }
+
+          
+          .cookie{
+            bottom:10px;
+            height:60px;
+            width: 80vw;
+            height:20vh;
+            position:fixed;
+            background-color: $gradiant;
+            border-color: rgb(228, 227, 225); 
+            color:$backColor;
+            border-radius: 10px;
+            padding:10px 30px;
+            z-index: 15; 
+            
+            p{
+              width: 60vw;
+              font-family:  sans-serif ;
+              font-size: 1.2rem;
+            }
+            .acceptCookie{
+                background-color: papayawhip;
+                position:fixed;
+                height: 50px;
+                width: 100px;
+                left:65%;
+                bottom:25px;
+                border-radius: 10px;
+                font-family:  sans-serif ;
+                font-size: 1.2rem;
+                &:hover {
+                   opacity: 1;
+                   box-shadow: 5px 5px rgba(100, 8, 143, 0.548);
+                   }
+            }
+          }  
+          
+          @media only screen and  (min-width: 280px) and (max-width: 767px)  {
+            .cookie{
+              bottom:20px;
+              left:0;
+              height:30vh;
+              width: 100vw;
+              position:fixed;
+              background-color: $gradiant;
+              border-color: rgb(228, 227, 225); 
+              color:$backColor;
+              border-radius: 10px;
+              padding:10px 20px;
+              z-index: 15; 
+              p{
+                width: 80vw;
+                font-family:  sans-serif ;
+                font-size: 1.2rem;
+              }
+              .acceptCookie{
+                  background-color: papayawhip;
+                  position:fixed;
+                  height: 40px;
+                  width: 80px;
+                  left:65%;
+                  padding-left: 2px;
+                  bottom:28px;
+                  border-radius: 10px;
+                  font-family:  sans-serif ;
+                  font-size: 1.2rem;
+                  &:hover {
+                     opacity: 1;
+                     box-shadow: 5px 5px rgba(100, 8, 143, 0.548);
+                     }
+              }
+          }
+        }
+
+
+          

@@ -1,0 +1,1145 @@
+///@import './variables.module.scss';
+
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+ 
+.inactive{display:none;}
+
+////@media only screen and (min-width: 992px) {
+    
+    .about{
+      /// margin-top: -5980px;
+       margin-top: 50px;
+       width:100vw;
+     ///  height: 5980px;
+       display:block;
+       position:relative;
+       padding:0px;
+       background-color:$backColor;
+       float:center;
+       align-items: center;
+       overflow:  hidden;
+       scrollbar-width: none;
+       z-index: 1;
+       margin-bottom: 0;
+         
+    }
+
+    .img{
+        width: 100vw;
+        height: 400px;
+        align-content: center;
+       // left:10px;
+        position:absolute;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+      //  border-radius: 10px;
+        //border: 5px solid #0000ff3b;
+        box-sizing: border-box;
+        background-size: cover;
+     //   background-attachment: fixed;
+        background-repeat:  no-repeat;
+        background-position: center;
+        background-color: ($gradiant,05);
+        .subImg{
+          width: 100vw;
+          height: 100%;
+          position:absolute;
+          background: rgb(0, 0, 0); /* Fallback color */
+          background: rgba(0, 0, 0, 0.4); 
+          display: inline-block;
+  
+      h1{
+        margin-left: 15%;
+        margin-top: 100px;
+        background: -webkit-linear-gradient($gradiant, $inputColor);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 36px;
+        z-index: 2;
+      
+      }
+      p{
+        margin-left: 15%;
+        margin-top: 25px;
+        color:$inputColor;
+        font-size: 24px;
+        z-index: 2;
+        
+      }
+      h2{
+        margin-left: 15%;
+        margin-top: 15px;
+        background: -webkit-linear-gradient($gradiant, $inputColor);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 32px;
+        z-index: 2;
+             }
+       
+      }
+      .triangle_left{
+        width: 0;
+        height: 0;
+        margin-left: 65%;
+        padding: 0;
+        border-top: 400px solid transparent;
+        border-right: 850px solid rgba(0, 0, 0, 0.4);
+        display: inline-block;
+      
+        
+             }
+      }
+      
+      .aboutsection2{
+        width: 100%;
+        h3{
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position:absolute;
+          margin-top:500px;
+          margin-left: 42%;
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+     }
+    
+      .values
+      {
+        
+        display:grid;
+        position: absolute;
+        margin-top:600px;
+        width: 100%;
+        border:none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+     
+      }
+    
+        .value
+        {
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          padding:0px;
+          margin-bottom: 0px;
+          
+          img{
+            margin-top: 0;
+            width: 5%;
+            height: 5%;
+            display: inline-block;
+            margin-right: 0px;
+            padding-right:10px;
+            padding-left:10px;
+          }
+    
+            h6{
+              margin-top: 3%;
+              background: -webkit-linear-gradient($cardColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+             display: inline-block;
+             margin-left: 0px;
+             padding-left: 0px;
+             font-size: 1rem;
+              }
+        }
+      
+      .card_content 
+      {
+        background: -webkit-linear-gradient($cardColor, $gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+         margin-top:0px;
+         padding-top: 10px;
+         padding-left: 20px;
+         padding-bottom: 50px;
+      
+       
+        p{
+          background: -webkit-linear-gradient($fontColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          justify-content: center;
+         
+         }
+     
+      
+      }
+    
+      .aboutsection3{
+        width: 100%;
+        h3{
+          background: -webkit-linear-gradient($cardColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position:absolute;
+          margin-top:1200px;
+          margin-left: 38%;
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+     }
+    
+      .visions
+      {
+        
+        display:grid;
+        position: absolute;
+        margin-top:1300px;
+        width: 100%;
+        border:none;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+     
+      }
+    
+        .vision
+        {
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          padding:0px;
+          margin-bottom: 0px;
+          
+          img{
+            margin-top: 0;
+            width: 5%;
+            height: 5%;
+            display: inline-block;
+            margin-right: 0px;
+            padding-right:10px;
+            padding-left:10px;
+          }
+    
+            h6{
+              margin-top: 3%;
+              background: -webkit-linear-gradient($cardColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              display: inline-block;
+              margin-left: 0px;
+              padding-left: 0px;
+              font-size: 1rem;
+              }
+        }
+      
+      .card_content 
+      {
+        background: -webkit-linear-gradient($cardColor, $gradiant);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+         margin-top:0px;
+         padding-top: 10px;
+         padding-left: 20px;
+         padding-bottom: 50px;
+      
+       
+        p{
+          background: -webkit-linear-gradient($fontColor, $gradiant);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          justify-content: center;
+         
+         }
+     
+      
+      }
+    
+      .section4{
+        position: absolute;
+        margin-top:1600px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        .content4{
+          max-width: 42%;
+          padding: 2%;
+          margin: 2%;
+          float:left;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          P{
+            background: -webkit-linear-gradient($fontColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            justify-content: center;
+          }
+        }
+        .img4{
+           width: 42%;
+           float:right;
+           height: 500px;
+           padding: 2%;
+           margin: 2%;
+           background-size: cover;
+           background-repeat:  no-repeat;
+           background-position: center;
+           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+        }
+      }
+     
+      .section5{
+        position: absolute;
+        margin-top:2300px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        .content5{
+          max-width: 42%;
+          padding: 2%;
+          margin: 2%;
+          float:right;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          P{
+            background: -webkit-linear-gradient($fontColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            justify-content: center;
+          }
+        }
+        .img5{
+           width: 42%;
+           float:left;
+           height: 500px;
+           padding: 2%;
+           margin: 2%;
+           background-size: cover;
+           background-repeat:  no-repeat;
+           background-position: center;
+           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+           border-radius: 10px;
+        }
+      }
+
+      .section6{
+        position: absolute;
+        margin-top:3000px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        .content6{
+          max-width: 42%;
+          padding: 2%;
+          margin: 2%;
+          float:left;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          P{
+            background: -webkit-linear-gradient($fontColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            justify-content: center;
+          }
+        }
+        .img6{
+           width: 42%;
+           float:right;
+           height: 500px;
+           padding: 2%;
+           margin: 2%;
+           background-size: cover;
+           background-repeat:  no-repeat;
+           background-position: center;
+           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+        }
+      }
+     
+      .section7{
+        position: absolute;
+        margin-top:3700px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        .content7{
+          max-width: 42%;
+          padding: 2%;
+          margin: 2%;
+          float:right;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          P{
+            background: -webkit-linear-gradient($fontColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            justify-content: center;
+          }
+        }
+        .img7{
+           width: 42%;
+           float:left;
+           height: 500px;
+           padding: 2%;
+           margin: 2%;
+           background-size: cover;
+           background-repeat:  no-repeat;
+           background-position: center;
+           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+           border-radius: 10px;
+        }
+      }
+
+      .section8{
+        position: absolute;
+        margin-top:4400px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        .content8{
+          max-width: 42%;
+          padding: 2%;
+          margin: 2%;
+          float:left;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          P{
+            background: -webkit-linear-gradient($fontColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            justify-content: center;
+          }
+        }
+        .img8{
+           width: 42%;
+           float:right;
+           height: 400px;
+           padding: 2%;
+           margin: 2%;
+           background-size: cover;
+           background-repeat:  no-repeat;
+           background-position: center;
+           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+           border-radius: 10px;
+        }
+      }
+
+      .section9{
+        position: absolute;
+        margin-top:5000px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        padding-right: 3%;
+        margin-right: 2%;
+        .content9{
+          width: 30%;
+          padding: 2%;
+          margin:0;
+          margin-left:10px;
+          float:left;
+         // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+          position: absolute;
+
+          // align-items: center;
+          // text-align: center;
+          h3{
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+         .spanflag{
+           width: 100%;
+           height: 50px;
+           justify-content: left;
+           display:inline-block;
+        
+          .flag{
+            max-width:10%;
+            height: 27px;
+            margin-right: 2%;
+         //   float:left; 
+            display:inline-block;
+          }
+            .address{
+              background: -webkit-linear-gradient($cardColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              max-width: 55%;
+             // float:right;
+              display:inline-block;
+              font-size: 1rem;
+            }
+          }
+        
+            P{
+              background: -webkit-linear-gradient($fontColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              justify-content: center;
+              width: 100%;
+            }
+         
+        }
+        .img9{
+           width: 60%;
+           float:right;
+           height: 300px;
+           
+          //  background-size: cover;
+          //  background-repeat:  no-repeat;
+          //  background-position: center;
+          //  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          //  border-radius: 10px;
+        }
+      }
+
+      .section10{
+        position: absolute;
+        margin-top:5400px;
+        width: 100%;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat:  no-repeat;
+        background-position: center;
+        border-radius: 5px;
+      }
+      .footer{
+        margin-top:6000px;
+        position:absolute;
+        height: 500px;
+        
+      }
+      
+
+      @media only screen and ( min-width: 768px) and (max-width: 991px) {
+
+       .footer{
+         margin-top:6400;
+         position:absolute;
+         height: 600px;
+         width: 100vw;
+         background-color: $gradiant;
+         background-size: 100%;
+         background-position: center;
+       }
+      }
+
+      @media only screen and  (min-width: 280px) and (max-width: 767px)  {
+
+
+        .about{
+          /// margin-top: -5980px;
+           margin-top: 50px;
+           width:100vw;
+         ///  height: 5980px;
+           display: block;
+           position:relative;
+           padding:0px;
+           background-color:$backColor;
+           float:center;
+           align-items: center;
+           overflow:  hidden;
+           scrollbar-width: none;
+           z-index: 1;
+           margin-bottom: 0;
+             
+        }
+    
+        .img{
+            width: 100vw;
+            height: 600px;
+            align-content: center;
+           // left:10px;
+            position:absolute;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+          //  border-radius: 10px;
+            //border: 5px solid #0000ff3b;
+            box-sizing: border-box;
+            background-size: cover;
+         //   background-attachment: fixed;
+            background-repeat:  no-repeat;
+            background-position: center;
+            background-color: ($gradiant,05);
+            .subImg{
+              width: 100vw;
+              height: 100%;
+              position:absolute;
+              background: rgb(0, 0, 0); /* Fallback color */
+              background: rgba(0, 0, 0, 0.4); 
+              display: inline-block;
+      
+          h1{
+            margin-left: 15%;
+            margin-top: 50px;
+            background: -webkit-linear-gradient($gradiant, $inputColor);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 36px;
+            z-index: 2;
+          
+          }
+          p{
+            margin-left: 15%;
+            margin-top: 25px;
+            color:$inputColor;
+            font-size: 24px;
+            z-index: 2;
+            
+          }
+          h2{
+            margin-left: 15%;
+            margin-top: 15px;
+            background: -webkit-linear-gradient($gradiant, $inputColor);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 32px;
+            z-index: 2;
+                 }
+           
+          }
+          .triangle_left{
+            width: 0;
+            height: 0;
+            margin-left: 65%;
+            padding: 0;
+            border-top: 400px solid transparent;
+            border-right: 850px solid rgba(0, 0, 0, 0.4);
+            display: inline-block;
+          
+            
+                 }
+          }
+          
+          .aboutsection2{
+            width: 100%;
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+
+            h3{
+              background: -webkit-linear-gradient($cardColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              position:absolute;
+              margin-top:650px;
+              margin-left: 35%;
+              font-weight: 400;
+              font-size: 1.5rem;
+            }
+         }
+        
+          .values
+          {
+            
+            display:grid;
+            position: absolute;
+            margin-top:750px;
+            width: 100%;
+            border:none;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+      //      gap: 5px;
+         
+          }
+        
+            .value
+            {
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              padding:0px;
+              margin: 0px;
+              display:grid;
+              grid-template-columns: repeat(1, 1fr);
+              grid-template-rows: auto;
+              .header{
+                margin: 0 ;
+                padding:0;
+              }
+              img{
+                width: 25%;
+                height: 25%;
+                display: inline-block;
+       //         margin: 10px;
+        //        padding-left:10px;
+              }
+        
+                h6{
+               
+                  background: -webkit-linear-gradient($cardColor, $gradiant);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                 display: inline-block;
+                 padding: 0px;
+                 margin: 0;
+                 font-size: 1rem;
+                  }
+            }
+          
+          .card_content 
+          {
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            justify-content: center;
+            
+           
+          }
+        
+          .aboutsection3{
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            width: 100%;
+            h3{
+              background: -webkit-linear-gradient($cardColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              position:absolute;
+              margin-top:1850px;
+              margin-left: 2%;
+              font-weight: 400;
+              font-size: 1.5rem;
+            }
+         }
+        
+          .visions
+          {
+            
+            display:grid;
+            position: absolute;
+            margin-top:1900px;
+            width: 100%;
+            border:none;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+         
+          }
+        
+            .vision
+            {
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              padding:0px;
+              margin-bottom: 0px;
+              display:grid;
+              grid-template-columns: repeat(1, 1fr);
+              grid-template-rows: auto;
+              .header{
+                margin: 0 ;
+                padding:0;
+              }
+
+              img{
+                margin-top: 0;
+                width: 25%;
+                height: 25%;
+                display: inline-block;
+                margin-right: 0px;
+                padding-right:10px;
+                padding-left:10px;
+              }
+        
+                h6{
+                  margin-top: 6%;
+                  background: -webkit-linear-gradient($cardColor, $gradiant);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  display: inline-block;
+                  margin-left: 0px;
+                  padding-left: 0px;
+                  font-size: 1rem;
+                  }
+            }
+          
+          .card_content 
+          {
+            background: -webkit-linear-gradient($cardColor, $gradiant);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+             margin-top:1px;
+             padding-top: 1px;
+             padding-left: 20px;
+             padding-bottom: 50px;
+          
+           
+            p{
+              background: -webkit-linear-gradient($fontColor, $gradiant);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              justify-content: center;
+             
+             }  
+          }
+        
+          .section4{
+            position: absolute;
+            margin-top:2520px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display:grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: auto;
+            .content4{
+              max-width: 96%;
+              padding: 2%;
+              margin: 2%;
+              float:left;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              h3{
+                background: -webkit-linear-gradient($cardColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              P{
+                background: -webkit-linear-gradient($fontColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                justify-content: center;
+              }
+            }
+            .img4{
+               width: 96%;
+               float:right;
+               height: 500px;
+               padding: 2%;
+               margin: 2%;
+               background-size: cover;
+               background-repeat:  no-repeat;
+               background-position: center;
+               box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+            }
+          }
+         
+          .section5{
+            position: absolute;
+            margin-top:3800px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display:grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: auto;
+            .content5{
+              max-width: 96%;
+              padding: 2%;
+              margin: 2%;
+              float:right;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              h3{
+                background: -webkit-linear-gradient($cardColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              P{
+                background: -webkit-linear-gradient($fontColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                justify-content: center;
+              }
+            }
+            .img5{
+               width: 96%;
+               float:left;
+               height: 500px;
+               padding: 2%;
+               margin: 2%;
+               background-size: cover;
+               background-repeat:  no-repeat;
+               background-position: center;
+               box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+               border-radius: 10px;
+            }
+          }
+    
+          .section6{
+            position: absolute;
+            margin-top:5000px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display:grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: auto;
+            .content6{
+              max-width: 96%;
+              padding: 2%;
+              margin: 2%;
+              float:left;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              h3{
+                background: -webkit-linear-gradient($cardColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              P{
+                background: -webkit-linear-gradient($fontColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                justify-content: center;
+              }
+            }
+            .img6{
+               width: 96%;
+               float:right;
+               height: 500px;
+               padding: 2%;
+               margin: 2%;
+               background-size: cover;
+               background-repeat:  no-repeat;
+               background-position: center;
+               box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+            }
+          }
+         
+          .section7{
+            position: absolute;
+            margin-top:6000px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display:grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: auto;
+            .content7{
+              max-width: 96%;
+              padding: 2%;
+              margin: 2%;
+              float:right;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              h3{
+                background: -webkit-linear-gradient($cardColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              P{
+                background: -webkit-linear-gradient($fontColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                justify-content: center;
+              }
+            }
+            .img7{
+               width: 96%;
+               float:left;
+               height: 500px;
+               padding: 2%;
+               margin: 2%;
+               background-size: cover;
+               background-repeat:  no-repeat;
+               background-position: center;
+               box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+               border-radius: 10px;
+            }
+          }
+    
+          .section8{
+            position: absolute;
+            margin-top:7000px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display:grid;
+           grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: auto;
+            .content8{
+              max-width: 96%;
+              padding: 2%;
+              margin: 2%;
+              float:left;
+              box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              h3{
+                background: -webkit-linear-gradient($cardColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              P{
+                background: -webkit-linear-gradient($fontColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                justify-content: center;
+              }
+            }
+            .img8{
+               width: 96%;
+               float:right;
+               height: 400px;
+               padding: 2%;
+               margin: 2%;
+               background-size: cover;
+               background-repeat:  no-repeat;
+               background-position: center;
+               box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+               border-radius: 10px;
+            }
+          }
+    
+          .section9{
+            position: absolute;
+            margin-top:7920px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            padding-right: 3%;
+            margin-right: 2%;
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+          }
+
+            .content9{
+              max-width: 96%;
+              padding: 2%;
+              margin-left:10px;
+              float:left;
+             // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+              border-radius: 10px;
+              overflow: hidden;
+              position: absolute;
+              h3{
+                background: -webkit-linear-gradient($cardColor, $gradiant);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+             .spanflag{
+               width: 100%;
+               height: 50px;
+               justify-content: left;
+               display:inline-block;
+            
+              .flag{
+                max-width:10%;
+                height: 27px;
+                margin-right: 2%;
+             ///   float:left; 
+                display:inline-block;
+              }
+                .address{
+                  background: -webkit-linear-gradient($cardColor, $gradiant);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  max-width: 100%;
+                 // float:right;
+                  display:inline-block;
+                  font-size: 1rem;
+                }
+              }
+            
+                P{
+                  background: -webkit-linear-gradient($fontColor, $gradiant);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  justify-content: center;
+                  width: 100%;
+                }
+                .img9{
+                  width: 100%;
+                  float:right;
+                  height: 300px;
+                  
+               }
+            }
+
+           
+        
+    
+          .section10{
+            position: absolute;
+            margin-top:8220px;
+            width: 100%;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat:  no-repeat;
+            background-position: center;
+            border-radius: 5px;
+          }
+
+
+        .footer{
+          margin-top:8800px;
+          position:absolute;
+          height: 800px;
+          width: 100vw;
+          background-color: $gradiant;
+          background-size: 100%;
+          background-position: center;
+        }
+      }
+     

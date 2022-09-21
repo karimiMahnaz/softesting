@@ -1,0 +1,75 @@
+@import './variables.module.scss';
+
+
+
+
+.inactive{display:none;}
+* {box-sizing: border-box;}
+
+.container{
+    margin: 0 auto;
+    width:100vw;
+    height:200vh;
+    display:flex;
+    place-items: center;
+    justify-content: center;
+    position:relative;
+    overflow: hidden; 
+    background-color: $backColor;
+    background-repeat: repeat;
+    background-attachment:fixed;
+    align-content: center;
+    
+}
+
+.searchInput{
+     width:60vw;
+     height: 50px;
+     top: 180px;
+     border-radius: 10px;
+     border-color: darkblue;
+     position: absolute;
+     padding-right: 40px;
+     font-family: 'Work Sans', sans-serif;
+     font-size: 1.2rem;
+     outline: none;
+     background-size: 35px;
+     background: no-repeat right;
+     margin-bottom:0px;
+     
+     &:focus{
+        border: 2px solid darkblue;
+    }
+}
+
+
+.searchResut{
+    width:60vw;
+    position: absolute;
+    top:280px;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.article{
+    list-style-type: none;
+    text-decoration: none;
+    margin:15px;
+}
+    .articleName{
+    
+        font-size: 1.3rem;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 100;
+        color:darkblue;
+        
+
+        &:hover{color:$buttonColor}
+    }
+
+    h3{
+         font-family: 'Work Sans', sans-serif;
+         color:darkblue;
+    }
+
+

@@ -1,0 +1,1033 @@
+
+//@import "./variables.module.scss";
+
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+
+
+#emailAd:hover{color:$buttonColor;}
+
+.fontLink {
+  font-family:  sans-serif ;
+}
+
+
+@media only screen and (min-width: 992px) {
+ 
+
+  .header{
+    
+    background-color:$gradiant;
+    background-size: 100%;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
+    float: center;
+    margin: 0;
+    margin-left : 0px;
+    margin-bottom: 0px;
+    scrollbar-width: none;
+    padding: 0px;
+   // border-top-left-radius: 6px;
+   // border-top-right-radius: 6px;
+    display:block;
+    font-family:  sans-serif ;
+  }
+  
+  .welcome{
+    top: 16px;
+    left:10%;
+    position:absolute;
+    font-size: .8rem;
+    cursor: pointer;
+    float:right;
+    display: block;
+    border:none;
+    border-radius: 5px;
+    color:$backColor;
+    text-decoration-line: none;
+    &:hover{ color:$buttonColor}
+    font-family:  sans-serif ;
+    
+  }
+
+ .signIn 
+   {
+     top: 10px;
+     left:3%;
+     font-size: .9rem;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     border-radius: 5px;
+     font-size: 14px;
+     padding: 4px 5px;
+     font-family:  sans-serif ;
+    }
+
+    .App{
+      background-color: $black;
+      color:$white;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border: none;
+      top:2px;
+      font-size: .7rem;
+      left:30%;
+      cursor: pointer;
+      &:hover{
+          color:$buttonColor;
+      }
+      .AppIcon{
+          width: 22px;
+          height:22px;
+          margin:7px;
+          align-items: left;
+          margin-left:0;
+          background-color: $white;
+          border-radius: 50%;
+      }
+  }
+
+.toolTip{
+      background-color: $white;
+      color:$black;
+      position:absolute;
+      cursor: pointer;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      float:center;
+      display: block;
+      height:17px;
+      width: 140px;
+      left:35%;
+      font-size:.7rem;
+      padding:2px;
+      border:none;
+      border-radius: 3px;
+      z-index: 1;
+      font-family:  sans-serif ;
+}
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:9px;
+  font-size: .7rem;
+  left:33%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+
+
+    #emailAd
+    {
+      top: 15px;
+      left:55%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      font-family:  sans-serif ;
+      font-size: .9rem;
+    }
+    
+    .email
+    {
+      width:18px;
+      height:14px;
+      top: 15px;
+      left:53%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+    .twitter
+    {
+      width:25px;
+      height:25px;
+      top: 10px;
+      left:79%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      background-color: white;
+      border-radius: 50%;
+     }
+    .YouTube
+    {
+      width:25px;
+      height:25px;
+      top: 10px;
+      left:81%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+    .linkedin
+    {
+      width:25px;
+      height:25px;
+      top: 10px;
+      left:83%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     
+    .facebook
+   {
+    width:25px;
+    height:25px;
+     top: 10px;
+     left:85%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .instagram
+   {
+    width:25px;
+    height:25px;
+     top: 10px;
+     left:87%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .whatsapp
+   {
+    width:25px;
+    height:25px;
+     top: 10px;
+     left:89%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .home
+   {
+    width:30px;
+    height:30px;
+     top: 10px;
+     left:93%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     background-color: $backColor;
+     border-radius: 10%;
+     
+    }
+}
+
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+  $logofontsize:32px;
+  $headerWidth: 100vw;
+  .header{
+    
+    background-color:$gradiant;
+    background-size: 100%;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
+    float: center;
+    margin-top: 0;
+    margin-left : 0px;
+    margin-bottom: 0px;
+    scrollbar-width: none;
+    padding: 0px;
+  //  border-top-left-radius: 6px;
+  //  border-top-right-radius: 6px;
+    display:block;
+    font-family:  sans-serif ;
+  }
+  
+  .welcome{
+    top: 16px;
+    left:10%;
+    font-size: .8rem;
+    position:absolute;
+    cursor: pointer;
+    float:right;
+    display: block;
+    border:none;
+    border-radius: 5px;
+    color:$backColor;
+    text-decoration-line: none;
+    &:hover{ color:$buttonColor}
+    font-family:  sans-serif ;
+  }
+ .signIn 
+   {
+     top: 10px;
+     left:2%;
+     font-size: .9rem;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     border-radius: 5px;
+     padding:5px;
+     font-family:  sans-serif ;
+    }
+
+    .App{
+      background-color: $black;
+      color:$white;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border: none;
+      top:2px;
+      font-size: .7rem;
+      left:30%;
+      cursor: pointer;
+      &:hover{
+          color:$buttonColor;
+      }
+      .AppIcon{
+          width: 22px;
+          height:22px;
+          margin:10px;
+          align-items: left;
+          margin-left:0;
+          background-color: $white;
+          border-radius: 50%;
+      }
+  }
+
+  .toolTip{
+    background-color: $white;
+    color:$black;
+    position:absolute;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    float:center;
+    display: block;
+    height:17px;
+    width: 140px;
+    left:35%;
+    font-size:.7rem;
+    padding:2px;
+    border:none;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:9px;
+  font-size: .7rem;
+  left:34%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+
+    #emailAd
+    {
+      top: 15px;
+      left:45%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      font-family:  sans-serif ;
+      font-size: .9rem;
+      
+    }
+    
+    .email
+    {
+      width:18px;
+      height:14px;
+      top: 15px;
+      left:42%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+    .twitter
+    {
+      width:25px;
+      height:25px;
+      top: 10px;
+      left:73%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      background-color: white;
+      border-radius: 50%;
+     }
+    .YouTube
+    {
+      width:25px;
+      height:25px;
+      top: 10px;
+      left:76%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+    .linkedin
+    {
+      width:25px;
+      height:25px;
+      top: 10px;
+      left:80%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     
+    .facebook
+   {
+    width:25px;
+    height:25px;
+     top: 10px;
+     left:83%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .instagram
+   {
+    width:25px;
+    height:25px;
+     top: 10px;
+     left:86%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .whatsapp
+   {
+    width:25px;
+    height:25px;
+     top: 10px;
+     left:89%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .home
+   {
+    width:30px;
+    height:30px;
+     top: 10px;
+     left:94%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     background-color: $backColor;
+     border-radius: 10%;
+     
+    }   
+}
+
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+  $logofontsize:24px;
+  $headerWidth: 767px;
+  .header{
+    
+    background-color:$gradiant;
+    background-size: 100%;
+    width: 100vw;
+    height: 80px;
+    align-content: center;
+    float: center;
+    margin-top: 0;
+    margin-left : 0px;
+    margin-bottom: 0px;
+    scrollbar-width: none;
+    padding: 0px;
+  //  border-top-left-radius: 6px;
+  //  border-top-right-radius: 6px;
+    display:block;
+    font-family:  sans-serif ;
+  }
+  
+ 
+ .signIn 
+   {
+     top: 10px;
+     left:3%;
+     font-size: .9rem;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     border-radius: 5px;
+     padding:5px;
+     font-family:  sans-serif ;
+    }
+
+    .App{
+      background-color: $black;
+      color:$white;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border: none;
+      top:2px;
+      font-size: .7rem;
+      left:23%;
+      cursor: pointer;
+      &:hover{
+          color:$buttonColor;
+      }
+      .AppIcon{
+          width: 22px;
+          height:22px;
+          margin:10px;
+          align-items: left;
+          margin-left:0;
+          background-color: $white;
+          border-radius: 50%;
+      }
+  }
+
+  .toolTip{
+    background-color: $white;
+    color:$black;
+    position:absolute;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    float:center;
+    display: block;
+    height:17px;
+    width: 140px;
+    margin-left:35%;
+    font-size:.7rem;
+    padding:2px;
+    border:none;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:9px;
+  font-size: .7rem;
+  left:33%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+    #emailAd
+    {
+      top: 15px;
+      left:55%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      font-family:  sans-serif ;
+      font-size: .9rem;
+      
+    }
+    
+    .email
+    {
+      width:18px;
+      height:14px;
+      top: 15px;
+      left:50%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+
+    .welcome{
+      top: 50px;
+      left:1%;
+      font-size: .8rem;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      border-radius: 5px;
+      color:$backColor;
+      text-decoration-line: none;
+      &:hover{ color:$buttonColor}
+      font-family:  sans-serif ;
+    }
+
+    
+    .twitter
+    {
+      width:25px;
+      height:25px;
+      top: 50px;
+      left:53.3%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      background-color: white;
+      border-radius: 50%;
+     }
+    .YouTube
+    {
+      width:25px;
+      height:25px;
+      top: 50px;
+      left:59%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+    .linkedin
+    {
+      width:25px;
+      height:25px;
+      top: 50px;
+      left:64%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     
+    .facebook
+   {
+    width:25px;
+    height:25px;
+     top: 50px;
+     left:69.2%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .instagram
+   {
+    width:25px;
+    height:25px;
+     top: 50px;
+     left:74.4%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .whatsapp
+   {
+    width:25px;
+    height:25px;
+     top: 50px;
+     left:79.6%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     font-family: sans-serif ;
+    }
+    .home
+   {
+    width:30px;
+    height:30px;
+     top: 45px;
+     left:90%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     background-color: $backColor;
+     border-radius: 10%;
+     
+    }  
+}
+
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+  $logofontsize:12px;
+  .header{
+    
+    background-color:$gradiant;
+    background-size: 100%;
+    width: 100vw;
+    height: 80px;
+    align-content: center;
+    float: center;
+    margin-top: 0;
+    margin-left : 0px;
+    margin-bottom: 0px;
+    scrollbar-width: none;
+    padding: 0px;
+  //  border-top-left-radius: 6px;
+  //  border-top-right-radius: 6px;
+    display:block;
+    font-family: sans-serif ;
+  }
+  
+ 
+ .signIn 
+   {
+     top: 5px;
+     left:1%;
+     font-size: .9rem;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     border-radius: 5px;
+     padding:5px;
+     font-family:  sans-serif;
+    }
+
+    .App{
+      background-color: $black;
+      color:$white;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border: none;
+      top:1.5px;
+      font-size: .7rem;
+      left:18%;
+      cursor: pointer;
+      &:hover{
+          color:$buttonColor;
+      }
+      .AppIcon{
+          width: 22px;
+          height:22px;
+          margin:8px;
+          align-items: left;
+          margin-left:0;
+          background-color: $white;
+          border-radius: 50%;
+      }
+  }
+
+  .toolTip{
+    background-color: $white;
+    color:$black;
+    position:absolute;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    float:center;
+    display: block;
+    height:17px;
+    width: 140px;
+    margin-left:35%;
+    font-size:.7rem;
+    padding:2px;
+    border:none;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+
+.search{
+  background-color: $black;
+  position:absolute;
+  cursor: pointer;
+  float:right;
+  display: block;
+  border: none;
+  top:8px;
+  font-size: .7rem;
+  left:29%;
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover{
+      color:$buttonColor;
+  }
+  .searchIcon{
+      width: 23px;
+      height:23px;
+      margin:1px;
+      align-items: left;
+      margin-left:0;
+   
+  }
+}
+
+
+    #emailAd
+    {
+      top: 15px;
+      left:46%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      color:$backColor;
+      font-family:  sans-serif ;
+      font-size: .9rem;
+      
+    }
+    
+    .email
+    {
+      width:18px;
+      height:14px;
+      top: 15px;
+      left:39%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+         
+    }
+
+    .welcome{
+      top: 50px;
+      left:1%;
+      font-size: .8rem;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      border-radius: 5px;
+      color:$backColor;
+      text-decoration-line: none;
+      font-family:  sans-serif ;
+      &:hover{ color:$buttonColor}
+    }
+
+    
+    .twitter
+    {
+      width:25px;
+      height:25px;
+      top: 50px;
+      left:45%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      background-color: white;
+      border-radius: 50%;
+     }
+    .YouTube
+    {
+      width:25px;
+      height:25px;
+      top: 50px;
+      left:53%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+    .linkedin
+    {
+      width:25px;
+      height:25px;
+      top: 50px;
+      left:61%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     
+    .facebook
+   {
+    width:25px;
+    height:25px;
+     top: 50px;
+     left:68%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .instagram
+   {
+    width:25px;
+    height:25px;
+     top: 50px;
+     left:75%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .whatsapp
+   {
+    width:25px;
+    height:25px;
+     top: 50px;
+     left:81%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    .home
+   {
+    width:30px;
+    height:30px;
+     top: 50px;
+     left:90%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     background-color: $backColor;
+     border-radius: 10%;
+     
+    }  
+  
+}
+
+

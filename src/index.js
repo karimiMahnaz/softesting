@@ -1,15 +1,43 @@
-import React from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import './assets/font/Nunito-Bold.ttf';
+import './assets/font/Nunito-Medium.ttf';
+import './assets/font/Nunito-Regular.ttf';
+import './assets/font/Nunito-Light.ttf';
+import './assets/font/Roboto-Light.ttf'
+
+
+import reportWebVitals from './reportWebVitals';
+///import * as serviceWorker from './serviceWorker';
+
+if ('serviceWorker' in navigator) {
+  // , { scope: '/' }
+  window.addEventListener('load', function () {
+      navigator.serviceWorker
+          .register("sw.js", { updateViaCache:'none', scope: '/' })
+          .then(function (res) {
+              console.log('service worker registered .',res);
+
+          })
+          .catch(function (err) {
+              console.log('SW Errors .', err);
+
+          });
+  });
+}
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  
 );
+
+///serviceWorker.register();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

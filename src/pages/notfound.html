@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/settings.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>SofTesting| NotFound</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%/src/styles/notFound.module.scss" />
+</head>
+<style>
+    #notFound {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 20;
+        overflow: hidden;
+        /* Enable scroll if needed */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
+        background-image: url("../assets/Page/bg.jpg");
+    }
+
+    .notFound {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .notFound    h2 {
+            color: rgb(230, 161, 161);
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 0;
+        }
+
+
+        p {
+
+            color: rgb(221, 221, 231);
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+
+        .notFound  a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: blue;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 40px;
+            color: beige;
+            font-weight: 700;
+            -webkit-box-shadow: 0px 4px 15px -5px blue;
+            box-shadow: 0px 4px 15px -5px blue;
+        }
+
+            .notFound  a:hover {
+                color: rgb(245, 138, 154);
+            }
+       
+    .notFound404 {
+        height: 280px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .notFound404 h1 {
+
+            font-size: 220px;
+            margin: 0px;
+            font-weight: 900;
+            position: absolute;
+            left: 50%;
+            color: blue;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background: no-repeat;
+            background-clip: text;
+            opacity: .5;
+            background-size: cover;
+            background-position: center;
+        }
+
+   
+
+    @media only screen and (max-width: 767px) {
+        .notFound404 {
+            height: 142px;
+        }
+
+        .notFound404 h1 {
+                font-size: 112px;
+            }
+        }
+    
+</style>
+
+<body>
+    <div id="notFound" >
+
+        <div class="notFound">
+            <div class="notFound404">
+                <h1>Oops!</h1>
+            </div>
+            <h2>404 - Page not found</h2>
+            <p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.
+            </p>
+            <a href="https://softestingca.com" >Go To Homepage</a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

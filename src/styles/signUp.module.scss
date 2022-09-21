@@ -1,0 +1,1425 @@
+
+@import './variables.module.scss';
+
+
+
+#submit:hover{opacity: 0.5;}
+#closeBtn:hover {
+    color: red;
+    cursor: pointer;
+  }
+  #signUp:hover{
+    color: $buttonColor;
+    cursor: pointer;
+  }
+  .inactive{display:none;}
+  .errorBorder{ border: 1px solid rgba(214, 9, 9, 0.8); }
+  .Border{ border: 1px solid rgba(9, 228, 93, 0.8); }
+
+  
+  .h1{
+    color:darkblue;
+    font-size: 2rem;
+    font-weight: 400;
+    transform: rotate(-45deg);
+    float:left;
+    margin-top: 50px;
+    position:absolute;
+ 
+   /* Legacy vendor prefixes that you probably don't need... */
+ 
+   /* Safari */
+   -webkit-transform: rotate(-45deg);
+ 
+   /* Firefox */
+   -moz-transform: rotate(-45deg);
+ 
+   /* IE */
+   -ms-transform: rotate(-45deg);
+ 
+   /* Opera */
+   -o-transform: rotate(-45deg);
+  }
+
+  @media only screen and (min-width: 992px) {
+
+.modal {
+   // display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 10%;
+    top: 37%;
+    width: 80%; /* Full width */
+    height: 68%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-size: cover;
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .container {
+      width: 100%; 
+      height: 100%;
+      background: $formColor; /* Fallback color */
+      background: rgba(6, 15, 117, 0.8); 
+      position: absolute;
+      #svg{
+        height:25px;
+        width:25px;
+      }
+      #line1{
+        stroke:$backColor;
+        stroke-width:3;
+      }
+      #line2{
+        stroke:$backColor;
+        stroke-width:3;
+      }
+      /* The Close Button */
+      .closeBtn {
+        /* Position it in the top right corner outside of the modal */
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+    }
+  }
+     
+ 
+   #userName{
+   height: 30px;
+   width: 500px;
+   top:70px;
+   left:80px;
+   position:absolute;
+   font-size: 0.9rem;
+  
+  }
+
+  #uError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:70px;
+    left:70px;
+    position:absolute;
+  }
+
+
+  #email{
+    height: 30px;
+    width: 500px;
+    top:105px;
+    left:80px;
+    position:absolute;
+    font-size: 0.9rem;
+   
+   }
+   #eError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:105px;
+    left:70px;
+    position:absolute;
+  }
+
+   #phone{
+    height: 30px;
+    width: 500px;
+    top:140px;
+    left:80px;
+    position:absolute;
+    font-size: 0.9rem;
+    
+   }
+
+   #phError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:140px;
+    left:70px;
+    position:absolute;
+  }
+
+  #password{
+    height: 30px;
+    width: 500px;
+    top:175px;
+    left:80px;
+    position:absolute;
+    font-size: 1rem;
+    font-size: 0.9rem;
+    outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+  }
+  #pError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:175px;
+    left:70px;
+    position:absolute;
+  }
+
+  #coPassword{
+    height: 30px;
+    width: 500px;
+    top:210px;
+    left:80px;
+    position:absolute;
+    font-size: 1rem;
+    font-size: 0.9rem;
+    outline: none;
+    background-size: 15px;
+    padding-right: 20px;
+    background: no-repeat right;
+    background-color: $backColor;
+   
+  }
+
+  #cpError{
+    height: 20px;
+    width: 5px;
+    color:red;
+    top:210px;
+    left:70px;
+    position:absolute;
+  }
+
+  #errorYup{
+    height: 20px;
+   // width: 230px;
+   font-size: 1rem;
+   top:250px;
+   left:100px;
+   position:absolute;
+   color:$backColor;
+ }
+
+
+ .rnc{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 220px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 8px;
+  box-sizing: border-box;
+  top:240px;
+  left:70%;
+  position:absolute;
+}
+.rnc-row {
+  display: flex;
+  align-items: stretch;
+  margin: 0 0 8px 0;
+}
+
+.rnc-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 0 8px;
+}
+
+.rnc-canvas {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.rnc-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  background: #fff;
+  color: inherit;
+  border: none;
+  padding: 0;
+  width: 25px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+ svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.rnc-input {
+  border: none;
+  padding: 10px 6px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+
+  #submit{
+    height: 40px;
+    width: 400px;
+    top:280px;
+    left:80px;
+    position:absolute;
+    color:$backColor;
+    background-color: $linkColor;
+    border-radius: 5px;
+    &:hover{color:red;}
+   // border:2 2 solid $inputColor;
+  }
+
+  
+
+  #signLabel{
+    height: 20px;
+   // width: 200px;
+    top:330px;
+    left:100px;
+    position:absolute;
+    color:$backColor;
+  }
+
+
+  #signIn{
+    height: 20px;
+    width: 100px;
+    top:330px;
+    left:260px;
+    position:absolute;
+    color:$backColor;
+    &:hover{color:red}
+    
+  }
+
+  .google
+    {
+      width:25px;
+      height:25px;
+      top: 180px;
+      left:74%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+
+  .twitter
+    {
+      width:25px;
+      height:25px;
+      top: 180px;
+      left:77%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      background-color: white;
+      border-radius: 50%;
+     }
+
+     .linkedin
+    {
+      width:25px;
+      height:25px;
+      top: 180px;
+      left:80%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     
+    .facebook
+   {
+     width:25px;
+     height:25px;
+     top: 180px;
+     left:83%;
+     position:absolute;
+     cursor: pointer;
+     float:right;
+     display: block;
+     border:none;
+     
+    }
+    #policy{
+        height: 20px;
+        top:370px;
+        left:100px;
+        position:absolute;
+        color:$backColor;
+        #link{
+          color:$backColor;
+          &:hover{color:red}
+          }
+    }
+   
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoomU 0.6s;
+    animation: animatezoomU 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+}
+
+@media only screen and ( min-width: 768px) and (max-width: 991px) {
+
+  .modal {
+    // display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 2; /* Sit on top */
+     left: 5%;
+     top: 36%;
+     width: 90%; /* Full width */
+     height: 68%; /* Full height */
+     overflow: hidden; /* Enable scroll if needed */
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     .container {
+       width: 100%; 
+       height: 100%;
+       background: $formColor; /* Fallback color */
+       background: rgba(6, 15, 117, 0.8); 
+       position: absolute;
+       #svg{
+         height:25px;
+         width:25px;
+       }
+       #line1{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       #line2{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       /* The Close Button */
+       .closeBtn {
+         /* Position it in the top right corner outside of the modal */
+         position: absolute;
+         right: 40px;
+         top: 20px;
+         font-size: 30px;
+         font-weight: bold;
+       }
+ 
+     }
+   }
+      
+  
+    #userName{
+    height: 30px;
+    width: 500px;
+    top:70px;
+    left:80px;
+    position:absolute;
+    font-size: 0.9rem;
+   
+   }
+ 
+   #uError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:70px;
+     left:70px;
+     position:absolute;
+   }
+ 
+ 
+   #email{
+     height: 30px;
+     width: 500px;
+     top:105px;
+     left:80px;
+     position:absolute;
+     font-size: 0.9rem;
+    
+    }
+    #eError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:105px;
+     left:70px;
+     position:absolute;
+   }
+ 
+    #phone{
+     height: 30px;
+     width: 500px;
+     top:140px;
+     left:80px;
+     position:absolute;
+     font-size: 0.9rem;
+     
+    }
+ 
+    #phError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:140px;
+     left:70px;
+     position:absolute;
+   }
+ 
+   #password{
+     height: 30px;
+     width: 500px;
+     top:175px;
+     left:80px;
+     position:absolute;
+     font-size: 1rem;
+     font-size: 0.9rem;
+     outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+    
+   }
+   #pError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:175px;
+     left:70px;
+     position:absolute;
+   }
+ 
+   #coPassword{
+     height: 30px;
+     width: 500px;
+     top:210px;
+     left:80px;
+     position:absolute;
+     font-size: 1rem;
+     font-size: 0.9rem;
+     outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+    
+   }
+ 
+   #cpError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:210px;
+     left:70px;
+     position:absolute;
+   }
+ 
+   #errorYup{
+     height: 20px;
+    // width: 230px;
+    font-size: 1rem;
+    top:250px;
+    left:100px;
+    position:absolute;
+    color:$backColor;
+  }
+ 
+ 
+  .rnc{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 220px;
+   background-color: #eee;
+   border-radius: 6px;
+   padding: 8px;
+   box-sizing: border-box;
+   top:250px;
+   left:70%;
+   position:absolute;
+ }
+ .rnc-row {
+   display: flex;
+   align-items: stretch;
+   margin: 0 0 8px 0;
+ }
+ 
+ .rnc-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0 0 0 8px;
+ }
+ 
+ .rnc-canvas {
+   box-sizing: border-box;
+   background-color: #fff;
+   border-radius: 4px;
+ }
+ 
+ .rnc-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   background: #fff;
+   color: inherit;
+   border: none;
+   padding: 0;
+   width: 25px;
+   height: 20px;
+   box-sizing: border-box;
+   border-radius: 4px;
+ }
+ 
+  svg {
+   width: 1em;
+   height: 1em;
+   fill: currentColor;
+ }
+ 
+ .rnc-input {
+   border: none;
+   padding: 10px 6px;
+   font-size: inherit;
+   font-family: inherit;
+ }
+ 
+ 
+   #submit{
+     height: 40px;
+     width: 400px;
+     top:280px;
+     left:80px;
+     position:absolute;
+     color:$backColor;
+     background-color: $linkColor;
+     border-radius: 5px;
+     &:hover{color:red;}
+    // border:2 2 solid $inputColor;
+   }
+ 
+   
+ 
+   #signLabel{
+     height: 20px;
+    // width: 200px;
+     top:330px;
+     left:100px;
+     position:absolute;
+     color:$backColor;
+   }
+ 
+ 
+   #signIn{
+     height: 20px;
+     width: 100px;
+     top:330px;
+     left:260px;
+     position:absolute;
+     color:$backColor;
+     &:hover{color:red}
+     
+   }
+ 
+   .google
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:74%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       
+      }
+ 
+   .twitter
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:77%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       background-color: white;
+       border-radius: 50%;
+      }
+ 
+      .linkedin
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:80%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       
+      }
+      
+     .facebook
+    {
+      width:25px;
+      height:25px;
+      top: 180px;
+      left:83%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     #policy{
+         height: 20px;
+         top:370px;
+         left:100px;
+         position:absolute;
+         color:$backColor;
+         #link{
+           color:$backColor;
+           &:hover{color:red}
+           }
+     }
+    
+   /* Add Zoom Animation */
+   .animate {
+     -webkit-animation: animatezoomU 0.6s;
+     animation: animatezoomU 0.6s
+   }
+   
+   @-webkit-keyframes animatezoom {
+     from {-webkit-transform: scale(0)}
+     to {-webkit-transform: scale(1)}
+   }
+   
+   @keyframes animatezoom {
+     from {transform: scale(0)}
+     to {transform: scale(1)}
+   }
+}
+
+@media only screen and  (min-width: 411px) and (max-width: 767px)  {
+  .modal {
+    // display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 2; /* Sit on top */
+   //  left: 1%;
+     top: 36%;
+     width: 100%; /* Full width */
+     height: 68%; /* Full height */
+     overflow: hidden; /* Enable scroll if needed */
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     .container {
+       width: 100%; 
+       height: 100%;
+       background: $formColor; /* Fallback color */
+       background: rgba(6, 15, 117, 0.8); 
+       position: absolute;
+       #svg{
+         height:25px;
+         width:25px;
+       }
+       #line1{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       #line2{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       /* The Close Button */
+       .closeBtn {
+         /* Position it in the top right corner outside of the modal */
+         position: absolute;
+         right: 40px;
+         top: 20px;
+         font-size: 30px;
+         font-weight: bold;
+       }
+ 
+     }
+   }
+      
+  
+    #userName{
+    height: 30px;
+    width: 60%;
+    top:20px;
+    left:2%;
+    position:absolute;
+    font-size: 0.9rem;
+   
+   }
+ 
+   #uError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:20px;
+     left:1%;
+     position:absolute;
+   }
+ 
+ 
+   #email{
+     height: 30px;
+     width: 60%;
+     top:55px;
+     left:2%;
+     position:absolute;
+     font-size: 0.9rem;
+    
+    }
+    #eError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:55px;
+     left:1%;
+     position:absolute;
+   }
+ 
+    #phone{
+     height: 30px;
+     width: 60%;
+     top:90px;
+     left:2%;
+     position:absolute;
+     font-size: 0.9rem;
+     
+    }
+ 
+    #phError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:90px;
+     left:1%;
+     position:absolute;
+   }
+ 
+   #password{
+     height: 30px;
+     width: 60%;
+     top:125px;
+     left:2%;
+     position:absolute;
+     font-size: 1rem;
+     font-size: 0.9rem;
+      outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+    
+   }
+   #pError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:125px;
+     left:1%;
+     position:absolute;
+   }
+ 
+   #coPassword{
+     height: 30px;
+     width: 60%;
+     top:160px;
+     left:2%;
+     position:absolute;
+     font-size: 1rem;
+     font-size: 0.9rem;
+      outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+    
+   }
+ 
+   #cpError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:160px;
+     left:1%;
+     position:absolute;
+   }
+ 
+   #errorYup{
+     height: 20px;
+    // width: 230px;
+    font-size: 1rem;
+    top:200px;
+    left:1%;
+    position:absolute;
+    color:$backColor;
+  }
+ 
+ 
+  .rnc{
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   max-width: 220px;
+   background-color: #eee;
+   border-radius: 6px;
+   padding: 8px;
+   box-sizing: border-box;
+   top:220px;
+   left:2%;
+   position:absolute;
+ }
+ .rnc-row {
+   display: flex;
+   align-items: stretch;
+   margin: 0 0 8px 0;
+ }
+ 
+ .rnc-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0 0 0 8px;
+ }
+ 
+ .rnc-canvas {
+   box-sizing: border-box;
+   background-color: #fff;
+   border-radius: 4px;
+ }
+ 
+ .rnc-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   background: #fff;
+   color: inherit;
+   border: none;
+   padding: 0;
+   width: 25px;
+   height: 20px;
+   box-sizing: border-box;
+   border-radius: 4px;
+ }
+ 
+  svg {
+   width: 1em;
+   height: 1em;
+   fill: currentColor;
+ }
+ 
+ .rnc-input {
+   border: none;
+   padding: 10px 6px;
+   font-size: inherit;
+   font-family: inherit;
+ }
+ 
+ 
+   #submit{
+     height: 40px;
+     width: 30%;
+     top:290px;
+     left:55%;
+     position:absolute;
+     color:$backColor;
+     background-color: $linkColor;
+     border-radius: 5px;
+     &:hover{color:red;}
+    // border:2 2 solid $inputColor;
+   }
+ 
+   
+ 
+   #signLabel{
+     height: 20px;
+    // width: 200px;
+     top:350px;
+     left:2%;
+     position:absolute;
+     color:$backColor;
+   }
+ 
+ 
+   #signIn{
+     height: 20px;
+     width: 100px;
+     top:350px;
+     left:40%;
+     position:absolute;
+     color:$backColor;
+     &:hover{color:red}
+     
+   }
+ 
+   .google
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:70%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       
+      }
+ 
+   .twitter
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:75%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       background-color: white;
+       border-radius: 50%;
+      }
+ 
+      .linkedin
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:80%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       
+      }
+      
+     .facebook
+    {
+      width:25px;
+      height:25px;
+      top: 180px;
+      left:85%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     #policy{
+         height: 20px;
+         top:380px;
+         left:2%;
+         position:absolute;
+         color:$backColor;
+         #link{
+           color:$backColor;
+           &:hover{color:red}
+           }
+     }
+    
+   /* Add Zoom Animation */
+   .animate {
+     -webkit-animation: animatezoomU 0.6s;
+     animation: animatezoomU 0.6s
+   }
+   
+   @-webkit-keyframes animatezoom {
+     from {-webkit-transform: scale(0)}
+     to {-webkit-transform: scale(1)}
+   }
+   
+   @keyframes animatezoom {
+     from {transform: scale(0)}
+     to {transform: scale(1)}
+   }
+}
+
+
+@media only screen and  (min-width: 280px) and (max-width: 410px)  {
+  .modal {
+    // display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 2; /* Sit on top */
+     left: 1%;
+     top: 36%;
+     width: 98%; /* Full width */
+     height: 68%; /* Full height */
+     overflow: hidden; /* Enable scroll if needed */
+     background-size: cover;
+     background-repeat:  no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     .container {
+       width: 100%; 
+       height: 100%;
+       background: $formColor; /* Fallback color */
+       background: rgba(6, 15, 117, 0.8); 
+       position: absolute;
+       #svg{
+         height:25px;
+         width:25px;
+       }
+       #line1{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       #line2{
+         stroke:$backColor;
+         stroke-width:3;
+       }
+       /* The Close Button */
+       .closeBtn {
+         /* Position it in the top right corner outside of the modal */
+         position: absolute;
+         right: 40px;
+         top: 20px;
+         font-size: 30px;
+         font-weight: bold;
+       }
+ 
+     }
+   }
+      
+  
+    #userName{
+    height: 30px;
+    width: 60%;
+    top:70px;
+    left:2%;
+    position:absolute;
+    font-size: 0.9rem;
+   
+   }
+ 
+   #uError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:70px;
+     left:1%;
+     position:absolute;
+   }
+ 
+ 
+   #email{
+     height: 30px;
+     width: 60%;
+     top:105px;
+     left:2%;
+     position:absolute;
+     font-size: 0.9rem;
+    
+    }
+    #eError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:105px;
+     left:1%;
+     position:absolute;
+   }
+ 
+    #phone{
+     height: 30px;
+     width: 60%;
+     top:140px;
+     left:2%;
+     position:absolute;
+     font-size: 0.9rem;
+     
+    }
+ 
+    #phError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:140px;
+     left:1%;
+     position:absolute;
+   }
+ 
+   #password{
+     height: 30px;
+     width: 60%;
+     top:175px;
+     left:2%;
+     position:absolute;
+     font-size: 1rem;
+     font-size: 0.9rem;
+     outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+    
+   }
+   #pError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:175px;
+     left:1%;
+     position:absolute;
+   }
+ 
+   #coPassword{
+     height: 30px;
+     width: 60%;
+     top:210px;
+     left:2%;
+     position:absolute;
+     font-size: 1rem;
+     font-size: 0.9rem;
+     outline: none;
+     background-size: 15px;
+     padding-right: 20px;
+     background: no-repeat right;
+     background-color: $backColor;
+    
+   }
+ 
+   #cpError{
+     height: 20px;
+     width: 5px;
+     color:red;
+     top:210px;
+     left:1%;
+     position:absolute;
+   }
+ 
+   #errorYup{
+     height: 20px;
+    // width: 230px;
+    font-size: 1rem;
+    top:250px;
+    left:1%;
+    position:absolute;
+    color:$backColor;
+  }
+ 
+ 
+  .rnc{
+   display: flex;
+   flex-direction: column;
+   width: 80%;
+   max-width: 220px;
+   background-color: #eee;
+   border-radius: 6px;
+   padding: 8px;
+   box-sizing: border-box;
+   top:220px;
+   left:62%;
+   position:absolute;
+ }
+ .rnc-row {
+   display: flex;
+   align-items: stretch;
+   margin: 0 0 8px 0;
+ }
+ 
+ .rnc-column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 0 0 0 8px;
+ }
+ 
+ .rnc-canvas {
+   box-sizing: border-box;
+   background-color: #fff;
+   border-radius: 4px;
+ }
+ 
+ .rnc-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   background: #fff;
+   color: inherit;
+   border: none;
+   padding: 0;
+   width: 25px;
+   height: 20px;
+   box-sizing: border-box;
+   border-radius: 4px;
+ }
+ 
+  svg {
+   width: 1em;
+   height: 1em;
+   fill: currentColor;
+ }
+ 
+ .rnc-input {
+   border: none;
+   padding: 10px 6px;
+   font-size: inherit;
+   font-family: inherit;
+ }
+ 
+ 
+   #submit{
+     height: 40px;
+     width: 60%;
+     top:280px;
+     left:2%;
+     position:absolute;
+     color:$backColor;
+     background-color: $linkColor;
+     border-radius: 5px;
+     &:hover{color:red;}
+    // border:2 2 solid $inputColor;
+   }
+ 
+   
+ 
+   #signLabel{
+     height: 20px;
+    // width: 200px;
+     top:330px;
+     left:2%;
+     position:absolute;
+     color:$backColor;
+   }
+ 
+ 
+   #signIn{
+     height: 20px;
+     width: 100px;
+     top:330px;
+     left:40%;
+     position:absolute;
+     color:$backColor;
+     &:hover{color:red}
+     
+   }
+ 
+   .google
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:70%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       
+      }
+ 
+   .twitter
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:75%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       background-color: white;
+       border-radius: 50%;
+      }
+ 
+      .linkedin
+     {
+       width:25px;
+       height:25px;
+       top: 180px;
+       left:80%;
+       position:absolute;
+       cursor: pointer;
+       float:right;
+       display: block;
+       border:none;
+       
+      }
+      
+     .facebook
+    {
+      width:25px;
+      height:25px;
+      top: 180px;
+      left:85%;
+      position:absolute;
+      cursor: pointer;
+      float:right;
+      display: block;
+      border:none;
+      
+     }
+     #policy{
+         height: 20px;
+         top:370px;
+         left:2%;
+         position:absolute;
+         color:$backColor;
+         #link{
+           color:$backColor;
+           &:hover{color:red}
+           }
+     }
+    
+   /* Add Zoom Animation */
+   .animate {
+     -webkit-animation: animatezoomU 0.6s;
+     animation: animatezoomU 0.6s
+   }
+   
+   @-webkit-keyframes animatezoom {
+     from {-webkit-transform: scale(0)}
+     to {-webkit-transform: scale(1)}
+   }
+   
+   @keyframes animatezoom {
+     from {transform: scale(0)}
+     to {transform: scale(1)}
+   }
+}

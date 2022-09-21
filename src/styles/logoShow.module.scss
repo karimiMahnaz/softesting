@@ -1,0 +1,83 @@
+///@import './variables.module.scss';
+
+$buttonColor:#0d6efd;
+$fontColor: rgb(83, 6, 134);;
+$gradiant:rgb(2,0,36);
+$backColor:rgb(247, 247, 242);
+$linkColor:rgb(44, 44, 131);
+$logo-font-size :24px;
+$footerWidth: 100%;
+$cardColor:rgb(116, 10, 187);
+///$inputColor:rgb(21,107,163);
+$labelColor:rgb(116, 136, 151);
+$inputColor:#ddd;
+$placeHolder:rgb(167, 164, 164);
+$logofontsize:36px;
+$headerWidth: 100%;
+$formColor:rgb(6, 15, 117);
+$black:black;
+$white:white;
+
+
+
+.logShow{
+    width: 100%; 
+    align-items: center;
+ }
+ .logo_holder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.logo_thumbnail{
+    width: 150px;
+    height: 150px;
+    background-size: 100px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px ;
+
+    animation-name: fadeInLeft; 
+    animation-duration: 50s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.45,.39,.76,.51);
+    animation-iteration-count: infinite;
+
+   }
+.logo {
+    width: 100px;
+    height: 100px;
+ }
+.logoShow {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    position: relative;
+   
+}
+
+
+
+
+.fadeInLeft {
+    -webkit-animation: fadeInLeft  ease-in-out; /* Chrome, Safari, Opera */
+    animation: fadeInLeft  ease-in-out;
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+       
+        transform: translateX(-1400px);
+    }
+    100% {
+      
+        transform: translateX(50px);
+    }
+}
+
