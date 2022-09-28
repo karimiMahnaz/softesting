@@ -69,12 +69,17 @@ const DocumentSign = (params) => {
 
 
     useEffect(() => {
+      console.log('filePath' , filePath);
+      if (filePath === null || filePath === '' || filePath === undefined){
+        setFilePath(localStorage.getItem('documentUrl'));
+      }
+
       if (localStorage.getItem("subTitle"))
       setSubTitleBase64(localStorage.getItem("subTitle").replace(/"/g, ""));
 
-    if (localStorage.getItem("signature")) {
-      setIsSign(true);
-      setSignatureBase64(
+      if (localStorage.getItem("signature")) {
+        setIsSign(true);
+        setSignatureBase64(
         localStorage
           .getItem("signature")
          /// .split("base64,")[1]

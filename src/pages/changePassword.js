@@ -14,7 +14,7 @@ import { Desktop, Tablet, Mobile, MobileX } from '../contexts/breakPoints';
 import { VisibilityContext } from '../contexts/visibilityContext';
 import img from '../assets/abstract-blue.jpg'
 import eye from '../assets/Icon/eye.png';
-import SignIn from '../pages/signIn';
+//import SignIn from '../pages/signIn';
 
 <title>SofTesting | ChangePassword</title>
 
@@ -22,7 +22,7 @@ import SignIn from '../pages/signIn';
 
 const ChangePassword = () => {
 
-  const { loginFrmShow, setLoginFrmShow, changePassFrmShow, setFormsHide } = useContext(VisibilityContext);
+  const { changePassFrmShow, setFormsHide } = useContext(VisibilityContext);
   const { register, handleSubmit, reset, formState: { errors }, isSubmiting } = useForm({
     mode: "onTouched",
     reValidateMode: "onChange"

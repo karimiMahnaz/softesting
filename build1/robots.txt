@@ -1,5 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-Sitemap: https://softestingca.com/sitemap.xml
-#Sitemap: https://www.softestingca.com/sitemap.xml
-User-agent: *
-Disallow:

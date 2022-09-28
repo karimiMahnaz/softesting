@@ -11,7 +11,8 @@ export  const AuthContext = createContext();
     isLoading : false ,
     authorized : false,
     cookies:false,
-    token:''
+    token:'',
+    documentUrl:'',
 };
 
 const AuthContextProvider = (props) =>{

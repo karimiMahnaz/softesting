@@ -270,6 +270,7 @@ try{
           setStatus("Login");
           toast.error(" ReCaptcha is not valid..", { theme: "dark" });
         }
+        
   //    })
      // .catch((ex) => {
         // setSuccess(false);
@@ -337,13 +338,14 @@ try{
        //   .then(({ data, status }) => {
        //     console.log("cookiestatus", status);
             if (res_cookie.status === 200) {
-              setStatus("Login");
+              setStatus("Login");       
               //   toast.success("Cookies Is Saved .", { theme: "colored" });
             } else {
               setStatus("Login");
               setSuccess(false);
               ///      toast.error("Cookies Is Not Saved .", { theme: "dark" });
             }
+            history.push('/contract/signature');
           // })
           // .catch((ex) => {
           //   setStatus("Login");

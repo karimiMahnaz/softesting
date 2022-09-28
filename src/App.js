@@ -131,7 +131,7 @@ function App() {
                       <Route path="/contract/signature" exact>
                         <Signature />
                       </Route>
-                      <Route path="/contract/signature:token">
+                      <Route path="/contract/signature/:token">
                         <Signature />
                       </Route>
                       <Route path="/contract/documentsign">

@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
-import { useHistory, Link, NavLink } from "react-router-dom";
+import { useHistory, Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,7 +11,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import styles from "../styles/signature.module.scss";
 import { Desktop, Tablet, Mobile, MobileX } from "../contexts/breakPoints";
 import { VisibilityContext } from "../contexts/visibilityContext";
-
+import { AuthContext } from "../contexts/authContext";
 import { NavContext } from "../contexts/navContext";
 import img from "../assets/abstract-blue.jpg";
 
@@ -41,8 +41,9 @@ const Signature = () => {
   const [contracts, setContracts] = useState([]);
   const [email, setEmail] = useState("");
   const [isSign, setIsSign] = useState(false);
-
+  
   toast.configure();
+  const { token } = useParams();
 
   let sigCanvasRef = useRef({});
 
@@ -57,6 +58,7 @@ const Signature = () => {
 
   const location = window.location.hostname;
   let getUrl = "";
+  let tokenUrl = "";
 
   if (location === "localhost") {
     getUrl = `http://${location}:8000/api/contract/getContracts`;
@@ -64,6 +66,12 @@ const Signature = () => {
     getUrl = `https://api.softestingca.com/api/contract/getContracts`;
   }
   
+   if (location ==='localhost') {
+        tokenUrl=`http://${location}:8000/api/contract/tokenCheck`
+      } else{
+        tokenUrl='https://api.softestingca.com/api/contract/tokenCheck'
+      }
+
   useEffect(() => {
    
     if (localStorage.getItem("subTitle"))
@@ -97,10 +105,30 @@ const Signature = () => {
     if (emailW === null || emailW === undefined || emailW === "") {
       history.push("/contract/login");
     } else {
-      console.log(emailW);
+      console.log('token',  token);
       setEmail(emailW);
+
+     axios({
+        method: "post",
+        url: tokenUrl,
+        data: { token: token ?  token.substr(1): token }
+
+      })
+        .then((response) => {
+          if (response.request.status === 200) {
+            console.log('response.data.status', response);
+          }
+        })
+        .catch(
+          (ex) => {
+            console.log('exex', ex);
+              toast.error("You don't have permission to sign SofTesting documents!", { theme: "dark" });
+              return;
+          });
+
+
       axios.get(getUrl, { params: { email: emailW } }).then((res) => {
-        const contractInfo = res.data;
+      //  const contractInfo = res.data;
         
          setContracts(res.data);
          console.log('mailresult', contracts)
@@ -121,7 +149,8 @@ const Signature = () => {
     );
     const documentUrl = `https://api.softestingca.com/uploaded-files/${email.replace(/"/g, '').trim().toLowerCase()}_contract/${e}`;
   
-    localStorage.removeItem("documentUrl");
+
+    await localStorage.removeItem("documentUrl");
     await localStorage.setItem('documentUrl',documentUrl);
     console.log(await localStorage.getItem('documentUrl'));
     //history.push("/contract/documentsign");
@@ -169,8 +198,8 @@ const Signature = () => {
       if (emailW === null || emailW === undefined || emailW === "") {
           history.push("/contract/login");
        } else {
-         console.log(emailW);
-         setEmail('emailW', `${emailW}`);
+         console.log('emailW', emailW);
+         setEmail(emailW);
          axios.get(getUrl, { params: { email: emailW } }).then((res) => {
                
          setContracts(res.data);
@@ -267,8 +296,8 @@ const Signature = () => {
                     style: {
                       border: "1px solid green",
                       position: "absolute",
-                      left: "55%",
-                      top: "30px",
+                      left: "50%",
+                      top: "40px",
                       backgroundColor: "white",
                     },
                   }}
@@ -282,7 +311,7 @@ const Signature = () => {
             )}
              <p className={styles.canvas}>Signature Canvas</p>
             <button id={styles.clear} onClick={signClear}>
-              clear
+              Clear
             </button>
 
             <button
@@ -405,8 +434,8 @@ const Signature = () => {
                     style: {
                       border: "1px solid green",
                       position: "absolute",
-                      left: "55%",
-                      top: "30px",
+                      left: "50%",
+                      top: "40px",
                       backgroundColor: "white",
                     },
                   }}
@@ -418,7 +447,7 @@ const Signature = () => {
                 {errors.sigCanvas.message}
               </p>
             )}
-
+             <p className={styles.canvas}>Signature Canvas</p>
             <button id={styles.clear} onClick={signClear}>
               clear
             </button>
@@ -540,8 +569,8 @@ const Signature = () => {
                     style: {
                       border: "1px solid green",
                       position: "absolute",
-                      left: "55%",
-                      top: "30px",
+                      left: "50%",
+                      top: "40px",
                       backgroundColor: "white",
                     },
                   }}
@@ -553,7 +582,7 @@ const Signature = () => {
                 {errors.sigCanvas.message}
               </p>
             )}
-
+            <p className={styles.canvas}>Signature Canvas</p>
             <button id={styles.clear} onClick={signClear}>
               clear
             </button>
@@ -583,10 +612,10 @@ const Signature = () => {
              {
                  contracts.map((contract, index) =>
            
-                   <li id={styles.fileName}
+                   <li className={styles.fileName}
                        onClick={() =>viewDocument(contract.contractName)}
                        key={index}>
-                      <Link to = "/contract/documentsign" id={styles.linkFileName} download> {contract.contractName}</Link>   
+                      <Link to = "/contract/documentsign" className={styles.linkFileName} download> {contract.contractName}</Link>   
                     </li>
 
                   )}  
@@ -675,8 +704,8 @@ const Signature = () => {
                     style: {
                       border: "1px solid green",
                       position: "absolute",
-                      left: "55%",
-                      top: "30px",
+                      left: "50%",
+                      top: "40px",
                       backgroundColor: "white",
                     },
                   }}
@@ -688,7 +717,7 @@ const Signature = () => {
                 {errors.sigCanvas.message}
               </p>
             )}
-
+             <p className={styles.canvas}>Signature Canvas</p>
             <button id={styles.clear} onClick={signClear}>
               clear
             </button>
