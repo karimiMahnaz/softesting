@@ -2,4 +2,6 @@
 /.cloud/
 .cloud/
 /.cloud
+/.env/
+.env/
 /.env
