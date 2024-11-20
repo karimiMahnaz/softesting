@@ -1,9 +1,6 @@
 @import './variables.module.scss';
 
 
-
-
-
 #link1:hover{color: red;}
 #link2:hover{color: red;}
 #link3:hover{color: red;}
@@ -27,19 +24,19 @@ nav {
 //  border-bottom-left-radius: 6px;
 //  border-bottom-right-radius: 6px;
   margin : 0px;
-  margin-top : -21px;
+ // margin-top : -21px;
   padding-top: 0rem;
- z-index: 3;
+  z-index: 3;
   align-content: center;
   scrollbar-width: none;
-  overflow:none;
+ // overflow-x:hidden;
   position: relative;
   display: block ;
   
 }
 #menu{
   
-  margin-top: 30px;
+  margin-top: 0;
   
 }
 .hamburger_menu {
@@ -117,7 +114,7 @@ span {
 
     #container {
       padding: 0;
-      margin-top: 22px;
+      margin-top: 0;
        
     }
 
@@ -149,8 +146,8 @@ span {
   #link1  {
    
 	  color: $backColor;
-    margin-top: 40px;
-    margin-left: 200px; 
+    margin-top: 10px;
+    margin-left: 190px; 
     text-decoration: none;
     position:absolute;
     font-family:  sans-serif;
@@ -159,8 +156,8 @@ span {
   #link2  {
    
 	  color: $backColor;
-    margin-top: 40px;
-    margin-left: 400px; 
+    margin-top: 10px;
+    margin-left: 375px; 
     text-decoration: none;
     position:absolute;
     font-family:  sans-serif;
@@ -169,8 +166,8 @@ span {
 
     #link3 {
       color: $backColor;
-      margin-top: 40px;
-      margin-left: 600px; 
+      margin-top: 10px;
+      margin-left: 560px; 
       text-decoration: none;
       position:absolute;
       font-family: sans-serif;
@@ -178,19 +175,27 @@ span {
 
       #link4 {
         color: $backColor;
-        margin-top: 40px;
-        margin-left: 800px; 
+        margin-top: 10px;
+        margin-left: 750px; 
         text-decoration: none;
         position:absolute;
         font-family: sans-serif;
         
         }
 
-      
+        #link5 {
+          color: $backColor;
+          margin-top: 10px;
+          margin-left: 860px; 
+          text-decoration: none;
+          position:absolute;
+          font-family: sans-serif;
+          
+          }
 
 .active {
 	opacity: 1;
-	margin-right: 30px;
+	margin-right: 10px;
   display:block;
 }
 .inactive{
@@ -202,20 +207,20 @@ span {
     color:$backColor;
     width: 450px;
     height: 100px;
-    padding: 10px;
+    padding-inline: 10px;
     position:absolute;
     font-size: $logo-font-size;
     display:inline-block;
     font-family: Helvetica ,Arial ,sans-serif,    ;
-    margin-top: 25px;
+    margin-top: 0;
     margin-left: 80px;
     cursor: pointer;
 
-    
  }
 
+
   .shape1{
-    margin-top: 37px;
+    margin-top: 27px;
    width: 1%;
    height: 5px;
    margin-left:25px;
@@ -225,7 +230,7 @@ span {
    border-radius: 2px;
 }
 .shape2{
-  margin-top: 42px;
+  margin-top: 32px;
   width: 1%;
   height: 5px;
   margin-left: 40px;
@@ -238,8 +243,8 @@ span {
   
 }
 .shape3{
-  top: 47px;
-  width: 3.5%;
+  top: 37px;
+  width: 1.2%;
   height: 5px;
   left: 28px;;
   background-color: rgb(11, 235, 130);
@@ -251,21 +256,21 @@ span {
  
 }
 .shape4{
-  top: 52px;
+  top: 42px;
   width: 1%;
   height: 5px;
   left: 30px;;
   background-color: $gradiant;
   display: block;
-position:absolute;
+  position:absolute;
   padding: 0;
   margin: 0;
   
   border-radius: 3px;
 }
 .shape5{
-  top: 57px;
-  width: 2%;
+  top: 47px;
+  width: 3%;
   height: 5px;
   left:33px;
   background-color: rgb(111, 226, 172);
@@ -276,7 +281,7 @@ position:absolute;
     border-radius: 11px;
 }
 .shape6{
-  top: 62px;
+  top: 52px;
   width: 2%;
   height: 5px;
   left:30px;
@@ -288,13 +293,13 @@ position:absolute;
   border-radius: 3px;
 }
 .shape7{
-  top: 67px;
-  width: .6%;
+  top: 57px;
+  width: 1.5%;
   height: 5px;
   position:absolute;
   background-color:rgb(11, 223, 124);
   display: block;
-  left:28px;
+  left:36px;
   padding: 0;
   margin: 0;
   border-radius: 3px;
@@ -307,23 +312,23 @@ position:absolute;
   nav {
     height: 100px;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,110,253,1) 25%, rgba(9,19,128,1) 69%, rgba(13,110,253,1) 94%, rgba(0,212,255,1) 100%);
-    width: 100vw;
+   // width: 100%;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     margin-left : 0px;
-    margin-top : -21px;
+   // margin-top : -21px;
     padding-top: 0rem;
    
     align-content: center;
     scrollbar-width: none;
-    overflow:none;
+   // overflow:hidden;
     position: relative;
     display: block ;
     
   }
   #menu{
     
-    margin-top: 30px;
+    margin-top: 0px;
     
   }
   .hamburger_menu {
@@ -403,7 +408,7 @@ position:absolute;
   
       #container {
         padding: 0;
-        margin-top: 22px;
+        margin-top: 0;
          
       }
   
@@ -432,10 +437,11 @@ position:absolute;
   #sublink5{  margin-top: 130px; }
   #sublink6{  margin-top: 160px; }
   
+ 
     #link1  {
      
       color: $backColor;
-      margin-top: 40px;
+      margin-top: 10px;
       margin-left: 160px; 
       text-decoration: none;
       position:absolute;
@@ -445,7 +451,7 @@ position:absolute;
     #link2  {
      
       color: $backColor;
-      margin-top: 40px;
+      margin-top: 10px;
       margin-left: 335px; 
       text-decoration: none;
       position:absolute;
@@ -455,7 +461,7 @@ position:absolute;
   
       #link3 {
         color: $backColor;
-        margin-top: 40px;
+        margin-top: 10px;
         margin-left: 505px; 
         text-decoration: none;
         position:absolute;
@@ -464,7 +470,7 @@ position:absolute;
   
         #link4 {
           color: $backColor;
-          margin-top: 40px;
+          margin-top: 10px;
           margin-left: 700px; 
           text-decoration: none;
           position:absolute;
@@ -472,7 +478,15 @@ position:absolute;
           
           }
   
-        
+          #link5 {
+            color: $backColor;
+            margin-top: 10px;
+            margin-left: 840px; 
+            text-decoration: none;
+            position:absolute;
+            font-family: sans-serif;
+            
+            }
   
   .active {
     opacity: 1;
@@ -488,103 +502,104 @@ position:absolute;
       color:$backColor;
       width: 450px;
       height: 100px;
-      padding: 10px;
+      padding-inline: 10px;
       position:absolute;
       font-size: $logo-font-size;
       display:inline-block;
       font-family: Helvetica ,Arial ,sans-serif,    ;
-      margin-top: 25px;
+      margin-top: 0;
       margin-left: 50px;
       cursor: pointer;
   
       
    }
   
-    .shape1{
-      margin-top: 37px;
-     width: 1%;
-     height: 5px;
-     margin-left:25px;
-     background-color:rgb(11, 223, 124);
-     display: block;
-     position:absolute;
-     border-radius: 2px;
-  }
-  .shape2{
-    margin-top: 42px;
-    width: 1%;
-    height: 5px;
-    margin-left: 40px;
-    background-color: $gradiant;
-    display: block;
-    position:absolute;
-    padding: 0;
-    margin: 0;
-    border-radius: 5px;
-    
-  }
-  .shape3{
-    top: 47px;
-    width: 3.5%;
-    height: 5px;
-    left: 28px;;
-    background-color: rgb(11, 235, 130);
-    display: block;
-    position:absolute;
-    padding-left: 2;
-    margin: 0;
-    border-radius: 10px;
-   
-  }
-  .shape4{
-    top: 52px;
-    width: 1%;
-    height: 5px;
-    left: 30px;;
-    background-color: $gradiant;
-    display: block;
+   .shape1{
+    margin-top: 27px;
+   width: 1%;
+   height: 5px;
+   margin-left:25px;
+   background-color:rgb(11, 223, 124);
+   display: block;
+   position:absolute;
+   border-radius: 2px;
+}
+.shape2{
+  margin-top: 32px;
+  width: 1%;
+  height: 5px;
+  margin-left: 40px;
+  background-color: $gradiant;
+  display: block;
   position:absolute;
-    padding: 0;
-    margin: 0;
-    
-    border-radius: 3px;
-  }
-  .shape5{
-    top: 57px;
-    width: 2%;
-    height: 5px;
-    left:33px;
-    background-color: rgb(111, 226, 172);
-    display: block;
-    position:absolute;
-    padding-left: 0;
-    margin: 0;
-      border-radius: 11px;
-  }
-  .shape6{
-    top: 62px;
-    width: 2%;
-    height: 5px;
-    left:30px;
-    background-color: $gradiant;
-    display: block;
-    position:absolute;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
-  }
-  .shape7{
-    top: 67px;
-    width: .6%;
-    height: 5px;
-    position:absolute;
-    background-color:rgb(11, 223, 124);
-    display: block;
-    left:28px;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
-  }
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  
+}
+.shape3{
+  top: 37px;
+  width: 1.2%;
+  height: 5px;
+  left: 28px;;
+  background-color: rgb(11, 235, 130);
+  display: block;
+  position:absolute;
+  padding-left: 2;
+  margin: 0;
+  border-radius: 10px;
+ 
+}
+.shape4{
+  top: 42px;
+  width: 1%;
+  height: 5px;
+  left: 30px;;
+  background-color: $gradiant;
+  display: block;
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  
+  border-radius: 3px;
+}
+.shape5{
+  top: 47px;
+  width: 3%;
+  height: 5px;
+  left:33px;
+  background-color: rgb(111, 226, 172);
+  display: block;
+  position:absolute;
+  padding-left: 0;
+  margin: 0;
+    border-radius: 11px;
+}
+.shape6{
+  top: 52px;
+  width: 2%;
+  height: 5px;
+  left:30px;
+  background-color: $gradiant;
+  display: block;
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+}
+.shape7{
+  top: 57px;
+  width: 1.5%;
+  height: 5px;
+  position:absolute;
+  background-color:rgb(11, 223, 124);
+  display: block;
+  left:36px;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
+}
+
   
   }
   
@@ -597,20 +612,20 @@ position:absolute;
     width: 100vw;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-left : 0px;
-    margin-top : -21px;
+    margin : 0;
+  //  margin-top : -21px;
     padding-top: 0rem;
    
     align-content: center;
     scrollbar-width: none;
-    overflow:none;
+  //  overflow:none;
     position: relative;
     display: block ;
     
   }
   #menu{
     
-    margin-top: 25px;
+    margin-top: 0px;
     
   }
   .hamburger_menu {
@@ -727,7 +742,7 @@ position:absolute;
   
       #container {
         padding: 0;
-        margin-top: 21px;
+        margin-top: 0;
          
       }
   
@@ -794,7 +809,14 @@ position:absolute;
           font-family: sans-serif;
           }
   
-        
+          #link5 {
+            color: $backColor;
+            margin-top: 200px;
+            margin-left: 10px; 
+            text-decoration: none;
+            position:absolute;
+            font-family: sans-serif;
+            }
   
   .active {
     opacity: 1;
@@ -810,102 +832,103 @@ position:absolute;
       color:$backColor;
       width: 100px;
       height: 100px;
-      padding: 10px;
+      padding-inline: 10px;
       position:absolute;
       font-size: $logo-font-size;
       display:inline-block;
       font-family: Helvetica ,Arial ,sans-serif,    ;
-      margin-top: 20px;
-      margin-left: 55px;
+      margin-top: 0px;
+      margin-left: 80px;
       cursor: pointer;
   
       
    }
   
-    .shape1{
-      margin-top: 30px;
-     width: 3%;
-     height: 5px;
-     margin-left:25px;
-     background-color:rgb(11, 223, 124);
-     display: block;
-     position:absolute;
-     border-radius: 2px;
+   .shape1{
+    margin-top: 27px;
+   width: 2.4%;
+   height: 5px;
+   margin-left:25px;
+   background-color:rgb(11, 223, 124);
+   
+   display: block;
+   position:absolute;
+   border-radius: 2px;
   }
   .shape2{
-    margin-top: 35px;
-    width: 3%;
-    height: 5px;
-    margin-left: 40px;
-    background-color: $gradiant;
-    display: block;
-    position:absolute;
-    padding: 0;
-    margin: 0;
-    border-radius: 5px;
-    
+  margin-top: 32px;
+  width: 4%;
+  height: 5px;
+  margin-left: 40px;
+  background-color: $gradiant;
+  display: block;
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  
   }
   .shape3{
-    top: 40px;
-    width: 6%;
-    height: 5px;
-    left: 28px;;
-    background-color: rgb(11, 235, 130);
-    display: block;
-    position:absolute;
-    padding-left: 2;
-    margin: 0;
-    border-radius: 10px;
-   
+  top: 31px;
+  width: 3.6%;
+  height: 5px;
+  left: 28px;;
+  background-color: rgb(11, 235, 130);
+  display: block;
+  position:absolute;
+  padding-left: 2;
+  margin: 0;
+  border-radius: 10px;
+  
   }
   .shape4{
-    top: 45px;
-    width: 3%;
-    height: 5px;
-    left: 30px;;
-    background-color: $gradiant;
-    display: block;
+  top: 42px;
+  width: 4%;
+  height: 5px;
+  left: 30px;;
+  background-color: $gradiant;
+  display: block;
   position:absolute;
-    padding: 0;
-    margin: 0;
-    
-    border-radius: 3px;
+  padding: 0;
+  margin: 0;
+  
+  border-radius: 3px;
   }
   .shape5{
-    top: 50px;
-    width: 4%;
-    height: 5px;
-    left:25px;
-    background-color: rgb(111, 226, 172);
-    display: block;
-    position:absolute;
-    padding-left: 0;
-    margin: 0;
-      border-radius: 11px;
+  top: 42px;
+  width: 7%;
+  height: 5px;
+  left:33px;
+  background-color: rgb(111, 226, 172);
+  display: block;
+  position:absolute;
+  padding-left: 0;
+  margin: 0;
+    border-radius: 11px;
   }
   .shape6{
-    top: 55px;
-    width: 3.6%;
-    height: 5px;
-    left:25px;
-    background-color: $gradiant;
-    display: block;
-    position:absolute;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
+  top: 52px;
+  width: 5%;
+  height: 5px;
+  left:30px;
+  background-color: $gradiant;
+  display: block;
+  position:absolute;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
   }
   .shape7{
-    top: 60px;
-    width: 2%;
-    height: 5px;
-    position:absolute;
-    background-color:rgb(11, 223, 124);
-    display: block;
-    left:24px;
-    padding: 0;
-    margin: 0;
-    border-radius: 3px;
+  top: 52px;
+  width: 4%;
+  height: 5px;
+  position:absolute;
+  background-color:rgb(11, 223, 124);
+  display: block;
+  left:36px;
+  padding: 0;
+  margin: 0;
+  border-radius: 3px;
   }
   
   }
@@ -919,20 +942,20 @@ position:absolute;
     width: 100vw;
   //  border-bottom-left-radius: 6px;
   //  border-bottom-right-radius: 6px;
-    margin-left : 0px;
-    margin-top : -21px;
+    margin : 0;
+  //  margin-top : -21px;
     padding-top: 0rem;
    
     align-content: center;
     scrollbar-width: none;
-    overflow:none;
+   // overflow:none;
     position: relative;
     display: block ;
     
   }
   #menu{
     
-    margin-top: 25px;
+    margin-top: 0px;
     
   }
   .hamburger_menu {
@@ -1012,7 +1035,7 @@ position:absolute;
   
       #container {
         padding: 0;
-        margin-top: 20px;
+        margin-top: 0;
          
       }
   
@@ -1116,7 +1139,15 @@ position:absolute;
           position:absolute;
           font-family: sans-serif;
           }
-  
+
+          #link5 {
+            color: $backColor;
+            margin-top: 200px;
+            margin-left: 10px; 
+            text-decoration: none;
+            position:absolute;
+            font-family: sans-serif;
+            }
         
   
   .active {
@@ -1133,103 +1164,103 @@ position:absolute;
     color:$backColor;
     width: 100px;
     height: 100px;
-    padding: 10px;
+    padding-inline: 10px;
     position:absolute;
     font-size: $logo-font-size;
     display:inline-block;
     font-family: Helvetica ,Arial ,sans-serif,    ;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 55px;
     cursor: pointer;
 
     
  }
 
-  .shape1{
-    margin-top: 30px;
-   width: 3%;
-   height: 5px;
-   margin-left:25px;
-   background-color:rgb(11, 223, 124);
-   display: block;
-   position:absolute;
-   border-radius: 2px;
+ .shape1{
+  margin-top: 27px;
+ width: 3%;
+ height: 5px;
+ margin-left:25px;
+ background-color:rgb(11, 223, 124);
+ display: block;
+ position:absolute;
+ border-radius: 2px;
 }
 .shape2{
-  margin-top: 35px;
-  width: 3%;
-  height: 5px;
-  margin-left: 40px;
-  background-color: $gradiant;
-  display: block;
-  position:absolute;
-  padding: 0;
-  margin: 0;
-  border-radius: 5px;
-  
+margin-top: 32px;
+width: 4%;
+height: 5px;
+margin-left: 40px;
+background-color: $gradiant;
+display: block;
+position:absolute;
+padding: 0;
+margin: 0;
+border-radius: 5px;
+
 }
 .shape3{
-  top: 40px;
-  width: 6%;
-  height: 5px;
-  left: 28px;;
-  background-color: rgb(11, 235, 130);
-  display: block;
-  position:absolute;
-  padding-left: 2;
-  margin: 0;
-  border-radius: 10px;
- 
+top: 37px;
+width: 4.2%;
+height: 5px;
+left: 28px;;
+background-color: rgb(11, 235, 130);
+display: block;
+position:absolute;
+padding-left: 2;
+margin: 0;
+border-radius: 10px;
+
 }
 .shape4{
-  top: 45px;
-  width: 3%;
-  height: 5px;
-  left: 30px;;
-  background-color: $gradiant;
-  display: block;
+top: 42px;
+width: 4%;
+height: 5px;
+left: 30px;;
+background-color: $gradiant;
+display: block;
 position:absolute;
-  padding: 0;
-  margin: 0;
-  
-  border-radius: 3px;
+padding: 0;
+margin: 0;
+
+border-radius: 3px;
 }
 .shape5{
-  top: 50px;
-  width: 4%;
-  height: 5px;
-  left:25px;
-  background-color: rgb(111, 226, 172);
-  display: block;
-  position:absolute;
-  padding-left: 0;
-  margin: 0;
-    border-radius: 11px;
+top: 47px;
+width: 7%;
+height: 5px;
+left:33px;
+background-color: rgb(111, 226, 172);
+display: block;
+position:absolute;
+padding-left: 0;
+margin: 0;
+  border-radius: 11px;
 }
 .shape6{
-  top: 55px;
-  width: 3.6%;
-  height: 5px;
-  left:25px;
-  background-color: $gradiant;
-  display: block;
-  position:absolute;
-  padding: 0;
-  margin: 0;
-  border-radius: 3px;
+top: 52px;
+width: 5%;
+height: 5px;
+left:30px;
+background-color: $gradiant;
+display: block;
+position:absolute;
+padding: 0;
+margin: 0;
+border-radius: 3px;
 }
 .shape7{
-  top: 60px;
-  width: 2%;
-  height: 5px;
-  position:absolute;
-  background-color:rgb(11, 223, 124);
-  display: block;
-  left:24px;
-  padding: 0;
-  margin: 0;
-  border-radius: 3px;
+top: 57px;
+width: 4.5%;
+height: 5px;
+position:absolute;
+background-color:rgb(11, 223, 124);
+display: block;
+left:36px;
+padding: 0;
+margin: 0;
+border-radius: 3px;
 }
-  
+
 
 }

@@ -4,13 +4,14 @@ $buttonColor:#0d6efd;
 
 @media only screen and  (min-width: 501px){
      section.slideshow{
-        width: 99%;
-        left:56%;
+        width: 100%;
+     //  left:56%;
+       
      }
 
      section.slideshow section.current-slide{
-        width: 95%;
-        height: 550px;
+        width: 100vw;
+        height: 55vh;
         margin: auto 10px;
       
     }
@@ -19,23 +20,23 @@ $buttonColor:#0d6efd;
 @media only screen and  (max-width: 500px){
 
     section.slideshow{
-        width: 100%;
+     //   width: 100vw;
         left:0;
     }
 
     section.slideshow section.current-slide{
-        width: 90%;
-        height: 550px;
-        margin: auto 10px;
+    //    width: 100%;
+        height: 55vh;
+        margin: 10px;
       
     }
 
 }
 section.slideshow div.slide-holder{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
+  //  display: flex;
+   // justify-content: space-evenly;
+  //  align-items: center;
+  //  flex-direction: row;
 }
 
 // section.slideshow section.previous-slide,
@@ -46,14 +47,14 @@ section.slideshow div.slide-holder{
 section.slideshow section.slide div.slide-thumbnail{
     width: 100%;
     height: 100%;
-    background: $backColor;
-    background-size: cover;
+  //  background: $backColor;
     background-position: center;
-    border-radius: 6px;
-    box-shadow: 5px 5px 5px 5px #ada9b16b;
-    -webkit-transition: all 1s;
-	-o-transition: all 1s;
- 	transition: all 1s;
+    background-repeat: no-repeat;
+  //  border-radius: 6px;
+ //   box-shadow: 5px 5px 5px 5px #ada9b16b;
+ //   -webkit-transition: all 1s;
+//	-o-transition: all 1s;
+ //	transition: all 1s;
 }
 section.slideshow div.slideshow-controller{
     margin-top: 10px;

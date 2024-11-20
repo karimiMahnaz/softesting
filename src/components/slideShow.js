@@ -3,7 +3,7 @@ import React, {useState, useEffect, useContext} from 'react';
 import '../styles/slideShow.scss';
 import { VisibilityContext } from '../contexts/visibilityContext';
 
-export default function SlideShow({images=[], interval=5000}){
+export default function SlideShow({images=[], interval=8000}){
     const [thumbnails, setThumnails] = useState([]);
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -65,8 +65,8 @@ export default function SlideShow({images=[], interval=5000}){
 
 
     const [dimensions, setDimensions] = React.useState({
-        height: window.innerHeight,
-        width: window.innerWidth
+        height: window.innerHeight -100,
+        width: window.innerWidth -100
       });
     
       function debounce(fn, ms) {
@@ -83,8 +83,8 @@ export default function SlideShow({images=[], interval=5000}){
       useEffect(() => {
         const debouncedHandleResize = debounce(function handleResize() {
           setDimensions({
-            height: window.innerHeight,
-            width: window.innerWidth
+            height: window.innerHeight -100,
+            width: window.innerWidth -100
           })
         }, 1000)
     
@@ -95,10 +95,10 @@ export default function SlideShow({images=[], interval=5000}){
     
         }
       })
-
+console.log('dimensions.height', dimensions.height)
     return (
         <section className="slideshow" style={{ width: `${dimensions.width}px`, height: `${dimensions.height}px` }}>
-            <div className="slide-holder">
+            {/* <div className="slide-holder"> */}
                 {/* <section className="slide previous-slide">
                     <div style={previousSlideStyle} className="slide-thumbnail"></div>
                 </section> */}
@@ -108,12 +108,12 @@ export default function SlideShow({images=[], interval=5000}){
                 {/* <section className="slide next-slide">
                     <div style={nextSlideStyle} className="slide-thumbnail"></div>
                 </section> */}
-            </div>
+            {/* </div> */}
 
-            <div className="slideshow-controller">
+            {/* <div className="slideshow-controller">
                 <span className="previous" onClick={previous} disabled= {resetPassFrmShow || loginFrmShow || registerFrmShow}></span>
                 <span className="next" onClick={next} disabled= {resetPassFrmShow || loginFrmShow || registerFrmShow}></span>
-            </div>
+            </div> */}
         </section>
     )
 }

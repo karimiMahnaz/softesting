@@ -57,22 +57,22 @@
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
     left: 19%;
-    top: 41%;
+    top: 50%;
     width: 56%; /* Full width */
-    height: 60%; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
-    background-size: cover;
-    background-repeat:  no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    align-content: center;
+    height: 50%; /* Full height */
     font-family: 'Work Sans', sans-serif;
     .container {
       width: 100%; 
       height: 100%;
-      background: $formColor; /* Fallback color */
-      background: rgba(6, 15, 117, 0.8); 
+      background-color: $formColor; /* Fallback color */
+      background-color: rgba(6, 15, 117, 0.8); 
+      overflow: hidden; /* Enable scroll if needed */
+      background-size: cover;
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-attachment: fixed;
       position: absolute;
+      align-content: center;
       #svg{
         height:25px;
         width:25px;
@@ -333,19 +333,20 @@
      left: 15%;
      top: 41%;
      width: 66%; /* Full width */
-     height: 60%; /* Full height */
+     height: 40%; /* Full height */
      overflow: hidden; /* Enable scroll if needed */
-     background-size: cover;
-     background-repeat:  no-repeat;
-     background-position: center;
-     background-attachment: fixed;
-     align-content: center;
+    
      .container {
        width: 100%; 
        height: 100%;
        background: $formColor; /* Fallback color */
        background: rgba(6, 15, 117, 0.8); 
        position: absolute;
+       background-size: cover;
+       background-repeat:  no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+       align-content: center;
        #svg{
          height:25px;
          width:25px;
@@ -608,17 +609,18 @@
      width: 100%; /* Full width */
      height: 60%; /* Full height */
      overflow: hidden; /* Enable scroll if needed */
-     background-size: cover;
-     background-repeat:  no-repeat;
-     background-position: center;
-     background-attachment: fixed;
-     align-content: center;
+    
      .container {
        width: 100%; 
        height: 100%;
        background: $formColor; /* Fallback color */
        background: rgba(6, 15, 117, 0.8); 
        position: absolute;
+       background-size: cover;
+       background-repeat:  no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+       align-content: center;
        #svg{
          height:25px;
          width:25px;
@@ -883,17 +885,18 @@
      width: 100%; /* Full width */
      height: 60%; /* Full height */
      overflow: hidden; /* Enable scroll if needed */
-     background-size: cover;
-     background-repeat:  no-repeat;
-     background-position: center;
-     background-attachment: fixed;
-     align-content: center;
+    
      .container {
        width: 100%; 
        height: 100%;
        background: $formColor; /* Fallback color */
        background: rgba(6, 15, 117, 0.8); 
        position: absolute;
+       background-size: cover;
+       background-repeat:  no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+       align-content: center;
        #svg{
          height:25px;
          width:25px;
